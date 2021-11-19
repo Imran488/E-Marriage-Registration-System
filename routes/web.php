@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Controllers\MarriageRegistrationController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('dashboard');
 });
+
+Route::group(['prefix'=>'admin'],function(){
+    Route::get('/dashboard',[DashboardController::class,'Dashboard'])->name('dashboard'); 
+    Route::get('/marrigeregistration',[MarriageRegistrationController::class,'MarriageRegistration'])->name('marrigeregistration');
+    Route::get('/userregistrationform',[MarriageRegistrationController::class,'UserRegistrationForm'])->name('userregistrationform');
+    Route::post('/store',[MarriageRegistrationController::class,'Store'])->name('store');  
+});
+
+
