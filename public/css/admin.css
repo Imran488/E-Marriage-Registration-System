@@ -64,9 +64,9 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #858796;
+    color: #1b83e4;
     text-align: left;
-    background-color: #fff;
+    background-color: rgb(243, 233, 233);
   }
   
   [tabindex="-1"]:focus:not(:focus-visible) {
@@ -6491,7 +6491,7 @@
   }
   
   .bg-white {
-    background-color: #121010 !important;
+    background-color: #091230f7 !important;
   }
   
   .bg-transparent {
