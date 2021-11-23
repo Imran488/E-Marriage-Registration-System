@@ -15,11 +15,28 @@ class CreateRegistrationFormsTable extends Migration
     {
         Schema::create('registration_forms', function (Blueprint $table) {
             $table->id();
-            $table->string('Name');
-            $table->string('Religion');
-            $table->string('DoB');
-            $table->string('NID');
-            $table->string('Age');
+            //Husband Details
+            $table->string('fullnameh')->default('');
+            $table->string('religion')->default('');
+            $table->string('date')->default('');
+            $table->string('passportnumber')->default('');
+            $table->string('age')->default('');
+            $table->string('txtroomh')->default('');
+            $table->string('txtroadh')->default('');
+            $table->string('district')->default('');
+            $table->string('txtcityh')->default('');
+            $table->string('txtpincodeh')->default('');
+            //wife Details
+            $table->string('fullnamew')->default('');
+            $table->string('religionw')->default('');
+            $table->string('datew')->default('');
+            $table->string('passportnumberw')->default('');
+            $table->string('agew')->default('');
+            $table->string('txtroomw')->default('');
+            $table->string('txtroadw')->default('');
+            $table->string('districtw')->default('');
+            $table->string('txtcityw')->default('');
+            $table->string('txtpincodew')->default('');
              $table->timestamps();
         });
     }

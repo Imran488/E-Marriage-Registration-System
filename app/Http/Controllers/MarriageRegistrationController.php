@@ -9,7 +9,7 @@ class MarriageRegistrationController extends Controller
     public function MarriageRegistration()
     {
         $registerlist=RegistrationForm::all();
-        //dd($registerlist)
+        // dd($registerlist);
         return view('admin.pages.marriageregistration',compact('registerlist'));
     }
     public function UserRegistrationForm()
@@ -19,16 +19,35 @@ class MarriageRegistrationController extends Controller
     }
     public function Store(Request $request)
     {
-        //dd($requesr->all());
-        RegistrationForm::create ([
-            'Name'=>$request->fullnameh,
-            'Religion'=>$request->religion,
-            'DoB'=>$request->date,
-            'NID'=>$request->passportnumber,
-            'Age'=>$request->age,
+        //dd($request->all());
+
+       RegistrationForm::create ([
+           //Husband Details
+            'fullnameh'=>$request->fullnameh,
+            'religion'=>$request->religion,
+            'date'=>$request->date,
+            'passportnumber'=>$request->passportnumber,
+            'age'=>$request->age,
+            'txtroomh'=>$request->txtroomh,
+            'txtroadh'=>$request->txtroadh,
+            'district'=>$request->district,
+            'txtcityh'=>$request->txtcityh,
+            'txtpincodeh'=>$request->txtpincodeh,
+            //Wife Details
+            'fullnamew'=>$request->fullnamew,
+            'religionw'=>$request->religion,
+            'datew'=>$request->datew,
+            'passportnumberw'=>$request->passportnumberw,
+            'agew'=>$request->agew,
+            'txtroomw'=>$request->txtroomw,
+            'txtroadw'=>$request->txtroadw,
+            'districtw'=>$request->districtw,
+            'txtcityw'=>$request->txtcityw,
+            'txtpincodew'=>$request->txtpincodew,
             
 
         ]);
+        return redirect('/admin/marrigeregistration');
         
     }
     }
