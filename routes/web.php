@@ -22,7 +22,9 @@ Route::group(['prefix'=>'admin'],function(){
     Route::get('/dashboard',[DashboardController::class,'Dashboard'])->name('dashboard'); 
     Route::get('/marrigeregistration',[MarriageRegistrationController::class,'MarriageRegistration'])->name('marrigeregistration');
     Route::get('/userregistrationform',[MarriageRegistrationController::class,'UserRegistrationForm'])->name('userregistrationform');
-    Route::post('/store',[MarriageRegistrationController::class,'Store'])->name('store');  
+    Route::post('/store',[MarriageRegistrationController::class,'Store'])->name('store');
+    Route::get('/wife',[MarriageRegistrationController::class,'WifeDetailsForm'])->name('wife');
+      
 });
 
 

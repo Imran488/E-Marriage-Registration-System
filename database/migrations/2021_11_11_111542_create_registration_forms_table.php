@@ -20,6 +20,7 @@ class CreateRegistrationFormsTable extends Migration
             $table->string('religion')->default('');
             $table->string('date')->default('');
             $table->string('passportnumber')->default('');
+            $table->string('image')->default('');
             $table->string('age')->default('');
             $table->string('txtroomh')->default('');
             $table->string('txtroadh')->default('');
@@ -31,6 +32,7 @@ class CreateRegistrationFormsTable extends Migration
             $table->string('religionw')->default('');
             $table->string('datew')->default('');
             $table->string('passportnumberw')->default('');
+            $table->string('imagew')->default('');
             $table->string('agew')->default('');
             $table->string('txtroomw')->default('');
             $table->string('txtroadw')->default('');

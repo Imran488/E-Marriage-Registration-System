@@ -2,9 +2,12 @@
 
 @section('contents')
     <h1><center> Husband Wife Registration Form</center></h1>
+    @if(session()->has('msg'))
+    <p class="alert alert-success">{{session()->get('msg')}}</p>
+    @endif
 
     
-    <form action="{{route('store')}}" method="POST">
+    <form action="{{route('store')}}" method="POST"enctype="multipart/form-data">
         @csrf
         <div id="formapp1" class="card1 form active" style="font-size:14px;">
            
@@ -81,7 +84,7 @@
                 <div class="row form-group">
                    <div class="col-md-4">Choose Image</div>
                    <div class="col-md-3">
-                       <input class="form-control" type="file" id="formFileMultiple" multiple />
+                       <input name="image" class="form-control" type="file" id="formFileMultiple" multiple />
                    </div>
                 </div>
 
@@ -163,6 +166,7 @@
                        </div>
                    </div>
                 </div>
+
                 <div class="card-body">
                     <h5 class="title-head">Wife DETAILS</h5>
                 </div>
@@ -233,7 +237,7 @@
                 <div class="row form-group">
                    <div class="col-md-4">Choose Image</div>
                    <div class="col-md-3">
-                       <input class="form-control" type="file" id="formFileMultiple" multiple />
+                   <input name="imagew" class="form-control" type="file" id="formFileMultiple" multiple />
                    </div>
                 </div>
 
@@ -315,8 +319,13 @@
                        </div>
                    </div>
                 </div>
+                
             </form>
             <center> <button type="submit" class="btn btn-primary">Submit</button></center>
+            <div class="col-md-6">
+                <a href="{{route('wife')}}" class="btn btn-primary">Next</a>
+            </div>
+            
         </div>
     </form>    
 @endsection

@@ -3,25 +3,24 @@
 @section('contents')
 
 <div class="container-fluid">
-<div class="row">
-<h1>Registered User List</h1>
+  <div class="row">
+    <h1>Registered User List</h1>
+    <div class="col-md-6"></div>
+    
     <div class="col-md-6">
-</div>
-
-    <div class="col-md-6">
-        <a href="{{route('userregistrationform')}}" class="btn btn-primary">Fill-Up Marriage Registration Form</a>
+      <a href="{{route('userregistrationform')}}" class="btn btn-primary">Fill-Up Marriage Registration Form</a>
     </div>
-
-</div>
+  </div>
 </div>
 <br>
-<table class="table">
+<table class="table table-dark table-striped">
   <thead>
     <tr>
       <th scope="col">Bridal ID</th>
       <th scope="col">HName</th>
       <th scope="col">WName</th>
-      <th scope="col">Religion</th>
+      <th scope="col">ImageH</th>
+      <th scope="col">ImageW</th>
       <th scope="col">HDoB</th>
       <th scope="col">WDoB</th>
       <th scope="col">HNID</th>
@@ -32,11 +31,13 @@
     </tr>
   </thead>
   <tbody>
-      @foreach ($registerlist as $list)
+    @foreach ($registerlist as $key=>$list)
     <tr>
-  <th>{{$list->id}}</th>    
+      <th>{{$key+1}}</th>    
       <td>{{$list->fullnameh}}</td>
       <td>{{$list->fullnamew}}</td>
+      <td><img  style="width:60px;height:60px" src="{{url('/uploades/'.$list->image)}}"  alt="image"></td>
+      <td><img  style="width:60px;height:60px" src="{{url('/uploades/'.$list->image)}}"  alt="image"></td></td>
       <td>{{$list->religion}}</td>
       <td>{{$list->date}}</td>
       <td>{{$list->datew}}</td>

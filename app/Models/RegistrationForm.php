@@ -9,5 +9,5 @@ use App\Models\RegistrationForm;
 class RegistrationForm extends Model
 {
     use HasFactory;
-    protected $fillable=['fullnameh','religion','date','passportnumber','age','txtroomh','txtroadh','district','txtcityh','txtpincodeh','fullnamew','religionw','datew','passportnumberw', 'agew', 'txtroomw', 'txtroadw','districtw','txtcityw','txtpincodew'];
+    protected $fillable=['fullnameh','religion','image','date','passportnumber','age','txtroomh','txtroadh','district','txtcityh','txtpincodeh','fullnamew','religionw','datew','passportnumberw','imagew', 'agew', 'txtroomw', 'txtroadw','districtw','txtcityw','txtpincodew'];
 }
