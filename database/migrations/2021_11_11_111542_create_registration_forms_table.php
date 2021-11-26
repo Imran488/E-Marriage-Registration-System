@@ -21,6 +21,7 @@ class CreateRegistrationFormsTable extends Migration
             $table->string('date')->default('');
             $table->string('passportnumber')->default('');
             $table->string('image')->default('');
+            $table->string('signature')->default('');
             $table->string('age')->default('');
             $table->string('txtroomh')->default('');
             $table->string('txtroadh')->default('');
@@ -33,12 +34,20 @@ class CreateRegistrationFormsTable extends Migration
             $table->string('datew')->default('');
             $table->string('passportnumberw')->default('');
             $table->string('imagew')->default('');
+            $table->string('signaturew')->default('');
             $table->string('agew')->default('');
             $table->string('txtroomw')->default('');
             $table->string('txtroadw')->default('');
             $table->string('districtw')->default('');
             $table->string('txtcityw')->default('');
             $table->string('txtpincodew')->default('');
+            //witness Details
+            $table->string('witnessname1')->default('');
+            $table->string('witnessaddress1')->default('');
+            $table->string('witnessname2')->default('');
+            $table->string('witnessaddress2')->default('');
+            $table->string('witnessname3')->default('');
+            $table->string('witnessaddress3')->default('');
              $table->timestamps();
         });
     }

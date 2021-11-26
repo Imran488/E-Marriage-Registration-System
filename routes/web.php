@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\WifeDetailsController;
 use App\Http\Controllers\MarriageRegistrationController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
@@ -23,8 +24,7 @@ Route::group(['prefix'=>'admin'],function(){
     Route::get('/marrigeregistration',[MarriageRegistrationController::class,'MarriageRegistration'])->name('marrigeregistration');
     Route::get('/userregistrationform',[MarriageRegistrationController::class,'UserRegistrationForm'])->name('userregistrationform');
     Route::post('/store',[MarriageRegistrationController::class,'Store'])->name('store');
-    Route::get('/wife',[MarriageRegistrationController::class,'WifeDetailsForm'])->name('wife');
-      
+    
 });
 
 

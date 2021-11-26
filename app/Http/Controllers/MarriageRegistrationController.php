@@ -46,7 +46,7 @@ class MarriageRegistrationController extends Controller
             'txtpincodeh'=>$request->txtpincodeh,
             //Wife Details
             'fullnamew'=>$request->fullnamew,
-            'religionw'=>$request->religion,
+            'religionw'=>$request->religionw,
             'datew'=>$request->datew,
             'passportnumberw'=>$request->passportnumberw,
             'imagew'=>$filename,
@@ -56,39 +56,18 @@ class MarriageRegistrationController extends Controller
             'districtw'=>$request->districtw,
             'txtcityw'=>$request->txtcityw,
             'txtpincodew'=>$request->txtpincodew,
+            //Witness Details
+            'witnessname1'=>$request->witnessname1,
+            'witnessaddress1'=>$request->witnessaddress1,
+            'witnessname2'=>$request->witnessname2,
+            'witnessaddress2'=>$request->witnessaddress2,
+            'witnessname3'=>$request->witnessname3,
+            'witnessaddress3'=>$request->witnessaddress3,
+            
         ]);
          return redirect()->back()/*route('marrigeregistration')*/->with('msg','Registration Successfull.');
         
     } 
 }
-        
-        //public function WifeDetailsForm()
-    //{
 
-       // return view('admin.pages.wifedetails');
-    //}
-    //public function wife(Request $request)
-    //{
-        //dd($request->all());
-
-       //RegistrationForm::create ([
-            //Wife Details
-            //'fullnamew'=>$request->fullnamew,
-            //'religionw'=>$request->religion,
-            //'datew'=>$request->datew,
-            //'passportnumberw'=>$request->passportnumberw,
-            //'agew'=>$request->agew,
-            //'txtroomw'=>$request->txtroomw,
-            //'txtroadw'=>$request->txtroadw,
-            //'districtw'=>$request->districtw,
-            //'txtcityw'=>$request->txtcityw,
-            //'txtpincodew'=>$request->txtpincodew,
-            
-
-       // ]);
-        //return redirect()->back()/*route('marrigeregistration')*/->with('msg','Registration Successfull.');
-        
-   // }
-   // }
-        
 

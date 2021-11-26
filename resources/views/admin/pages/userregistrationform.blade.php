@@ -89,6 +89,13 @@
                 </div>
 
                 <div class="row form-group">
+                   <div class="col-md-4">Choose Signature</div>
+                   <div class="col-md-3">
+                   <input name="signature" class="form-control" type="file" id="formFileMultiple" multiple />
+                   </div>
+                </div>
+
+                <div class="row form-group">
                    <div class="col-md-12">
                        <h5>Permanent Address</h5>
                    </div>
@@ -167,10 +174,13 @@
                    </div>
                 </div>
 
-                <div class="card-body">
-                    <h5 class="title-head">Wife DETAILS</h5>
+
+
+                <div class="card">
+                   <div class="card-body">
+                       <h5 class="title-head">WIFE DETAILS</h5>
+                    </div>
                 </div>
-                
 
                <div class="row form-group">
                    <div class="col-md-4">
@@ -237,7 +247,14 @@
                 <div class="row form-group">
                    <div class="col-md-4">Choose Image</div>
                    <div class="col-md-3">
-                   <input name="imagew" class="form-control" type="file" id="formFileMultiple" multiple />
+                       <input name="imagew" class="form-control" type="file" id="formFileMultiple" multiple />
+                   </div>
+                </div>
+
+                <div class="row form-group">
+                   <div class="col-md-4">Choose Signature</div>
+                   <div class="col-md-3">
+                   <input name="signaturew" class="form-control" type="file" id="formFileMultiple" multiple />
                    </div>
                 </div>
 
@@ -252,7 +269,7 @@
                                Flat / Room No. 
                            </div>
                            <div class="col-md-8">
-                               <input name="txtroomw" type="text" maxlength="250" id="txtroomw" class="form-control" placeholder="Flat / Room No." required data-parsley-required-message="Please Enter Flat / Room No.">
+                               <input name="txtroomw" type="text" maxlength="250" id="txtroomh" class="form-control" placeholder="Flat / Room No." required data-parsley-required-message="Please Enter Flat / Room No.">
                             </div>
                        </div>
                    </div>
@@ -264,7 +281,7 @@
                                Road / Street Name
                            </div>
                            <div class="col-md-8">
-                               <input name="txtroadw" type="text" maxlength="250" id="txtroadw" class="form-control" placeholder="Road / Street Name" required data-parsley-required-message="Please Enter Road / Street Name">
+                               <input name="txtroadw" type="text" maxlength="250" id="txtroadh" class="form-control" placeholder="Road / Street Name" required data-parsley-required-message="Please Enter Road / Street Name">
                             </div>
                         </div>
                     </div>
@@ -300,7 +317,7 @@
                                Sub-District
                            </div>
                            <div class="col-md-8">
-                               <input name="txtcityw" type="text" maxlength="100" id="txtcityw" class="form-control" placeholder="Sub-District Name">
+                               <input name="txtcityw" type="text" maxlength="100" id="txtcityh" class="form-control" placeholder="Sub-District Name">
                                <span id="RequiredFieldValidator11" style="color:Red;visibility:hidden;">Please Enter Sub-District Name</span>
                            </div>
                        </div>
@@ -313,19 +330,78 @@
                                Pincode / Zipcode 
                            </div>
                            <div class="col-md-8">
-                               <input required data-parsley-required-message="Please Enter Pincode / Zipcode " name="txtpincodew" type="text" maxlength="10" id="txtpincodew" class="form-control" placeholder="Pincode / Zipcode " onkeypress="return isNumberKey(event)">
+                               <input required data-parsley-required-message="Please Enter Pincode / Zipcode " name="txtpincodew" type="text" maxlength="10" id="txtpincodeh" class="form-control" placeholder="Pincode / Zipcode " onkeypress="return isNumberKey(event)">
                                <span id="RequiredFieldValidator12" style="color:Red;visibility:hidden;">Please Enter Pincode / Zipcode</span>
                            </div>
                        </div>
                    </div>
                 </div>
-                
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="title-head">WITNESS DETAILS</h5>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-4">
+                            <label class="red">*</label>
+                            Full Name of the Witness1
+                        </div>
+                        <div class="col-md-6">
+                            <input name="witnessname1" type="text"  id="witnessname1" class="form-control" placeholder="Please Enter  Full Name of the Witness"  data-parsley-required-message="Please Enter  Full Name of the Witness">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-4">
+                            <label class="red">*</label>
+                            Address of Witness1
+                        </div>
+                        <div class="col-md-6">
+                            <textarea name="witnessaddress1" id="witnessaddress1" class="form-control" placeholder="Please Enter  Address of the Witness"  data-parsley-required-message="Please Enter  Address of the Witness"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-4">
+                            <label class="red">*</label>
+                            Full Name of the Witness2
+                        </div>
+                        <div class="col-md-6">
+                            <input name="witnessname2" type="text"  id="witnessname2" class="form-control" placeholder="Please Enter  Full Name of the Witness"  data-parsley-required-message="Please Enter  Full Name of the Witness">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-4">
+                            <label class="red">*</label>
+                            Address of Witness2
+                        </div>
+                        <div class="col-md-6">
+                            <textarea name="witnessaddress2" id="witnessaddress2" class="form-control" placeholder="Please Enter  Address of the Witness"  data-parsley-required-message="Please Enter  Address of the Witness"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-4">
+                            <label class="red">*</label>
+                            Full Name of the Witness 3
+                        </div>
+                        <div class="col-md-6">
+                            <input name="witnessname3" type="text"  id="witnessname3" class="form-control" placeholder="Please Enter  Full Name of the Witness"  data-parsley-required-message="Please Enter  Full Name of the Witness">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-4">
+                            <label class="red">*</label>
+                            Address of Witness3
+                        </div>
+                        <div class="col-md-6">
+                            <textarea name="witnessaddress3" id="witnessaddress3" class="form-control" placeholder="Please Enter  Address of the Witness"  data-parsley-required-message="Please Enter  Address of the Witness"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+
             </form>
-            <center> <button type="submit" class="btn btn-primary">Submit</button></center>
+           <center><button type="submit" class="btn btn-primary">Submit</button></center>
             <div class="col-md-6">
-                <a href="{{route('wife')}}" class="btn btn-primary">Next</a>
+                <a href="#" class="btn btn-primary">Next</a>
             </div>
-            
         </div>
     </form>    
 @endsection
