@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect()->route('dashboard');
+    return view('website.master');
 });
 
 Route::group(['prefix'=>'admin'],function(){

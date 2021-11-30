@@ -84,14 +84,14 @@
                 <div class="row form-group">
                    <div class="col-md-4">Choose Image</div>
                    <div class="col-md-3">
-                       <input name="image" class="form-control" type="file" id="formFileMultiple" multiple />
+                       <input name="imageh" class="form-control" type="file" id="formFileMultiple" multiple />
                    </div>
                 </div>
 
                 <div class="row form-group">
                    <div class="col-md-4">Choose Signature</div>
                    <div class="col-md-3">
-                   <input name="signature" class="form-control" type="file" id="formFileMultiple" multiple />
+                   <input name="signatureh" class="form-control" type="file" id="formFileMultiple" multiple />
                    </div>
                 </div>
 

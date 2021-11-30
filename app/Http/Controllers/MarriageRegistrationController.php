@@ -23,11 +23,31 @@ class MarriageRegistrationController extends Controller
         //dd($request->all());
         $filename ='';
 
-        if($request->hasfile('image'))
+        if($request->hasfile('imageh'))
         {
-            $file=$request->file('image');
-            $filename = date('Ymdhms').'.'.$file->getClientOriginalExtension();
-            $file->storeAs('/uploades',$filename);
+            $file=$request->file('imageh');
+            $filenameh = date('Ymdhms').'h.'.$file->getClientOriginalExtension();
+            $file->storeAs('/uploades',$filenameh);
+           
+        }
+        if($request->hasfile('imagew'))
+        {
+            $file=$request->file('imagew');
+            $filenamew = date('Ymdhms').'w.'.$file->getClientOriginalExtension();
+            $file->storeAs('/uploades',$filenamew);
+        }
+        if($request->hasfile('signatureh'))
+        {
+            $file=$request->file('signatureh');
+            $filenamesh = date('Ymdhms').'sh.'.$file->getClientOriginalExtension();
+            $file->storeAs('/uploades',$filenamesh);
+           
+        }
+        if($request->hasfile('signaturew'))
+        {
+            $file=$request->file('signaturew');
+            $filenamesw = date('Ymdhms').'sw.'.$file->getClientOriginalExtension();
+            $file->storeAs('/uploades',$filenamesw);
         }
 
        RegistrationForm::create ([
@@ -37,7 +57,8 @@ class MarriageRegistrationController extends Controller
             'religion'=>$request->religion,
             'date'=>$request->date,
             'passportnumber'=>$request->passportnumber,
-            'image'=>$filename,
+            'imageh'=>$filenameh,
+            'signatureh'=>$filenamesh,
             'age'=>$request->age,
             'txtroomh'=>$request->txtroomh,
             'txtroadh'=>$request->txtroadh,
@@ -49,7 +70,8 @@ class MarriageRegistrationController extends Controller
             'religionw'=>$request->religionw,
             'datew'=>$request->datew,
             'passportnumberw'=>$request->passportnumberw,
-            'imagew'=>$filename,
+            'imagew'=>$filenamew,
+            'signaturew'=>$filenamesw,
             'agew'=>$request->agew,
             'txtroomw'=>$request->txtroomw,
             'txtroadw'=>$request->txtroadw,
