@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('contents')
-<h1><center>Marriage History</center></h1>
+<h1><center>Marriage Registration History</center></h1>
 
 <!-- Content Row -->
 <div class="row">
@@ -10,7 +10,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Registerd</div>
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Registration</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">65</div>
                     </div>
                     <div class="col-auto">
@@ -27,7 +27,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Muslim Registerd</div>
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Pending Registration</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">30</div>
                     </div>
                     <div class="col-auto">
@@ -45,7 +45,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Hindu Registerd</div>
+                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Rejected Registration</div>
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
                                 <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">20</div>
@@ -66,7 +66,7 @@
             <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Christian Registerd</div>
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Verified Registration</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
                      </div>
                      <div class="col-auto">

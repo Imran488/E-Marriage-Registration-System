@@ -21,10 +21,19 @@
     </li>
 
 
+
+    <li class="nav-item active">
+        <a class="nav-link collapsed" href="{{route('kazilist')}}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M22 14h-2V7.238l-7.928 7.1L4 7.216V19h10v2H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v10zM4.511 5l7.55 6.662L19.502 5H4.511zM19 22l-3.536-3.536 1.415-1.414L19 19.172l3.536-3.536 1.414 1.414L19 22z" fill="rgba(218,31,31,1)"/></svg>
+            <span>Kazi List</span>
+        </a>
+    </li>
+
+
     <li class="nav-item active">
         <a class="nav-link collapsed" href="{{route('marrigeregistration')}}">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.757 3l-2 2H5v14h14V9.243l2-2V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12.757zm3.728-.9L21.9 3.516l-9.192 9.192-1.412.003-.002-1.417L20.485 2.1z" fill="rgba(242,19,19,1)"/></svg>
-            <span>Marriage Registration</span>
+            <span>Marriage List</span>
         </a>
     </li>
 
@@ -32,7 +41,7 @@
     <li class="nav-item active">
         <a class="nav-link collapsed" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M22 14h-2V7.238l-7.928 7.1L4 7.216V19h10v2H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v10zM4.511 5l7.55 6.662L19.502 5H4.511zM19 22l-3.536-3.536 1.415-1.414L19 19.172l3.536-3.536 1.414 1.414L19 22z" fill="rgba(218,31,31,1)"/></svg>
-            <span>Check Marrital Status</span>
+            <span>Devorce List</span>
         </a>
     </li>
 
@@ -40,7 +49,7 @@
     <li class="nav-item active">
         <a class="nav-link collapsed" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13 21v2h-2v-2H3a1 1 0 0 1-1-1V6h20v14a1 1 0 0 1-1 1h-8zm-9-2h16V8H4v11zm9-9h5v2h-5v-2zm0 4h5v2h-5v-2zm-4-4v3h3a3 3 0 1 1-3-3zM2 3h20v2H2V3z" fill="rgba(210,30,30,1)"/></svg>
-            <span>Users Appoinment</span>
+            <span>Users List</span>
         </a>
     </li>
 
@@ -56,7 +65,16 @@
     <li class="nav-item active">
         <a class="nav-link collapsed" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 2l5 5v14.008a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 21.008V2.992C3 2.444 3.445 2 3.993 2H16zm-4 6a4 4 0 1 0 4 4h-4V8z" fill="rgba(213,32,32,1)"/></svg>
-            <span>Report</span>
+            <span>Payment List</span>
+        </a>
+    </li>
+
+
+
+    <li class="nav-item active">
+        <a class="nav-link collapsed" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16 2l5 5v14.008a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 21.008V2.992C3 2.444 3.445 2 3.993 2H16zm-4 6a4 4 0 1 0 4 4h-4V8z" fill="rgba(213,32,32,1)"/></svg>
+            <span>Setting</span>
         </a>
     </li>
 </ul>

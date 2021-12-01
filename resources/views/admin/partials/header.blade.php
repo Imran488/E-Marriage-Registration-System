@@ -7,11 +7,7 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </nav>
-    <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-        </form>
-    </nav>
+    
 </nav>
 
 

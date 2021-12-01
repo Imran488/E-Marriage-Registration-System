@@ -25,121 +25,103 @@
                                         <ul class="nav nav-pills" id="mainNav">
                                             
                                             <li class="">
-                                                <a class="" href="/">
+                                                <a class="" href="#">
                                                     Home
                                                 </a>
                                             </li>
-                                                                                                                                    <li class="dropdown"> <a class="dropdown-item text-2 dropdown-toggle" href="#">
-                                                    Management &nbsp <i
-                                                        class="#">
-                                                    </i></a>
-                                                <ul class="dropdown-menu"  -style="transform: skew(20deg) !important; margin-left: 10px !important;">
-
-                                                                                                        <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
-                                                            href="https://www.marriagesolutionbd.com/page/12/company-introduction">
-                                                            Who we are
-                                                        </a>
-                                                    </li>
-                                                                                                        <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
-                                                            href="https://www.marriagesolutionbd.com/page/16/why-choose-us">
-                                                            Why Us?
-                                                        </a>
-                                                    </li>
-                                                                                                        <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
-                                                            href="https://www.marriagesolutionbd.com/page/17/our_speciality">
-                                                            Our Speciality
-                                                        </a>
-                                                    </li>
-                                                                                                        <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
-                                                        href="#">
-                                                        Employee Stories
-                                                        </a>
-                                                    </li>
-                                                    
-                                                    
-                                                    
-                                                </ul>
-                                            </li>
-                                                                                                                                    <li class="dropdown"> <a class="dropdown-item dropdown-toggle text-2" href="#">
-                                                    Packages &amp; Payments &nbsp <i
-                                                        class="#"></i></a>
-                                                <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
-
-                                                    <li> <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
-                                                            href="#">
-                                                            Membership Packages
-                                                        </a>
-                                                    </li>
-                                                                                                        <li> <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
-                                                            href="#">
-                                                            Payment Method
-                                                        </a>
-                                                    </li>
-                                                                                                        <li> <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
-                                                            href="#">
-                                                            Terms &amp; Conditions
-                                                        </a>
-                                                    </li>
-                                                                                                    </ul>
-                                            </li>
-                                                                                        
+<li class="dropdown"> 
+    <a class="dropdown-item text-2 dropdown-toggle" href="#">
+        Management &nbsp 
+        <i class="#"></i>
+    </a>
+    <ul class="dropdown-menu"  -style="transform: skew(20deg) !important; margin-left: 10px !important;">
+        <li>
+            <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                Who we are
+            </a>
+        </li>
+        <li> 
+            <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                Why Us?
+            </a>
+        </li>
+        <li> 
+            <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                Our Speciality
+            </a>
+        </li>
+        <li> 
+            <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                Employee Stories
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="dropdown"> 
+    <a class="dropdown-item dropdown-toggle text-2" href="#">
+        Packages &amp; Payments &nbsp <i class="#"></i>
+    </a>
+    <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
+        
+        <li> 
+            <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                Payment Method
+            </a>
+        </li>
+        <li> 
+            <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                Terms &amp; Conditions
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="dropdown"> 
+    <a class="#" href="#">
+        Find Us &nbsp <i class="#"></i>
+    </a>
+    <ul class="dropdown-menu"  -style="transform: skew(20deg) !important; margin-left: 10px !important;">
+        <li> 
+            <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="#">Our Offices</a>
+        </li>
+        
+        <li>
+            <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                Help &amp; Customer Support
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="dropdown"> 
+    <a class="dropdown-item dropdown-toggle text-2" href="#">
+        Services &nbsp <i class="#"></i>
+    </a>
+    <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
+        <li>
+            <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+               Marriage
+            </a>
+        </li>
+        <li> 
+            <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                Devorce
+            </a>
+        </li>
+        
+    </ul>
+</li>
                                             
-                                                                                        <li class="dropdown"> <a class="#" href="#">
-                                                    Find Us &nbsp <i
-                                                        class="#"></i></a>
-                                                <ul class="dropdown-menu"  -style="transform: skew(20deg) !important; margin-left: 10px !important;">
-                                                    <li> <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="#">Our Offices</a></li> 
-                                                                                                        
-                                                    <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
-                                                        href="#">
-                                                        Career
-                                                    </a>
-                                                    </li>
-                                                    
-                                                    
-                                                                                                        
-                                                    <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
-                                                        href="#">
-                                                        Help &amp; Customer Support
-                                                    </a>
-                                                    </li>
-                                                    
-                                                    
-                                                                                                    </ul>
-                                            </li>
-                                                                                        
-
-                                                                                        <li class="">
-                                                <a class=" text-2" href=#">
-                                                    Blog
-                                                </a>
-                                            </li>
-                                            
-                                            <li class="dropdown">
-                                                <a href="#" class="btn login "><span><img src="#"/></span>  &nbsp; Login</a>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a href="#" class="btn register text-white "><img src="#"/> &nbsp;Appoinment</a>
-                                            </li>
-                                            
-                                                                                        
-                                            
-                                            
-                                            
-                                        </ul>
-                                    </nav>
-                                </div>
-                                
-                                <button class="btn header-btn-collapse-nav" data-toggle="collapse"
-                                    data-target=".header-nav-main nav">
-                                    <i class="fas fa-bars"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div>
+<li class="dropdown">
+    <a href="#" class="btn login "><span><img src=""/></span> &nbsp; Login</a>
+</li>
+<li class="dropdown">
+    <a href="#" class="btn register text-white "><img src=""/> &nbsp;Registration</a>
+</li>
+</ul>
+</nav>
+</div>
+<button class="btn header-btn-collapse-nav" data-toggle="collapse"data-target=".header-nav-main nav">
+    <i class="fas fa-bars"></i>
+</button>
+</div>
+</div>
+<div>

@@ -4,7 +4,7 @@
 
 <div class="container-fluid">
   <div class="row">
-    <h1>Registered User List</h1>
+    <h1> Marriage Registration List</h1>
     <div class="col-md-6"></div>
     
     <div class="col-md-6">
@@ -17,16 +17,16 @@
   <thead>
     <tr>
       <th scope="col">Bridal ID</th>
-      <th scope="col">HName</th>
-      <th scope="col">WName</th>
-      <th scope="col">HNID</th>
-      <th scope="col">WNID</th>
-      <th scope="col">HDistrict</th>
-      <th scope="col">WDistrict</th>
-      <th scope="col">ImageH</th>
-      <th scope="col">ImageW</th>
-      <th scope="col">HSignature</th>
-      <th scope="col">WSignature</th>
+      <th scope="col">GName</th>
+      <th scope="col">BName</th>
+      <th scope="col">GNID</th>
+      <th scope="col">BNID</th>
+      <th scope="col">GDistrict</th>
+      <th scope="col">BDistrict</th>
+      <th scope="col">GImage</th>
+      <th scope="col">BImage</th>
+      <th scope="col">GSignature</th>
+      <th scope="col">BSignature</th>
       <th scope="col">Action</th>
     </tr>
   </thead>

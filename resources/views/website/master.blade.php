@@ -6214,33 +6214,10 @@ html.boxed .body {
 			
 			<div role="main" class="main">
 				
-
-
-
-                
-
-                
-
-                
-
-    
-
     
             @include('website.partials.header')
                             
                             
-                            <a class="floatbutton1 w3-green- border- p-2 m-auto w3-medium w3-hover-purple " title="Change Language"  href="https://www.marriagesolutionbd.com/language/change" >
-                                                                BN
-                                                            </a>
-                            <a class="floatbutton2 border- rounded- text-center m-auto py-1 social-icons-facebook w3-blue- w3-hover-white w3-hover-text-blue" style="width: 36px;" href="http://www.facebook.com/marriagebd2012" 
-                                title="Facebook"><i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="floatbutton3 text-center m-auto pt-1 pb-0 social-icons-whatsapp w3-purple w3-hover-white w3-hover-text-purple " style="width: 36px;" href="https://wa.me/+8801819873943" 
-                                title="Whatsapp"><i class="fab fa-2x fa-whatsapp"></i> 
-                            </a>
-                            <a class="floatbutton4 text-center m-auto pt-1 pb-0 social-icons-whatsapp w3-purple w3-hover-white w3-hover-text-purple " style="width: 36px;" href="https://www.instagram.com/" 
-                                title="Whatsapp"><i class="fab fa-2x fa-instagram"></i> 
-                            </a>
                             
 
                         </div>

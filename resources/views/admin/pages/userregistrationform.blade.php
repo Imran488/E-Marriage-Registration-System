@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('contents')
-    <h1><center> Husband Wife Registration Form</center></h1>
+    <h1><center> Groom Bride Registration Form</center></h1>
     @if(session()->has('msg'))
     <p class="alert alert-success">{{session()->get('msg')}}</p>
     @endif
@@ -15,17 +15,17 @@
            <form data-parsley-validate="" method="post" id="apply">
                <div class="card">
                    <div class="card-body">
-                       <h5 class="title-head">HUSBAND DETAILS</h5>
+                       <h5 class="title-head">GROOM DETAILS</h5>
                     </div>
                 </div>
 
                <div class="row form-group">
                    <div class="col-md-4">
                        <label class="red">*</label>
-                       Full Name of the Husband
+                       Full Name of the Groom
                    </div>
                    <div class="col-md-6">
-                       <input name="fullnameh" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Full Name of the Husband" required data-parsley-required-message="Please Enter  Full Name of the Husband">
+                       <input name="fullnameh" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Full Name of the Groom" required data-parsley-required-message="Please Enter  Full Name of the Groom">
                     </div>
                 </div>
             
@@ -35,7 +35,7 @@
                        Age
                    </div>
                    <div class="col-md-6">
-                       <input name="age" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Age" required data-parsley-required-message="Please Enter  Full Name of the Husband">
+                       <input name="age" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Age" required data-parsley-required-message="Please Enter  Full Name of the Groom">
 
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                        Date of Birth 
                    </div>
                    <div class="col-md-3">
-                       <input type ="date" name="date" class="form-control" placeholder="Please Enter  Age" required data-parsley-required-message="Please Enter  Full Name of the Husband">
+                       <input type ="date" name="date" class="form-control" placeholder="Please Enter  Age" required data-parsley-required-message="Please Enter  Full Name of the Groom">
                    </div>
                </div>
 
@@ -178,17 +178,17 @@
 
                 <div class="card">
                    <div class="card-body">
-                       <h5 class="title-head">WIFE DETAILS</h5>
+                       <h5 class="title-head">BRIDE DETAILS</h5>
                     </div>
                 </div>
 
                <div class="row form-group">
                    <div class="col-md-4">
                        <label class="red">*</label>
-                       Full Name of the Wife
+                       Full Name of the Bride
                    </div>
                    <div class="col-md-6">
-                       <input name="fullnamew" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Full Name of the Wife" required data-parsley-required-message="Please Enter  Full Name of the Husband">
+                       <input name="fullnamew" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Full Name of the Bride" required data-parsley-required-message="Please Enter  Full Name of the Bride">
                     </div>
                 </div>
             
@@ -198,7 +198,7 @@
                        Age
                    </div>
                    <div class="col-md-6">
-                       <input name="agew" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Age" required data-parsley-required-message="Please Enter  Full Name of the Husband">
+                       <input name="agew" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Age" required data-parsley-required-message="Please Enter  Full Name of the Bride">
 
                     </div>
                 </div>
@@ -225,7 +225,7 @@
                        Date of Birth 
                    </div>
                    <div class="col-md-3">
-                       <input type ="date" name="datew" class="form-control" placeholder="Please Enter  Age" required data-parsley-required-message="Please Enter  Full Name of the Husband">
+                       <input type ="date" name="datew" class="form-control" placeholder="Please Enter  Age" required data-parsley-required-message="Please Enter  Full Name of the Bride">
                    </div>
                </div>
 
@@ -399,9 +399,7 @@
 
             </form>
            <center><button type="submit" class="btn btn-primary">Submit</button></center>
-            <div class="col-md-6">
-                <a href="#" class="btn btn-primary">Next</a>
-            </div>
+            
         </div>
     </form>    
 @endsection
