@@ -15,12 +15,6 @@
 		<link rel="shortcut icon" href="https://www.marriagesolutionbd.com/storage/favicon/favicon.png" type="image/x-icon">
 		<link rel="icon" href="https://www.marriagesolutionbd.com/storage/favicon/favicon.png" type="image/x-icon">
 
-		
-
-        		
-		
-		
-		
 		<!-- Web Fonts  -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
@@ -49,16 +43,11 @@
 		<link rel="stylesheet" href="https://www.marriagesolutionbd.com/prt/vendor/rs-plugin/css/navigation.css">
 		<link rel="stylesheet" href="https://www.marriagesolutionbd.com/prt/vendor/circle-flip-slideshow/css/component.css">
 		
-		
-		<!-- Demo CSS -->
-
-
 		<!-- Skin CSS -->
 		<link rel="stylesheet" href="https://www.marriagesolutionbd.com/prt/css/skins/default.css"> 
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="https://www.marriagesolutionbd.com/prt/css/custom.css">
-
 		<link rel="stylesheet" href="https://www.marriagesolutionbd.com/css/welcome.css">
 
 
@@ -6107,33 +6096,14 @@ html.boxed .body {
 .bg-color-custom{
 	background-color: #fef5ff !important;
 }
-		</style>
-
-		
-        <link href="https://www.marriagesolutionbd.com/css/LandingPage.css" rel="stylesheet">
-    <style>
+</style>
+<link href="https://www.marriagesolutionbd.com/css/LandingPage.css" rel="stylesheet">
+<head>
+	<style>
         nav > .nav-pills > li > a  {
             border-radius: 0px !important;
         }
-        /* #mainNav:hover nav > .nav-pills > li > a  {
-            transform: skew(-20deg);
-            border-radius: 0px !important;
-        } */
-        #mainNav > li:hover{
-            /* transform: skew(0deg) !important; */
-        }
-        /* #mainNav > li :hover{
-            transform: skew(-20deg);
-            border-radius: 0px !important;
-        }
-         #mainNav > li > a :hover{
-            transform: skew(-20deg) !important;
-            border-radius: 0px !important;
-        }
-        #mainNav > li > ul :hover{
-            transform: skew(0deg) !important;
-            border-radius: 0px !important;
-        } */
+        
 
         .floatbutton1{
             background-color: #641b69;
@@ -6163,25 +6133,7 @@ html.boxed .body {
             right: 0px; 
             z-index:1;
         }
-        /* @media  only screen and (max-width: 600px) {
-            .floatbutton1{
-            position: fixed;
-            top:15px;
-            right: 60px;
-            z-index:1;
-        }
-        .floatbutton2{
-            position: fixed;
-            top:15px;
-             right: 120px; 
-             z-index:1;
-        }
-        .floatbutton3{
-            position: fixed;
-            top:17px; right: 180px; 
-            z-index:1;
-        }
-        } */
+       
     </style>
 	</head>
 	
@@ -6203,12 +6155,7 @@ html.boxed .body {
 		js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
 		fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
-		<!-- Your customer chat code -->
-		<div class="fb-customerchat"
-		attribution=install_email
-		theme_color="#9c27b0"
-		page_id="101097735488055">
-		</div>
+		
 		<div class="body">
 			
 			
@@ -6217,296 +6164,10 @@ html.boxed .body {
     
             @include('website.partials.header')
                             
-                            
-                            
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+			@yield('slides')            
         </div>
-    </header>
-</div>
- 
-
-
-
-<div class="z-index-1 appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="100">
-  <div class="owl-carousel owl-theme full-width owl-loaded owl-drag owl-carousel-init m-0" data-plugin-options="{'items': 1, 'loop': true, 'nav': true, 'dots': false,
-  
-    'autoplayHoverPause':false,  'autoplay':true, 'autoplayTimeout': 5000}">
-          
-   <div>
-          <img src="https://www.marriagesolutionbd.com/uslive/cpxlg/iXQTkXtr1622277151.jpeg"  class="img-fluid" alt="">
-
-          <div class="row slider-custom-caption" style="margin-top: -60px;">
-
-                      
-            <div class="col-md-12">
-
-                <div class="container p-0">
-                    
-                                        
-                <div class="w3-card-">
-            <div class="card- w3-card-4- px-5 rounded slider-card-bg-color-" style="background-color:#fef5ff">
-                <div class="card- shadow- card1- mx-auto- w3-animate-zoom w-100 p-0" style="background-color:#fef5ff">
-                    <div class="row g-0">
-                      <div class="col-lg-2 col-md-3 pt-2">
-                        <img
-                          src="https://www.marriagesolutionbd.com/storage/slider/jQby1iif1622277151.jpeg"
-                          class="m-auto p-2 d-flex w3-circle"
-                          style="max-width: 100px; max-height: 100px;"
-                          alt=""
-                        />
-                      </div>
-                      <div class="col-lg-10 col-md-9 pl-0">
-                        <div class="card-body pt-4 pb-0 pl-0">
-                          <div class="card-title fw-bold bold w3-large p-0 text-dark pl-0"  style="color: #605154; font-weight: 400 !important;">Nowrin &amp; Faruki</div>
-                          <p class="fw-lighter fst-italic w3-medium text-dark">
-                            
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-                
-                        </div>
-            </div>
-        </div>
-          
-      </div>  
-       
-   <div>
-          <img src="https://www.marriagesolutionbd.com/uslive/cpxlg/Jo5rtll21622296261.jpg"  class="img-fluid" alt="">
-
-          <div class="row slider-custom-caption" style="margin-top: -60px;">
-
-                      
-            <div class="col-md-12">
-
-                <div class="container p-0">
-                    
-                                        
-                <div class="w3-card-">
-            <div class="card- w3-card-4- px-5 rounded slider-card-bg-color-" style="background-color:#fef5ff">
-                <div class="card- shadow- card1- mx-auto- w3-animate-zoom w-100 p-0" style="background-color:#fef5ff">
-                    <div class="row g-0">
-                      <div class="col-lg-2 col-md-3 pt-2">
-                        <img
-                          src="https://www.marriagesolutionbd.com/storage/slider/wutyn1cI1622296261.jpg"
-                          class="m-auto p-2 d-flex w3-circle"
-                          style="max-width: 100px; max-height: 100px;"
-                          alt=""
-                        />
-                      </div>
-                      <div class="col-lg-10 col-md-9 pl-0">
-                        <div class="card-body pt-4 pb-0 pl-0">
-                          <div class="card-title fw-bold bold w3-large p-0 text-dark pl-0"  style="color: #605154; font-weight: 400 !important;">Shahinoor &amp; Fahim</div>
-                          <p class="fw-lighter fst-italic w3-medium text-dark">
-                            
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-                
-                        </div>
-            </div>
-        </div>
-          
-      </div>  
-       
-   <div>
-          <img src="https://www.marriagesolutionbd.com/uslive/cpxlg/o3yxIgv71622365246.jpg"  class="img-fluid" alt="">
-
-          <div class="row slider-custom-caption" style="margin-top: -60px;">
-
-                      
-            <div class="col-md-12">
-
-                <div class="container p-0">
-                    
-                                        
-                <div class="w3-card-">
-            <div class="card- w3-card-4- px-5 rounded slider-card-bg-color-" style="background-color:#fef5ff">
-                <div class="card- shadow- card1- mx-auto- w3-animate-zoom w-100 p-0" style="background-color:#fef5ff">
-                    <div class="row g-0">
-                      <div class="col-lg-2 col-md-3 pt-2">
-                        <img
-                          src="https://www.marriagesolutionbd.com/storage/slider/OWPhCIHO1622365246.jpg"
-                          class="m-auto p-2 d-flex w3-circle"
-                          style="max-width: 100px; max-height: 100px;"
-                          alt=""
-                        />
-                      </div>
-                      <div class="col-lg-10 col-md-9 pl-0">
-                        <div class="card-body pt-4 pb-0 pl-0">
-                          <div class="card-title fw-bold bold w3-large p-0 text-dark pl-0"  style="color: #605154; font-weight: 400 !important;">Suchana &amp; Saif</div>
-                          <p class="fw-lighter fst-italic w3-medium text-dark">
-                            
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-                
-                        </div>
-            </div>
-        </div>
-          
-      </div>  
-       
-   <div>
-          <img src="https://www.marriagesolutionbd.com/uslive/cpxlg/y81phATK1622923195.jpg"  class="img-fluid" alt="">
-
-          <div class="row slider-custom-caption" style="margin-top: -60px;">
-
-                      
-            <div class="col-md-12">
-
-                <div class="container p-0">
-                    
-                                        
-                <div class="w3-card-">
-            <div class="card- w3-card-4- px-5 rounded slider-card-bg-color-" style="background-color:#fef5ff">
-                <div class="card- shadow- card1- mx-auto- w3-animate-zoom w-100 p-0" style="background-color:#fef5ff">
-                    <div class="row g-0">
-                      <div class="col-lg-2 col-md-3 pt-2">
-                        <img
-                          src="https://www.marriagesolutionbd.com/storage/slider/8hBGL8Sc1622923195.jpg"
-                          class="m-auto p-2 d-flex w3-circle"
-                          style="max-width: 100px; max-height: 100px;"
-                          alt=""
-                        </div>
-                        </div>
-                      <div class="col-lg-10 col-md-9 pl-0">
-                        <div class="card-body pt-4 pb-0 pl-0">
-                          <div class="card-title fw-bold bold w3-large p-0 text-dark pl-0"  style="color: #605154; font-weight: 400 !important;">Happy Family - Sabrina &amp; Sadman</div>
-                          <p class="fw-lighter fst-italic w3-medium text-dark">
-                            
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-                
-                        </div>
-            </div>
-        </div>
-          
-      </div>  
-  </div>
-</div>
-</header>
-
-<!-- Recent Stories -->
-<div class="stories">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-lg-4 col-md-12 col-sm-12 str_left">
-        <h1 class="fw-bold bold text-center">RECENT STORIES</h1>
-        <p class="text-center">BRIDE & GROOM</p>
-      </div>
-      <div class="col-lg-8 col-md-12 col-sm-12 d-flex">
-        <div class="v1"></div>
-        <p class="my-auto p-4 str_right bold w3-medium">
-          Every story has a wonderful bonding & We create the bonding of a life time
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Brid -->
-  <div class="container">
-    <div class="row pb-5 pt-5">
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <div
-          class="card card2 mx-auto bg-transparent border-0 text-center"
-          style="width: 20rem"
-        >
-          
-          <img src="https://www.marriagesolutionbd.com/uslive/pfimd/Group4.png" class="w3-circle" alt="..."/>
-
-          <div class="card-body">
-            <h1 class="card-title">Sabrina Amin</h1>
-            <p class="card-text">
-              
-              "Our family is grateful to have the support from E-Marriage Registration System. We have trusted their work ethics to build our relationships between families."
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-1 ml-5 v2"></div>
-      <div class="col-lg-4 col-md-12 col-sm-12">
-        <div
-          class="card card2 bg-transparent border-0 text-center"
-          style="width: 20rem"
-        >
-          
-          <img src="https://www.marriagesolutionbd.com/uslive/pfimd/Group5.png" class="w3-circle" alt="">
-          
-          <div class="card-body">
-            
-            <h1 class="card-title">Sadman Sakib</h1>
-
-            <p class="card-text">
-              "E-Marriage Registration System has really helped me and my family to find the right life partner. Their dedication and effort is remarkable."
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="container d-flex mx-auto w-75">
-    <div
-      class="card card2 mx-auto bg-transparent border-0 text-center"
-      style="width: auto"
-    >
-      <img
-        src="./img/Group 4.png"
-        class="card-img-top w-50 mx-auto"
-        alt="..."
-      />
-      <div class="card-body">
-        <h1 class="card-title">Sabrina Amin</h1>
-        <p class="card-text">
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo
-          dolores"
-        </p>
-      </div>
-    </div>
-    <div class="v2"></div>
-    <div
-      class="card card2 bg-transparent border-0 text-center"
-      style="width: auto"
-    >
-      <img
-        src="./img/Group 5.png"
-        class="card-img-top w-50 mx-auto"
-        alt="..."
-      />
-      <div class="card-body">
-        <h1 class="card-title">Sadman Sakib</h1>
-        <p class="card-text">
-          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-          erat, sed diam voluptua. At vero eos et accusam et justo duo
-          dolores"
-        </p>
-      </div>
-    </div>
-  </div> -->\
-  
-  @include('website.partials.footer')		
+		
+		@include('website.partials.footer')		
 
 		<!-- Vendor -->
 		<script src="https://www.marriagesolutionbd.com/prt/vendor/jquery/jquery.min.js"></script>
@@ -6540,37 +6201,8 @@ html.boxed .body {
 		
 		<!-- Theme Initialization Files -->
 		<script src="https://www.marriagesolutionbd.com/prt/js/theme.init.js"></script>
-
-		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
-			ga('create', 'UA-12345678-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-         -->
-         <script type="text/javascript">
-    $(document).ready(function(){
-  });
-</script>
-
-    <script>
-        // $(document).ready(function () {
-        //     $("#monthly_income").focus(function () {
-        //         $("monthly_income_tips").css("display", "inline").fadeOut(2000);
-        //     })
-
-        // })
-        $(document).ready(function(){
-              $("#monthly_income").focus(function(){
-                $("#monthly_income_tips").css("display", "inline")
-                // .fadeOut(5000);
-              });
-            });
+		<script type="text/javascript">$(document).ready(function(){});</script>
+		<script>$(document).ready(function(){$("#monthly_income").focus(function(){$("#monthly_income_tips").css("display", "inline")});});
     </script>
-
 	</body>
-</html>
+	</head>

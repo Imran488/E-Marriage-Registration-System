@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\RegistrationForm;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KaziListController;
 use App\Http\Controllers\DashboardController;
@@ -17,7 +18,8 @@ use App\Http\Controllers\MarriageRegistrationController;
 */
 
 Route::get('/', function () {
-    return view('website.master');
+    $registerlist=RegistrationForm::all();
+    return view('website.pages.home',compact('registerlist'));
 });
 
 Route::group(['prefix'=>'admin'],function(){
