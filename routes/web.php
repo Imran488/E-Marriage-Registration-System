@@ -4,6 +4,8 @@ use App\Models\RegistrationForm;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KaziListController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Website\HomeController;
+
 use App\Http\Controllers\MarriageRegistrationController;
 
 /*
@@ -17,9 +19,11 @@ use App\Http\Controllers\MarriageRegistrationController;
 |
 */
 
-Route::get('/', function () {
-    $registerlist=RegistrationForm::all();
-    return view('website.pages.home',compact('registerlist'));
+Route::group(['prefix'=>'website'], function () {
+  Route::get('/menu/home',[HomeController::class,'menuHome'])->name('menu.home');
+  Route::get('/register',[HomeController::class,'Register'])->name('register');
+
+   
 });
 
 Route::group(['prefix'=>'admin'],function(){
