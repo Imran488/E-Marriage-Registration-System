@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('contents')
-    <h1><center> Husband Wife Registration Form</center></h1>
+    <h1><center> Kazi Registration Form</center></h1>
     @if(session()->has('msg'))
     <p class="alert alert-success">{{session()->get('msg')}}</p>
     @endif
@@ -38,6 +38,24 @@
                    </div>
                    <div class="col-md-6">
                        <input name="password" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Your Password" required data-parsley-required-message="Please Enter  Full Name of the Husband">
+                    </div>
+                </div>
+                <div class="row form-group">
+                   <div class="col-md-4">
+                       <label class="red">*</label>
+                       Confirm Password
+                   </div>
+                   <div class="col-md-6">
+                       <input name="repassword" type="text"  id="txtfname" class="form-control" placeholder="Please Retype  Your Password" required data-parsley-required-message="Please Enter  Full Name of the Husband">
+                    </div>
+                </div>
+                <div class="row form-group">
+                   <div class="col-md-4">
+                       <label class="red">*</label>
+                      Address
+                   </div>
+                   <div class="col-md-6">
+                       <input name="address" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Your Address" required data-parsley-required-message="Please Enter  Full Name of the Husband">
                     </div>
                 </div>
             </form>

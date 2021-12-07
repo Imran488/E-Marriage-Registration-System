@@ -25,7 +25,10 @@ class KaziListController extends Controller
         KaziForm::create([
         'name'=>$request->name,
         'email'=>$request->email,
-        'password'=>$request->password,  ]);
+        'password'=>$request->password, 
+        'confirmpassword'=>$request->repassword,
+        'address'=>$request->address,
+     ]);
         return redirect()->back()/*route('marrigeregistration')*/->with('msg','Registration Successfull.');
     }
 }

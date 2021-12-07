@@ -10,5 +10,5 @@ class KaziForm extends Model
 {
     use HasFactory;
     protected $table ="kazilist";
-    protected $fillable=['name','email','password'];
+    protected $fillable=['name','email','password','confirmpassword','address'];
 }

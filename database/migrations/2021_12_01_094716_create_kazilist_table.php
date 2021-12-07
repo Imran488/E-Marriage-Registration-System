@@ -18,6 +18,8 @@ class CreateKazilistTable extends Migration
             $table->string('name')->default('');
             $table->string('email')->unique()->default('');
             $table->string('password')->default('');
+            $table->string('confirmpassword')->default('');
+            $table->string('address')->default('');
            $table->timestamps();
         });
     }

@@ -20,6 +20,7 @@
       <th scope="col">Name</th>
       <th scope="col">Email</th>
       <th scope="col">Password</th>
+      <th scope="col">Address</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
@@ -30,6 +31,7 @@
       <td>{{$list->name}}</td>
       <td>{{$list->email}}</td>
       <td>{{$list->password}}</td>
+      <td>{{$list->address}}</td>
     </tr>
     @endforeach
   </tbody>
