@@ -1,7 +1,7 @@
-<!--@extends('website.master')-->
-<!--@section('slides')-->
+@extends('website.master')
+@section('slides')
 
-<div class="form_wrapper">
+<!-- <div class="form_wrapper">
   <div class="form_container">
     <div class="title_container">
       <h2>Responsive Registration Form</h2>
@@ -57,5 +57,35 @@
       </div>
     </div>
   </div>
+</div> -->
+<center>
+<form>
+  <div class="form-group">
+    <div class="col-md-4">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+  </div>
+  <div class="form-group">
+  <div class="col-md-4">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
 </div>
-<!--@endsection-->
+  <div class="form-group">
+  <div class="col-md-4">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="cpassword" class="form-control" id="exampleInputPassword1" placeholder="Retype Password">
+  </div>
+</div>
+  <div class="form-check">
+  <div class="col-md-4">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+</div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</center>
+@endsection

@@ -8,10 +8,10 @@ use App\Models\RegistrationForm;
 
 class HomeController extends Controller
 {
-    public function menuHome()
+    public function Home()
     {
         $registerlist=RegistrationForm::all();
-        return view('website.pages.menu_home',compact('registerlist'));
+        return view('website.pages.home',compact('registerlist'));
     }
     public function Register()
     {

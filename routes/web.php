@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KaziListController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Website\HomeController;
-
+use App\Http\Controllers\website\ManagementController;
 use App\Http\Controllers\MarriageRegistrationController;
 
 /*
@@ -18,11 +18,18 @@ use App\Http\Controllers\MarriageRegistrationController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+
+  $registerlist=RegistrationForm::all();
+  return view('website.pages.home',compact('registerlist'));
+  });
 
 Route::group(['prefix'=>'website'], function () {
-  Route::get('/menu/home',[HomeController::class,'menuHome'])->name('menu.home');
+  Route::get('/home',[HomeController::class,'Home'])->name('home');
   Route::get('/register',[HomeController::class,'Register'])->name('register');
-
+  Route::get('/aboutus',[ManagementController::class,'Aboutus'])->name('aboutus');
+  Route::get('/speciality',[ManagementController::class,'Speciality'])->name('speciality');
+  Route::get('/employee',[ManagementController::class,'Employee'])->name('employee');
    
 });
 

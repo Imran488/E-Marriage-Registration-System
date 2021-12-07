@@ -22,34 +22,30 @@
                                     class="header-nav-main header-nav-main-rounded header-nav-main-dropdown-no-borders header-nav-main-effect-1 header-nav-main-sub-effect-1">
                                     <nav class="collapse w3-text-medium">
                                         <ul class="nav nav-pills" id="mainNav">
-                                            
-                                            <li class="">
-                                                <a class="#" href="{{route('menu.home')}}">
+                                            <li>
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('home')}}">
                                                     Home
                                                 </a>
                                             </li>
+                                            
                                             <li class="dropdown"> 
                                                 <a class="dropdown-item text-2 dropdown-toggle" href="#">
                                                     Management &nbsp
                                                 </a>
                                                 <ul class="dropdown-menu"  -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li>
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('aboutus')}}">
                                                             Who we are
                                                         </a>
                                                     </li>
+                                                    
                                                     <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
-                                                            Why Us?
-                                                        </a>
-                                                    </li>
-                                                    <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('speciality')}}">
                                                             Our Speciality
                                                         </a>
                                                     </li>
                                                     <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('employee')}}">
                                                             Employee Stories
                                                         </a>
                                                     </li>
