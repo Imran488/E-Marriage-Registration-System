@@ -19,7 +19,7 @@
       <th scope="col">BrideDistrict</th>
       <th scope="col">GroomImage</th>
       <th scope="col">BrideImage</th>
-      
+      <th scope="col">Marriage Date</th>
       
     </tr>
   </thead>
@@ -35,7 +35,7 @@
       <td>{{$list->districtw}}</td>
       <td><img  style="width:60px;height:60px" src="{{url('/uploades/'.$list->imageh)}}"  alt="imageh"></td>
       <td><img  style="width:60px;height:60px" src="{{url('/uploades/'.$list->imagew)}}"  alt="imagew"></td>
-      
+      <td>{{$list->mdate}}</td>
       
     </tr>
     @endforeach

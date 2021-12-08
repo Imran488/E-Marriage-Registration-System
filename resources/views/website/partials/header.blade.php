@@ -88,17 +88,17 @@
                                                 </a>
                                                 <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li>
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('marriage')}}">
                                                             Marriage
                                                         </a>
                                                     </li>
                                                     <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('devorce')}}">
                                                             Devorce
                                                         </a>
                                                     </li>
                                                     <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('certificate')}}">
                                                             Certificate
                                                         </a>
                                                     </li>

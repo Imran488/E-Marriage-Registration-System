@@ -10,6 +10,7 @@ use App\Http\Controllers\KaziOfficeController;
 use App\Http\Controllers\Website\HomeController;
 use App\Http\Controllers\website\FindUsController;
 use App\Http\Controllers\website\PaymentController;
+use App\Http\Controllers\website\ServiceController;
 use App\Http\Controllers\website\ManagementController;
 use App\Http\Controllers\MarriageRegistrationController;
 
@@ -39,7 +40,9 @@ Route::group(['prefix'=>'website'], function () {
   Route::get('/support',[FindUsController::class,'Support'])->name('support');
   Route::get('/payment',[PaymentController::class,'Payment'])->name('payment');
   Route::get('/payment.condition',[PaymentController::class,'Paymentcondition'])->name('paymentcondition');
-   
+  Route::get('/marriage',[ServiceController::class,'Marriage'])->name('marriage');
+  Route::get('/devorce',[ServiceController::class,'Devorce'])->name('devorce');
+  Route::get('/certificate',[ServiceController::class,'Certificate'])->name('certificate');
 });
 
 Route::group(['prefix'=>'admin'],function(){

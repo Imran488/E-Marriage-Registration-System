@@ -17,42 +17,34 @@
         <link href="{{url('css/admin.css')}}" rel="stylesheet">
     </head>
     <body id="page-top">
+
+
         <!-- Page Wrapper -->
         <div id="wrapper">
-             @include('admin.partials.sidebar')
-             
-<!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-        
-            <!-- Main Content -->
-            <div id="content">
-
-                @include('admin.partials.header')
-                
-
-                @yield('contents')
-                
-            <!-- Footer -->
-            @include('admin.partials.footer')
-            <!-- End of Footer -->
-</div>
-</div>
-</div>
-<!-- Bootstrap core JavaScript-->
-<script src="{{url('js/jquery.min.js')}}"></script>
-    <script src="{{url('js/bootstrap.bundle.min.js')}}"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="{{url('js/jquery.easing.min.js')}}"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="{{url('js/all.min.js')}}"></script>
-
-    <!-- Page level plugins -->
-    <script src="{{url('js/Chart.min.js')}}"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="{{url('js/chart-area-demo.js')}}"></script>
-    <script src="{{url('js/chart-pie-demo.js')}}"></script>
-</body>
+            @include('admin.partials.sidebar')
+            <!-- Content Wrapper -->
+            <div id="content-wrapper" class="d-flex flex-column">
+                <!-- Main Content -->
+                <div id="content">
+                    @include('admin.partials.header')
+                    @yield('contents')
+                    <!-- Footer -->
+                    @include('admin.partials.footer')
+                    <!-- End of Footer -->
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript-->
+        <script src="{{url('js/jquery.min.js')}}"></script>
+        <script src="{{url('js/bootstrap.bundle.min.js')}}"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="{{url('js/jquery.easing.min.js')}}"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="{{url('js/all.min.js')}}"></script>
+        <!-- Page level plugins -->
+        <script src="{{url('js/Chart.min.js')}}"></script>
+        <!-- Page level custom scripts -->
+        <script src="{{url('js/chart-area-demo.js')}}"></script>
+        <script src="{{url('js/chart-pie-demo.js')}}"></script>
+    </body>
 </html>

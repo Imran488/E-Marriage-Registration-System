@@ -19,6 +19,15 @@
                     </div>
                 </div>
 
+                <div class="row form-group">
+                   <div class="col-md-4">
+                       Marriage Date 
+                   </div>
+                   <div class="col-md-6">
+                       <input type ="date" name="mdate" class="form-control" placeholder="Please Enter  Marriage Date" required data-parsley-required-message="Please Enter  Full Name of the Bride">
+                   </div>
+               </div>
+
                <div class="row form-group">
                    <div class="col-md-4">
                        <label class="red">*</label>

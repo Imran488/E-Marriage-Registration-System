@@ -15,6 +15,7 @@ class CreateRegistrationFormsTable extends Migration
     {
         Schema::create('registration_forms', function (Blueprint $table) {
             $table->id();
+            $table->string('mdate')->default('');
             //Husband Details
             $table->string('fullnameh')->default('');
             $table->string('religion')->default('');

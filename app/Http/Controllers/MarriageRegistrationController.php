@@ -51,7 +51,7 @@ class MarriageRegistrationController extends Controller
         }
 
        RegistrationForm::create ([
-
+        'mdate'=>$request->mdate,
            //Husband Details
             'fullnameh'=>$request->fullnameh,
             'religion'=>$request->religion,
