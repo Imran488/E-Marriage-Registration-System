@@ -9,8 +9,7 @@
                         <div class="header-row">
                             <div class="header-logo">
                                 <a href="/">
-                                    <img alt="E-Marriage Registration System" width="120" height="60" data-sticky-width="82"
-                                        data-sticky-height="40" src="https://cdn3.iconfinder.com/data/icons/geek-3/24/Jedi_Order_sigil_logo_star_wars-256.png">
+                                    <img alt="E-Marriage Registration System" width="120" height="60" data-sticky-width="82"data-sticky-height="40" src="https://cdn3.iconfinder.com/data/icons/geek-3/24/Jedi_Order_sigil_logo_star_wars-256.png">
                                 </a>
                             </div>
                         </div>
@@ -53,16 +52,16 @@
                                             </li>
                                             <li class="dropdown"> 
                                                 <a class="dropdown-item dropdown-toggle text-2" href="#">
-                                                    Packages &amp; Payments &nbsp 
+                                                     Payments &nbsp 
                                                 </a>
                                                 <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('payment')}}">
                                                             Payment Method
                                                         </a>
                                                     </li>
                                                     <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('paymentcondition')}}">
                                                             Terms &amp; Conditions
                                                         </a>
                                                     </li>
@@ -74,10 +73,10 @@
                                                 </a>
                                                 <ul class="dropdown-menu"  -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="#">Our Offices</a>
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="{{route('ouroffices')}}">Our Offices</a>
                                                     </li>
                                                     <li>
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('support')}}">
                                                             Help &amp; Customer Support
                                                         </a>
                                                     </li>
