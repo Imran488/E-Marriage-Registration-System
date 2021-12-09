@@ -8,6 +8,7 @@ use App\Http\Controllers\KaziListController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KaziOfficeController;
 use App\Http\Controllers\Website\HomeController;
+use App\Http\Controllers\Website\LoginController;
 use App\Http\Controllers\website\FindUsController;
 use App\Http\Controllers\website\PaymentController;
 use App\Http\Controllers\website\ServiceController;
@@ -32,7 +33,7 @@ Route::get('/', function () {
 
 Route::group(['prefix'=>'website'], function () {
   Route::get('/home',[HomeController::class,'Home'])->name('home');
-  Route::get('/register',[HomeController::class,'Register'])->name('register');
+  Route::get('/marriagerules',[HomeController::class,'Rules'])->name('rules');
   Route::get('/aboutus',[ManagementController::class,'Aboutus'])->name('aboutus');
   Route::get('/speciality',[ManagementController::class,'Speciality'])->name('speciality');
   Route::get('/employee',[ManagementController::class,'Employee'])->name('employee');
@@ -43,8 +44,10 @@ Route::group(['prefix'=>'website'], function () {
   Route::get('/marriage',[ServiceController::class,'Marriage'])->name('marriage');
   Route::get('/devorce',[ServiceController::class,'Devorce'])->name('devorce');
   Route::get('/certificate',[ServiceController::class,'Certificate'])->name('certificate');
+  Route::get('/admin',[LoginController::class,'Admin'])->name('admin');
+  Route::get('/user',[LoginController::class,'User'])->name('user');
+  Route::get('/signup',[LoginController::class,'Signup'])->name('signup');
 });
-
 Route::group(['prefix'=>'admin'],function(){
     Route::get('/dashboard',[DashboardController::class,'Dashboard'])->name('dashboard'); 
     Route::get('/kazilist',[KaziListController::class,'KaziList'])->name('kazilist');

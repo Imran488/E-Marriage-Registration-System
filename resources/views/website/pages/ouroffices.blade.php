@@ -1,10 +1,10 @@
 @extends('website.master')
 
 @section('slides')
-
+<center>
 <div class="container-fluid">
   <div class="row">
-    <center><h1> Here Our All Office Addresses</h1></center>
+    <h1 style="background-color:#800080; color:white"> Here Our All Office Addresses</h1>
     <div class="col-md-6"></div>
 </div>
 </div>
@@ -27,5 +27,6 @@
     @endforeach
   </tbody>
 </table>
-
+<a href="{{route('home')}}" class="btn" style="background-color:lightgray; border-radius:10px">Back</a>
+</center>
 @endsection

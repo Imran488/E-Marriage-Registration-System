@@ -6157,16 +6157,16 @@ html.boxed .body {
 		fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 		
+		
 		<div class="body">
-			
-			
+		<header  style="background-image: url('/jpg/website/marriage1.png'); background-position: center; background-size: cover; min-height:600px;">
+		
 			<div role="main" class="main">
+				@include('website.partials.header')
 				
-    
-            @include('website.partials.header')
-                            
-			@yield('slides')            
-        </div>
+				@yield('slides')
+			</div>
+		</div>
 		
 		@include('website.partials.footer')		
 
@@ -6200,7 +6200,6 @@ html.boxed .body {
 		<!-- Theme Initialization Files -->
 		<script src="{{url('website/js/theme.init.js')}}"></script>
 		<script type="text/javascript">$(document).ready(function(){});</script>
-		<script>$(document).ready(function(){$("#monthly_income").focus(function(){$("#monthly_income_tips").css("display", "inline")});});
-    </script>
+		<script>$(document).ready(function(){$("#monthly_income").focus(function(){$("#monthly_income_tips").css("display", "inline")});});</script>
 	</body>
-	</head>
+</head>

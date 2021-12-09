@@ -13,9 +13,9 @@ class HomeController extends Controller
         $registerlist=RegistrationForm::all();
         return view('website.pages.home',compact('registerlist'));
     }
-    public function Register()
+    public function Rules()
     {
-        return view('website.pages.register');
+        return view('website.pages.marriagerules');
     }
 }
     

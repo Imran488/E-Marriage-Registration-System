@@ -1,7 +1,7 @@
 @extends('website.master')
 @section('slides')
 <center>
-    <h1>Marriage Request Form</h1>
+    <h1 style="background-color:#800080; color:white">Marriage Request Form</h1>
 <form>
     <div class="form-group">
         <div class="col-md-4">
@@ -49,6 +49,7 @@
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="{{route('home')}}" class="btn" style="background-color:lightgray; border-radius:10px">Cancel</a>
 </form>
 </center>
 @endsection
