@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title> Admin-Dashboard</title>
+        <title> Admin</title>
 
 
         <!-- Custom fonts for this template-->
@@ -26,14 +26,16 @@
             <div id="content-wrapper" class="d-flex flex-column">
                 <!-- Main Content -->
                 <div id="content">
+                    <header  style="background-image: url('/jpg/website/marriage1.png'); background-position: center; background-size: cover; min-height:600px;">
                     @include('admin.partials.header')
                     @yield('contents')
-                    <!-- Footer -->
-                    @include('admin.partials.footer')
-                    <!-- End of Footer -->
+                    
                 </div>
             </div>
         </div>
+        <!-- Footer -->
+        @include('admin.partials.footer')
+        <!-- End of Footer -->
         <!-- Bootstrap core JavaScript-->
         <script src="{{url('js/jquery.min.js')}}"></script>
         <script src="{{url('js/bootstrap.bundle.min.js')}}"></script>

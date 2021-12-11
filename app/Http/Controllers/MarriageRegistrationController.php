@@ -90,6 +90,12 @@ class MarriageRegistrationController extends Controller
          return redirect()->back()/*route('marrigeregistration')*/->with('msg','Registration Successfull.');
         
     } 
+    public function View()
+    {
+        dd("Hellow");
+
+        //return view('admin.pages.userregistrationform');
+    }
 }
 
 

@@ -27,8 +27,8 @@ use App\Http\Controllers\MarriageRegistrationController;
 */
 Route::get('/', function () {
 
-  $registerlist=RegistrationForm::all();
-  return view('website.pages.home',compact('registerlist'));
+  
+  return view('website.pages.home');
   });
 
 Route::group(['prefix'=>'website'], function () {
@@ -48,6 +48,12 @@ Route::group(['prefix'=>'website'], function () {
   Route::get('/user',[LoginController::class,'User'])->name('user');
   Route::get('/signup',[LoginController::class,'Signup'])->name('signup');
 });
+
+Route::get('/admin', function () {
+
+  
+  return view('admin.pages.dashboard');
+  });
 Route::group(['prefix'=>'admin'],function(){
     Route::get('/dashboard',[DashboardController::class,'Dashboard'])->name('dashboard'); 
     Route::get('/kazilist',[KaziListController::class,'KaziList'])->name('kazilist');
@@ -59,7 +65,7 @@ Route::group(['prefix'=>'admin'],function(){
     Route::get('/marrigeregistration',[MarriageRegistrationController::class,'MarriageRegistration'])->name('marrigeregistration');
     Route::get('/userregistrationform',[MarriageRegistrationController::class,'UserRegistrationForm'])->name('userregistrationform');
     Route::post('/store',[MarriageRegistrationController::class,'Store'])->name('store');
-    
+    Route::get('/view',[MarriageRegistrationController::class,'View'])->name('view');
 });
 
 

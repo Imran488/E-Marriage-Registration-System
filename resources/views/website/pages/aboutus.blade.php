@@ -1,7 +1,7 @@
 @extends('website.master')
 @section('slides')
 <center>
-<h1> About Us </h1>
+<h1 style="background-color:#800080; color:white"> Who We Are </h1>
 <p style="background-color:#800080; color:white">E-Marriage Registration System that provides successful help to manage the Register 
 Registration process and also manage remove Register. This is the ongoing 
 project for Marriage Registration. This project fully remove early child 
