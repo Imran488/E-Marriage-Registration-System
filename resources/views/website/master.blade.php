@@ -6158,14 +6158,14 @@ html.boxed .body {
 		}(document, 'script', 'facebook-jssdk'));</script>
 		
 		
-		<div class="body">
-		<header  style="background-image: url('/jpg/website/marriage1.png'); background-position: center; background-size: cover; min-height:600px;">
 		
+		<div class="body">
+			<header  style="background-image: url('/jpg/website/marriage1.png'); background-position: center; background-size: cover; min-height:600px;">
 			<div role="main" class="main">
 				@include('website.partials.header')
-				
 				@yield('slides')
 			</div>
+		</div>
 		</div>
 		
 		@include('website.partials.footer')		

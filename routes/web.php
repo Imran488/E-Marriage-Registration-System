@@ -65,7 +65,8 @@ Route::group(['prefix'=>'admin'],function(){
     Route::get('/marrigeregistration',[MarriageRegistrationController::class,'MarriageRegistration'])->name('marrigeregistration');
     Route::get('/userregistrationform',[MarriageRegistrationController::class,'UserRegistrationForm'])->name('userregistrationform');
     Route::post('/store',[MarriageRegistrationController::class,'Store'])->name('store');
-    Route::get('/view',[MarriageRegistrationController::class,'View'])->name('view');
+    Route::get('/view/{bridal_id}',[MarriageRegistrationController::class,'View'])->name('view');
+    Route::get('/delete/{bridal_id}',[MarriageRegistrationController::class,'Delete'])->name('delete');
 });
 
 

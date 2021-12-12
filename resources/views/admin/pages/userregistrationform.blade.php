@@ -24,7 +24,7 @@
                        Marriage Date 
                    </div>
                    <div class="col-md-6">
-                       <input type ="date" name="mdate" class="form-control" placeholder="Please Enter  Marriage Date" required data-parsley-required-message="Please Enter  Full Name of the Bride">
+                       <input type ="date" name="mdate" class="form-control" placeholder="Please Enter  Marriage Date" required data-parsley-required-message="Please Enter  Marriage Date">
                    </div>
                </div>
 
@@ -349,6 +349,7 @@
                     <div class="card-body">
                         <h5 class="title-head">WITNESS DETAILS</h5>
                     </div>
+                
                     <div class="row form-group">
                         <div class="col-md-4">
                             <label class="red">*</label>
@@ -404,8 +405,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </form>
            <center><button type="submit" class="btn btn-primary">Submit</button></center>
             

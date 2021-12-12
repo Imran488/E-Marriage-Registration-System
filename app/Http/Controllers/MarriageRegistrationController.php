@@ -90,11 +90,21 @@ class MarriageRegistrationController extends Controller
          return redirect()->back()/*route('marrigeregistration')*/->with('msg','Registration Successfull.');
         
     } 
-    public function View()
+    public function View($id)
     {
-        dd("Hellow");
+        //dd("$id");
+        $list=RegistrationForm::find($id);
+        //dd($bridal);
 
-        //return view('admin.pages.userregistrationform');
+        return view('admin.pages.viewdetails',compact('list'));
+    }
+    public function Delete($id)
+    {
+        //dd("$id");
+        $list=RegistrationForm::find($id)->delete();
+        //dd($bridal);
+
+        return redirect()->back()->with('msg','Delete Succesfully');
     }
 }
 
