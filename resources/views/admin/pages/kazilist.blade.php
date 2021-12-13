@@ -6,7 +6,9 @@
   <div class="row">
     <h1> Kazi List</h1>
     <div class="col-md-6"></div>
-    
+    @if(session()->has('msg'))
+    <p class="alert alert-success">{{session()->get('msg')}}</p>
+    @endif
     <div class="col-md-6">
       <a href="{{route('kaziform')}}" class="btn btn-primary">Add kazi</a>
     </div>
@@ -32,6 +34,8 @@
       <td>{{$list->email}}</td>
       <td>{{$list->password}}</td>
       <td>{{$list->address}}</td>
+      <td><a class= "btn btn-primary"href="{{route('kazidetails',$list->id)}}">View</td>
+      <td><a class= "btn btn-danger"href="{{route('kazidelete',$list->id)}}">Delete</td>
     </tr>
     @endforeach
   </tbody>

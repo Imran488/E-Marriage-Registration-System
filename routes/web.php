@@ -57,9 +57,13 @@ Route::get('/admin', function () {
 Route::group(['prefix'=>'admin'],function(){
     Route::get('/dashboard',[DashboardController::class,'Dashboard'])->name('dashboard'); 
     Route::get('/kazilist',[KaziListController::class,'KaziList'])->name('kazilist');
+    Route::get('/kazidetails/{id}',[KaziListController::class,'KaziDetails'])->name('kazidetails');
+    Route::get('/kazidelete/{id}',[KaziListController::class,'KaziDelete'])->name('kazidelete');
     Route::get('/kaziform',[KaziListController::class,'KaziForm'])->name('kaziform');
     Route::post('/kstore',[KaziListController::class,'KStore'])->name('kstore');
     Route::get('/office',[KaziOfficeController::class,'Office'])->name('kazioffice');
+    Route::get('/officedetails/{id}',[KaziOfficeController::class,'OfficeDetails'])->name('officedetails');
+    Route::get('/officedelete/{id}',[KaziOfficeController::class,'OfficeDelete'])->name('officedelete');
     Route::get('/officeform',[KaziOfficeController::class,'OfficeForm'])->name('officeform');
     Route::post('/ostore',[KaziOfficeController::class,'OStore'])->name('ostore');
     Route::get('/marrigeregistration',[MarriageRegistrationController::class,'MarriageRegistration'])->name('marrigeregistration');

@@ -27,5 +27,18 @@ class KaziOfficeController extends Controller
      ]);
         return redirect()->back()/*route('marrigeregistration')*/->with('msg','Registration Successfull.');
     }
+    public function OfficeDetails($id)
+    {
+        $officelist=Office::find($id);
+        
+        return view('admin.pages.officedetails',compact('officelist'));
+    }
+    public function OfficeDelete($id)
+    {
+        $officelist=Office::find($id)->delete();
+        
+        return redirect()->back()->with('msg','Delete Succesfully');
+    }
 }
+
 

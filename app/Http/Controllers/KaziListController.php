@@ -31,4 +31,14 @@ class KaziListController extends Controller
      ]);
         return redirect()->back()/*route('marrigeregistration')*/->with('msg','Registration Successfull.');
     }
+    public function KaziDetails($id)
+    {
+        $kazilist=KaziForm::find($id);
+        return view('admin.pages.kazidetails',compact('kazilist'));
+    }
+    public function KaziDelete($id)
+    {
+        $kazilist=KaziForm::find($id)->delete();
+        return redirect()->back()->with('msg','Delete Succesfully');
+    }
 }

@@ -73,7 +73,9 @@
                                                 </a>
                                                 <ul class="dropdown-menu"  -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li> 
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="{{route('ouroffices')}}">Our Offices</a>
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="{{route('ouroffices')}}">
+                                                            Our Offices
+                                                        </a>
                                                     </li>
                                                     <li>
                                                         <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('support')}}">
@@ -104,11 +106,12 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li class="">
-                                                    <a class="#" href="{{route('rules')}}">
-                                                        Marriage Rules
-                                                    </a>
-                                                </li>
+                                            <li>
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('rules')}}">
+                                                   Marriage Rules
+                                                </a>
+                                            </li>
+                                            
                                             <li class="dropdown"> 
                                                 <a class="dropdown-item dropdown-toggle text-2" href="#">Login </a>
                                                 <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
