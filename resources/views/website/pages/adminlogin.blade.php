@@ -1,7 +1,7 @@
 @extends('website.master')
 @section('slides')
 <center>
-    <h1 style="background-color:#800080; color:white">Admin Login</h1>
+    <h1 style="color:black"><u>Admin Login</u></h1>
 <form>
     
     <div class="form-group">
@@ -19,7 +19,6 @@
     </div>
     
     <a href="{{route('dashboard')}}" class="btn" style="background-color:lightgray; border-radius:10px">SignIn</a>
-    <a href="{{route('home')}}" class="btn" style="background-color:lightgray; border-radius:10px">SignUp</a>
 </form>
 </center>
 @endsection

@@ -1,7 +1,7 @@
 @extends('website.master')
 @section('slides')
 <center>
-    <h1 style="background-color:#800080; color:white">Devorce Request Form</h1>
+    <h1 style="color:black"><u>Devorce Request Form</u></h1>
 <form>
     <div class="form-group">
         <div class="col-md-4">

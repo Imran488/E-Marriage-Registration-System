@@ -9,7 +9,7 @@
                         <div class="header-row">
                             <div class="header-logo">
                                 <a href="#">
-                                    <img alt="#" width="120" height="60" data-sticky-width="82"data-sticky-height="40" src="https://cdn3.iconfinder.com/data/icons/geek-3/24/Jedi_Order_sigil_logo_star_wars-256.png"><p>E-Marriage Registration</p>
+                                    <img alt="#" width="120" height="60" data-sticky-width="82"data-sticky-height="40" src="https://cdn3.iconfinder.com/data/icons/geek-3/24/Jedi_Order_sigil_logo_star_wars-256.png"><p style="color:black"><b>E-Marriage Registration</b></p>
                                 </a>
                             </div>
                         </div>
@@ -21,15 +21,15 @@
                                     class="header-nav-main header-nav-main-rounded header-nav-main-dropdown-no-borders header-nav-main-effect-1 header-nav-main-sub-effect-1">
                                     <nav class="collapse w3-text-medium">
                                         <ul class="nav nav-pills" id="mainNav">
-                                            <li>
+                                            <li> @auth
                                                 <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('home')}}">
                                                     Home
                                                 </a>
-                                            </li>
+                                            </li> @endauth
                                             
-                                            <li class="dropdown"> 
-                                                <a class="dropdown-item text-2 dropdown-toggle" href="#">
-                                                    Management &nbsp
+                                            <li class="dropdown"> @auth
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"" href="#">
+                                                    Management 
                                                 </a>
                                                 <ul class="dropdown-menu"  -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li>
@@ -49,10 +49,10 @@
                                                         </a>
                                                     </li>
                                                 </ul>
-                                            </li>
-                                            <li class="dropdown"> 
-                                                <a class="dropdown-item dropdown-toggle text-2" href="#">
-                                                     Payments &nbsp 
+                                            </li>@endauth
+                                            <li class="dropdown"> @auth
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"" href="#">
+                                                     Payments 
                                                 </a>
                                                 <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li> 
@@ -66,9 +66,9 @@
                                                         </a>
                                                     </li>
                                                 </ul>
-                                            </li>
-                                            <li class="dropdown"> 
-                                                <a class="#" href="#">
+                                            </li>@endauth
+                                            <li class="dropdown"> @auth
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"" href="#">
                                                     Find Us 
                                                 </a>
                                                 <ul class="dropdown-menu"  -style="transform: skew(20deg) !important; margin-left: 10px !important;">
@@ -83,10 +83,10 @@
                                                         </a>
                                                     </li>
                                                 </ul>
-                                            </li>
-                                            <li class="dropdown"> 
-                                                <a class="dropdown-item dropdown-toggle text-2" href="#">
-                                                    Services &nbsp 
+                                            </li>@endauth
+                                            <li class="dropdown"> @auth
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"" href="#">
+                                                    Services 
                                                 </a>
                                                 <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li>
@@ -105,18 +105,25 @@
                                                         </a>
                                                     </li>
                                                 </ul>
-                                            </li>
+                                            </li>@endauth
+                                            <li>@auth
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('rules')}}">Marriage Rules</a>
+                                            </li>@endauth
+                                            @if(auth()->user())
+                                             
                                             <li>
-                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('rules')}}">
-                                                   Marriage Rules
-                                                </a>
-                                            </li>
+                                                <a href="logout" class="dropdown-item w3-hover-purple w3-medium w3-text-purple" >Logout </a>
+                                            </li>@endif
                                             
                                             <li class="dropdown"> 
-                                                <a class="dropdown-item dropdown-toggle text-2" href="#">Login </a>
+                                               
+
+                                            @if(!auth()->user())
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" >Login </a>
+                                                @endif
                                                 <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li>
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('admin')}}">
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('admin.login')}}">
                                                             Admin
                                                         </a>
                                                     </li>
@@ -126,13 +133,15 @@
                                                         </a>
                                                     </li>
                                                 </ul>
-                                                
-                                                <li class="dropdown">
+                                                <li>@auth
+                                                    <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                                                    Search</a>
+                                                </li>@endauth
+                                         <!-- <li class="dropdown">
                                                     <nav class="navbar navbar-light bg-light">
-                                                        <form class="form-inline" style="relative"><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"><svg style="position:absolute; top:37px; left:175px;"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg>
-                                                        </form>
+                                                        <form class="form-inline" style="relative"><input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"><svg style="position:absolute; top:37px; left:175px;"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="22"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"></svg></form>
                                                     </nav>
-                                                </li>
+                                                </li> -->
                                             </li>
                                         </ul>
                                     </nav>
@@ -140,7 +149,6 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn header-btn-collapse-nav" data-toggle="collapse"data-target=".header-nav-main nav"><i class="fas fa-bars"></i></button>
                 </div>
             </div>
         </div>

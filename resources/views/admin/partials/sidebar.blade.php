@@ -24,6 +24,12 @@
         </a>
     </li>
 
+    <li class="nav-item active">
+        <a class="nav-link collapsed" href="{{route('userlist')}}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1zM8 7v2h8V7H8zm0 4v2h8v-2H8zm0 4v2h8v-2H8z" fill="rgba(210,38,38,1)"/></svg>
+            <span>Users </span>
+        </a>
+    </li>
 
     <li class="nav-item active">
         <a class="nav-link collapsed" href="{{route('marrigeregistration')}}">
@@ -41,9 +47,8 @@
     </li>
 
 
-    <li class="dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M15 5h2a2 2 0 0 1 2 2v8.17a3.001 3.001 0 1 1-2 0V7h-2v3l-4.5-4L15 2v3zM5 8.83a3.001 3.001 0 1 1 2 0v6.34a3.001 3.001 0 1 1-2 0V8.83z" fill="rgba(210,45,45,1)"/></svg> 
+    <li class="nav-item active">
+        <a class="nav-link dropdown-toggle" href="#" id="Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M15 5h2a2 2 0 0 1 2 2v8.17a3.001 3.001 0 1 1-2 0V7h-2v3l-4.5-4L15 2v3zM5 8.83a3.001 3.001 0 1 1 2 0v6.34a3.001 3.001 0 1 1-2 0V8.83z" fill="rgba(210,45,45,1)"/></svg> 
             User Requests
         </a>
         <div class="dropdown-menu" aria-labelledby="Dropdown">

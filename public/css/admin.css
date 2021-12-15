@@ -64,7 +64,7 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #5f0453fb;
+    color: #11050ffb;
     text-align: left;
     background-color: rgb(243, 233, 233);
   }
@@ -159,13 +159,13 @@
   }
   
   a {
-    color: #81086c;
+    color: #010612;
     text-decoration: none;
     background-color: transparent;
   }
   
   a:hover {
-    color: #81086c;
+    color: #010612;
     text-decoration: underline;
   }
   
@@ -1490,7 +1490,7 @@
   
   .table th,
   .table td {
-    padding: 0.60rem;
+    padding: 0.50rem;
     vertical-align: top;
     border-top: 1px solid #e3e6f0;
   }
@@ -3191,7 +3191,7 @@
     padding: 0.25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #81086c;
+    color: #010612;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
@@ -10710,7 +10710,7 @@
   }
   
   .sidebar-dark .nav-item.active .nav-link {
-    color:#81086c;
+    color:#010612;
   }
   
   .sidebar-dark .nav-item.active .nav-link i {

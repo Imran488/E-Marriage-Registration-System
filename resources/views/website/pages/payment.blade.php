@@ -1,8 +1,9 @@
 @extends('website.master')
 @section('slides')
 <!--container start-->
+<center>
 <div class="container">
-<h1 style="background-color:#800080; color:white">Here You can Make Payments</h1>
+<h1 style=" color:black"><u>Here You can Make Payments</u></h1>
 
 <!--temporary success message start-->
 {{--@if(session()->has('msg'))
@@ -119,5 +120,6 @@
 <!--fluid-container end-->
 
 </div>
+                </center>
 <!--container end-->
 @endsection

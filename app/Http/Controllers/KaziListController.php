@@ -2,11 +2,19 @@
 
 namespace App\Http\Controllers;
 use App\Models\KaziForm;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 
 class KaziListController extends Controller
 {
+    public function UserList()
+    {
+        $userlist=User::all();
+        // dd($registerlist);
+        return view('admin.pages.userlist',compact('userlist'));
+    }
+
     public function KaziList()
     {
         $kazilist=KaziForm::all();

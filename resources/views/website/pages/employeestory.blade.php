@@ -6,12 +6,12 @@
   <div class="container py-5">
     <div class="row">
       <div class="col-lg-4 col-md-12 col-sm-12 str_left">
-        <h1 class="fw-bold bold text-center">RECENT STORIES</h1>
-        <p class="text-center">BRIDE & GROOM</p>
+        <h1 style=" color:black" class="fw-bold bold text-center">RECENT STORIES</h1>
+        <p style=" color:black" class="text-center">BRIDE & GROOM</p>
       </div>
       <div class="col-lg-8 col-md-12 col-sm-12 d-flex">
         <div class="v1"></div>
-        <p class="my-auto p-4 str_right bold w3-medium">
+        <p style=" color:black" class="my-auto p-4 str_right bold w3-medium">
           Every story has a wonderful bonding & We create the bonding of a life time
         </p>
       </div>
@@ -32,7 +32,7 @@
 
           <div class="card-body">
             <h1 class="card-title">{{$list->fullnamew}}</h1>
-            <p class="card-text">
+            <p style=" color:black" class="card-text">
               
               "Our family is grateful to have the support from E-Marriage Registration System. We have trusted their work ethics to build our relationships between families."
             </p>
@@ -51,7 +51,7 @@
             
             <h1 class="card-title">{{$list->fullnameh}}</h1>
 
-            <p class="card-text">
+            <p style=" color:black" class="card-text">
               "E-Marriage Registration System has really helped me and my family to find the right life partner. Their dedication and effort is remarkable."
             </p>
           </div>
