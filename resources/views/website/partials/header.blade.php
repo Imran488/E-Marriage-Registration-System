@@ -123,7 +123,7 @@
                                                 @endif
                                                 <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li>
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('admin.login')}}">
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('admin')}}">
                                                             Admin
                                                         </a>
                                                     </li>

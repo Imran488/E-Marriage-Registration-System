@@ -6134,11 +6134,9 @@ html.boxed .body {
             right: 0px; 
             z-index:1;
         }
-       
-    </style>
-	</head>
-	
-	<body>
+	</style>
+</head>
+<body>
 		 <!-- Load Facebook SDK for JavaScript -->
 		<div id="fb-root"></div>
 		<script>
@@ -6166,7 +6164,7 @@ html.boxed .body {
 				@yield('slides')
 			</div>
 		</div>
-		</div>
+		
 		
 		@include('website.partials.footer')		
 
@@ -6203,3 +6201,4 @@ html.boxed .body {
 		<script>$(document).ready(function(){$("#monthly_income").focus(function(){$("#monthly_income_tips").css("display", "inline")});});</script>
 	</body>
 </head>
+</html>

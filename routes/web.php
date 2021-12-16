@@ -44,7 +44,8 @@ Route::group(['prefix'=>'website'], function () {
   Route::get('/marriage',[ServiceController::class,'Marriage'])->name('marriage');
   Route::get('/devorce',[ServiceController::class,'Devorce'])->name('devorce');
   Route::get('/certificate',[ServiceController::class,'Certificate'])->name('certificate');
-  Route::get('/adminlogin',[LoginController::class,'Admin'])->name('admin.login');
+  Route::get('/admin',[LoginController::class,'Admin'])->name('admin');
+  // Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.login');
   Route::get('/user',[LoginController::class,'User'])->name('user');
   Route::post('/userlogin',[LoginController::class,'UserLogin'])->name('user.login');
   Route::get('/signup',[LoginController::class,'Signup'])->name('signup');

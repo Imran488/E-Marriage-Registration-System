@@ -60,4 +60,5 @@
     </div>
 	@endforeach
 </div>
+<center><a href="{{route('home')}}" class="btn" style="background-color:lightgray; border-radius:10px">Back</a></center>
 @endsection

@@ -1,10 +1,9 @@
 @extends('website.master')
 
 @section('slides')
-
+<center> <h1 style= "color:black"><u><b>Here Our All Office Addresses</b></u></h1></center>
 <div class="container-fluid">
   <div class="row">
-    <h1 style= "color:black"><u><b>Here Our All Office Addresses</b></u></h1>
     <div class="container">
       <div class="row">
         @foreach ($officelist as $key=>$list)

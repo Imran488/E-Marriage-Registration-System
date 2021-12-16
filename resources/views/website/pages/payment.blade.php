@@ -120,6 +120,6 @@
 <!--fluid-container end-->
 
 </div>
-                </center>
+</center>
 <!--container end-->
 @endsection

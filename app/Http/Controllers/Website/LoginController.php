@@ -9,7 +9,7 @@ class LoginController extends Controller
 {
     public function Admin()
     {
-        return view('website.pages.adminlogin');
+        return view('website.pages.admin');
     }
     public function User()
     {
