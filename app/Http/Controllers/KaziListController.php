@@ -11,7 +11,7 @@ class KaziListController extends Controller
     public function UserList()
     {
         $userlist=User::all();
-        // dd($registerlist);
+        // dd($userlist);
         return view('admin.pages.userlist',compact('userlist'));
     }
 

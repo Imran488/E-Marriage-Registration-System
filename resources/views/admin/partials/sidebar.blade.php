@@ -53,18 +53,11 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="Dropdown">
           <a class="dropdown-item" href="#">Marriage</a>
-          <a class="dropdown-item" href="#">Devorce</a>
+          <a class="dropdown-item" href="{{route('devorce.requestlist')}}">Devorce</a>
           <a class="dropdown-item" href="#">Certificate</a>
         </div>
     </li>
 
-    
-    <li class="nav-item active">
-        <a class="nav-link collapsed" href="{{url('admin.pages.viewdetails')}}">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M6.455 19L2 22.5V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H6.455zM11 13v2h2v-2h-2zm0-6v5h2V7h-2z" fill="rgba(213,27,27,1)"/></svg>
-            <span>Certificate</span>
-        </a>
-    </li>
 
     
     <li class="nav-item active">
@@ -79,6 +72,17 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M17.084 15.812a7 7 0 1 0-10.168 0A5.996 5.996 0 0 1 12 13a5.996 5.996 0 0 1 5.084 2.812zM12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0L12 23.728zM12 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" fill="rgba(203,43,43,1)"/></svg>
             <span>Our Offices</span>
         </a>
+    </li>
+
+
+    <li class="nav-item active">
+        <a class="nav-link dropdown-toggle" href="#" id="Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.757 3l-2 2H5v14h14V9.243l2-2V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12.757zm3.728-.9L21.9 3.516l-9.192 9.192-1.412.003-.002-1.417L20.485 2.1z" fill="rgba(242,19,19,1)"></svg>
+            Certificate List
+        </a>
+        <div class="dropdown-menu" aria-labelledby="Dropdown">
+          <a class="dropdown-item" href="#">Marriage</a>
+          <a class="dropdown-item" href="#">Devorce</a>
+        </div>
     </li>
 
 

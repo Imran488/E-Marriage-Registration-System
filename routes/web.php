@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KaziListController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KaziOfficeController;
+use App\Http\Controllers\UserRequestController;
 use App\Http\Controllers\Website\HomeController;
 use App\Http\Controllers\Website\LoginController;
 use App\Http\Controllers\website\FindUsController;
@@ -43,7 +44,9 @@ Route::group(['prefix'=>'website'], function () {
   Route::get('/payment.condition',[PaymentController::class,'Paymentcondition'])->name('paymentcondition');
   Route::get('/marriage',[ServiceController::class,'Marriage'])->name('marriage');
   Route::get('/devorce',[ServiceController::class,'Devorce'])->name('devorce');
+  Route::post('/devorceform',[ServiceController::class,'DevorceForm'])->name('devorce.requestform');
   Route::get('/certificate',[ServiceController::class,'Certificate'])->name('certificate');
+  Route::post('/certificateform',[ServiceController::class,'CertificateForm'])->name('certificate.requestform');
   Route::get('/admin',[LoginController::class,'Admin'])->name('admin');
   // Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.login');
   Route::get('/user',[LoginController::class,'User'])->name('user');
@@ -76,6 +79,7 @@ Route::group(['prefix'=>'admin'],function(){
     Route::post('/store',[MarriageRegistrationController::class,'Store'])->name('store');
     Route::get('/view/{bridal_id}',[MarriageRegistrationController::class,'View'])->name('view');
     Route::get('/delete/{bridal_id}',[MarriageRegistrationController::class,'Delete'])->name('delete');
+    Route::get('/devorcerequestslist',[UserRequestController::class,'DevorceRequestList'])->name('devorce.requestlist');
 });
 
 

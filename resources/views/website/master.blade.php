@@ -6158,7 +6158,7 @@ html.boxed .body {
 		
 		
 		<div class="body">
-			<header  style="background-image: url('/jpg/website/marriage1.png'); background-position: center; background-size: cover; min-height:600px;">
+			<header  style="background-image: url('/jpg/website/image.jpg'); background-position: center; background-size: cover; min-height:600px;">
 			<div role="main" class="main">
 				@include('website.partials.header')
 				@yield('slides')

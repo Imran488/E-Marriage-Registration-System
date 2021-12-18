@@ -2,7 +2,7 @@
 @section('slides')
 <center>
     <h1 style="color:black"><u>Certificate Request Form</u></h1>
-<form>
+<form action="{{route('certificate.requestform')}}"method="post">
     <div class=" form-group">
         <div class="col-md-4">
             <label class="red">Certificate Type</label>
@@ -18,31 +18,31 @@
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputEmail1">Marriage Date </label>
-            <input type ="date" name="datew" class="form-control" placeholder="Please Enter  Age" required data-parsley-required-message="Please Enter  Full Name of the Bride">
+            <input type ="date" name="datem" class="form-control" placeholder="Please Enter Marriage Date" required data-parsley-required-message="Please Enter Marriage Date">
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputName">Groom Name</label>
-            <input type="gname" class="form-control" id="exampleInputName" placeholder="Name">
+            <input type="name" name="gname" class="form-control" id="exampleInputName" placeholder="Groom Name">
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputName">Bride Name</label>
-            <input type="bname" class="form-control" id="exampleInputName" placeholder="Name">
+            <input type="name" name="bname" class="form-control" id="exampleInputName" placeholder="BrideName">
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputPassword1">Groom Address</label>
-            <input type="gaddress" class="form-control" id="exampleInputPassword1" placeholder="Address">
+            <label for="exampleInputPassword1">Groom NID</label>
+            <input type="nid" name="gnid" class="form-control" id="exampleInputPassword1" placeholder="Groom NID">
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputPassword1">Bride Address</label>
-            <input type="baddress" class="form-control" id="exampleInputPassword1" placeholder="Address">
+            <label for="exampleInputPassword1">Bride NID</label>
+            <input type="nid" name="bnid" class="form-control" id="exampleInputPassword1" placeholder="Bride NID">
         </div>
     </div>
     
