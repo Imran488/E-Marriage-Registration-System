@@ -2,7 +2,11 @@
 @section('slides')
 <center>
     <h1 style="color:black"><u>Certificate Request Form</u></h1>
+    @if(session()->has('msg'))
+    <p class="alert alert-success">{{session()->get('msg')}}</p>
+    @endif 
 <form action="{{route('certificate.requestform')}}"method="post">
+    @csrf
     <div class=" form-group">
         <div class="col-md-4">
             <label class="red">Certificate Type</label>
@@ -10,8 +14,8 @@
         <div class="col-md-4">
             <select  data-parsley-required-message="Please Select" name="certificate" id="certificate" class="form-control">
                 <option disabled selected="">Please Choose Type</option>
-                <option value="Islam">Marriage</option>
-                <option value="Hindu">Devorce</option>
+                <option value="Marriage">Marriage</option>
+                <option value="Devorce">Devorce</option>
             </select>
         </div>
     </div>
@@ -50,7 +54,7 @@
     <div class="form-check">
         <div class="col-md-4">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <label class="form-check-label" for="exampleCheck1">I Declare that all Informations are True</label>
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>

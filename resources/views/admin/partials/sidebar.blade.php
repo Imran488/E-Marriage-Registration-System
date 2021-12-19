@@ -52,9 +52,9 @@
             User Requests
         </a>
         <div class="dropdown-menu" aria-labelledby="Dropdown">
-          <a class="dropdown-item" href="#">Marriage</a>
+          <a class="dropdown-item" href="{{route('marriage.requestlist')}}">Marriage</a>
           <a class="dropdown-item" href="{{route('devorce.requestlist')}}">Devorce</a>
-          <a class="dropdown-item" href="#">Certificate</a>
+          <a class="dropdown-item" href="{{route('certificate.requestlist')}}">Certificate</a>
         </div>
     </li>
 

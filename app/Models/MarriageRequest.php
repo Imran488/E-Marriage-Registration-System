@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class DevorceRequest extends Model
+class MarriageRequest extends Model
 {
     use HasFactory;
-    protected $fillable=['mid','name','address','email','contactnumber'];
+    protected $fillable=['name','nid','date','address','email','contactnumber'];
 }

@@ -14,7 +14,7 @@
         <div class="col-md-4">
             <label for="exampleInputEmail1">Email </label>
             <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
     </div>
     <div class="form-group">
@@ -26,7 +26,7 @@
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputPassword1">Mobile Number</label>
-            <input type="number" name="number" class="form-control" id="exampleInputPassword1" placeholder="Retype Password please">
+            <input type="number" name="number" class="form-control" id="exampleInputPassword1" placeholder="Mobile Number">
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>

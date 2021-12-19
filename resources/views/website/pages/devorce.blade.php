@@ -40,12 +40,12 @@
         </div>
     </div>
     
-    <!-- <div class="form-check">
+    <div class="form-check">
         <div class="col-md-4">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <label class="form-check-label" for="exampleCheck1">I Declare that all Informations are True</label>
         </div>
-    </div> -->
+    </div>
     <button type="submit" class="btn btn-primary">Submit</button>
     <a href="{{route('home')}}" class="btn" style="background-color:lightgray; border-radius:10px">Cancel</a>
 </form>

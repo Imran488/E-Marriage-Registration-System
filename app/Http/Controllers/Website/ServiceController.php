@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\website;
+use App\Models\MarriageRequest;
 use App\Models\DevorceRequest;
 use App\Models\CertificateRequest;
 use App\Http\Controllers\Controller;
@@ -21,18 +22,34 @@ class ServiceController extends Controller
         return view('website.pages.certificate');
     }
 
-    public function CertificateForm(Request $request){
-         dd($request->all());
-        // CertificateRequest::create([
-        //     'certificate'=>$request->certificate,
-        //     'datem'=>$request->datem,
-        //     'gname'=>$request->gname,
-        //     'bname'=>($request->bname) ,
-        //     'gnid'=>($request->gnid) ,
-        //     'bnid'=>($request->bnid) ,
-        // ]);
+
+    public function MarriageForm(Request $request){
+        //  dd($request->all());
+        MarriageRequest::create([
+            'name'=>$request->name,
+            'nid'=>$request->nid,
+            'date'=>$request->date,
+            'address'=>($request->address) ,
+            'email'=>($request->email) ,
+            'contactnumber'=>($request->contactnumber) ,
+        ]);
         
-        // return redirect()->back()->with('msg','Request submitted');
+        return redirect()->back()->with('msg','Request submitted');
+        // return redirect()->route('home');
+     }
+
+    public function CertificateForm(Request $request){
+        //  dd($request->all());
+        CertificateRequest::create([
+            'certificate'=>$request->certificate,
+            'datem'=>$request->datem,
+            'gname'=>$request->gname,
+            'bname'=>($request->bname) ,
+            'gnid'=>($request->gnid) ,
+            'bnid'=>($request->bnid) ,
+        ]);
+        
+        return redirect()->back()->with('msg','Request submitted');
         // return redirect()->route('home');
      }
     public function DevorceForm(Request $request){
