@@ -39,12 +39,12 @@
     </li>
 
 
-    <li class="nav-item active">
+    <!-- <li class="nav-item active">
         <a class="nav-link collapsed" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.757 3l-2 2H5v14h14V9.243l2-2V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12.757zm3.728-.9L21.9 3.516l-9.192 9.192-1.412.003-.002-1.417L20.485 2.1z" fill="rgba(242,19,19,1)"/></svg>
-            <span>Devorce </span>
+            <span>Divorce </span>
         </a>
-    </li>
+    </li> -->
 
 
     <li class="nav-item active">
@@ -53,7 +53,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="Dropdown">
           <a class="dropdown-item" href="{{route('marriage.requestlist')}}">Marriage</a>
-          <a class="dropdown-item" href="{{route('devorce.requestlist')}}">Devorce</a>
+          <a class="dropdown-item" href="{{route('devorce.requestlist')}}">Divorce</a>
           <a class="dropdown-item" href="{{route('certificate.requestlist')}}">Certificate</a>
         </div>
     </li>
@@ -81,7 +81,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="Dropdown">
           <a class="dropdown-item" href="#">Marriage</a>
-          <a class="dropdown-item" href="#">Devorce</a>
+          <a class="dropdown-item" href="#">Divorce</a>
         </div>
     </li>
 
@@ -93,4 +93,13 @@
             <span>Setting</span>
         </a>
     </li>
+
+
+    <li class="nav-item active">
+        <a class="nav-link collapsed" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2a9.985 9.985 0 0 1 8 4h-2.71a8 8 0 1 0 .001 12h2.71A9.985 9.985 0 0 1 12 22zm7-6v-3h-8v-2h8V8l5 4-5 4z" fill="rgba(224,31,31,1)"/></svg>
+            <span>Logout</span>
+        </a>
+    </li>
+
 </ul>

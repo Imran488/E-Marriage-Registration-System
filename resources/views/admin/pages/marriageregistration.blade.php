@@ -18,18 +18,18 @@
 <table class="table table-dark table-striped">
   <thead>
     <tr>
-      <th scope="col">Bridal ID</th>
-      <th scope="col">GName</th>
-      <th scope="col">BName</th>
+      <th scope="col">Marriage ID</th>
+      <th scope="col">Groom Name</th>
+      <th scope="col">Bride Name</th>
       <!-- <th scope="col">GNID</th>
       <th scope="col">BNID</th>
       <th scope="col">GDistrict</th>
       <th scope="col">BDistrict</th> -->
-      <th scope="col">GImage</th>
-      <th scope="col">BImage</th>
-      <th scope="col">GSignature</th>
-      <th scope="col">BSignature</th>
-      <th scope="col">MDate</th>
+      <th scope="col">Groom Image</th>
+      <th scope="col">Bride Image</th>
+      <th scope="col">Groom Signature</th>
+      <th scope="col">Bride Signature</th>
+      <th scope="col">Marriage Date</th>
       <th scope="col">Action</th>
     </tr>
   </thead>

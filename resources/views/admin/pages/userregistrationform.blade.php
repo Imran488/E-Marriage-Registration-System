@@ -349,8 +349,8 @@
                     <div class="card-body">
                         <h5 class="title-head">WITNESS DETAILS</h5>
                     </div>
-                
-                    <div class="row form-group">
+                </div>
+                <div class="row form-group">
                         <div class="col-md-4">
                             <label class="red">*</label>
                             Full Name of the Witness1
@@ -404,7 +404,6 @@
                             <textarea name="witnessaddress3" id="witnessaddress3" class="form-control" placeholder="Please Enter  Address of the Witness"  data-parsley-required-message="Please Enter  Address of the Witness"></textarea>
                         </div>
                     </div>
-                </div>
             </form>
            <center><button type="submit" class="btn btn-primary">Submit</button></center>
             

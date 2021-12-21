@@ -87,7 +87,7 @@ class MarriageRegistrationController extends Controller
             'witnessaddress3'=>$request->witnessaddress3,
             
         ]);
-         return redirect()->back()/*route('marrigeregistration')*/->with('msg','Registration Successfull.');
+         return redirect()->route('marrigeregistration')->with('msg','Registration Successfull.');
         
     } 
     public function View($id)

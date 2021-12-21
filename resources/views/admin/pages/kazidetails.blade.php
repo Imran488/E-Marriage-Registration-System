@@ -10,6 +10,7 @@
     <p>Kazi ID: {{$kazilist->id}}</p>
     <p>Kazi Name: {{$kazilist->name}}</p>
     <p>Kazi Email: {{$kazilist->email}}</p>
+    <p>Kazi Contact Number: {{$kazilist->confirmpassword}}</p>
     <p>Kazi Address: {{$kazilist->address}}</p>
 </b>
 </center>

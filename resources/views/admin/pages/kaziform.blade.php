@@ -31,24 +31,19 @@
                        <input name="email" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Your Email" required data-parsley-required-message="Please Enter  Full Name of the Husband">
                     </div>
                 </div>
+
+
                 <div class="row form-group">
                    <div class="col-md-4">
                        <label class="red">*</label>
-                       Password
+                       Contact Number
                    </div>
                    <div class="col-md-6">
-                       <input name="password" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Your Password" required data-parsley-required-message="Please Enter  Full Name of the Husband">
+                       <input name="repassword" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Your Contact Number" required data-parsley-required-message="Please Enter  Full Name of the Husband">
                     </div>
                 </div>
-                <div class="row form-group">
-                   <div class="col-md-4">
-                       <label class="red">*</label>
-                       Confirm Password
-                   </div>
-                   <div class="col-md-6">
-                       <input name="repassword" type="text"  id="txtfname" class="form-control" placeholder="Please Retype  Your Password" required data-parsley-required-message="Please Enter  Full Name of the Husband">
-                    </div>
-                </div>
+
+
                 <div class="row form-group">
                    <div class="col-md-4">
                        <label class="red">*</label>
@@ -58,6 +53,21 @@
                        <input name="address" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Your Address" required data-parsley-required-message="Please Enter  Full Name of the Husband">
                     </div>
                 </div>
+
+
+                
+
+                <div class="row form-group">
+                   <div class="col-md-4">
+                       <label class="red">*</label>
+                       Password
+                   </div>
+                   <div class="col-md-6">
+                       <input name="password" type="text"  id="txtfname" class="form-control" placeholder="Please Enter  Your Password" required data-parsley-required-message="Please Enter  Full Name of the Husband">
+                    </div>
+                </div>
+                
+                
             </form>
             <center><button type="submit" class="btn btn-primary">Submit</button></center>
         </div>

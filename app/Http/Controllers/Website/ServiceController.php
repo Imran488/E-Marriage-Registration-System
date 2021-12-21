@@ -34,7 +34,7 @@ class ServiceController extends Controller
             'contactnumber'=>($request->contactnumber) ,
         ]);
         
-        return redirect()->back()->with('msg','Request submitted');
+        return redirect()->route('home')->with('msg','Request submitted');
         // return redirect()->route('home');
      }
 
@@ -49,7 +49,7 @@ class ServiceController extends Controller
             'bnid'=>($request->bnid) ,
         ]);
         
-        return redirect()->back()->with('msg','Request submitted');
+        return redirect()->route('home')->with('msg','Request submitted');
         // return redirect()->route('home');
      }
     public function DevorceForm(Request $request){
@@ -62,7 +62,7 @@ class ServiceController extends Controller
             'contactnumber'=>($request->contactnumber) ,
         ]);
         
-        return redirect()->back()->with('msg','Request submitted');
+        return redirect()->route('home')->with('msg','Request submitted');
         // return redirect()->route('home');
      }
     }

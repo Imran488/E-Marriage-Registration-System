@@ -23,6 +23,21 @@ class UserRequestController extends Controller
         // dd($devorcerequestslist);
         return view('admin.pages.devorcerequestslist',compact('devorcerequestslist'));
     }
+    public function DivorceView($mid)
+    {
+        // dd($mid);
+        $list=DevorceRequest::where('mid',$mid)->first();
+        
+// dd($list);
+        return view('admin.pages.divorcedetails',compact('list'));
+    }
+    public function DivorceDelete($mid)
+    {
+        //dd("$mid");
+        $list=DevorceRequest::find($mid)->delete();
+        
+        return redirect()->back()->with('msg','Delete Succesfully');
+    }
 
     public function CertificateRequestList()
     {

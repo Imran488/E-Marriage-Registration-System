@@ -4,7 +4,7 @@
 
 <div class="container-fluid">
   <div class="row">
-    <h1>Devorce Requests List</h1>
+    <h1>Divorce Requests List</h1>
     <div class="col-md-6"></div>
     @if(session()->has('msg'))
     <p class="alert alert-success">{{session()->get('msg')}}</p>
@@ -32,8 +32,8 @@
       <td>{{$list->address}}</td>
       <td>{{$list->email}}</td>
       <td>{{$list->contactnumber}}</td>
-      <td><a class= "btn btn-primary"href="#">View</td>
-      <td><a class= "btn btn-danger"href="#">Delete</td>
+      <td><a class= "btn btn-primary"href="{{route('divorceview',$list->mid)}}">View</td>
+      <td><a class= "btn btn-danger"href="{{route('divorcedelete',$list->mid)}}">Delete</td>
     </tr>
     @endforeach
   </tbody>

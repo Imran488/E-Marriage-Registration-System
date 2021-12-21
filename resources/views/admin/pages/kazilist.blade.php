@@ -21,7 +21,7 @@
       <th scope="col">ID</th>
       <th scope="col">Name</th>
       <th scope="col">Email</th>
-      <th scope="col">Password</th>
+      <th scope="col">Contact Number</th>
       <th scope="col">Address</th>
       <th scope="col">Action</th>
     </tr>
@@ -32,7 +32,7 @@
       <th>{{$key+1}}</th>    
       <td>{{$list->name}}</td>
       <td>{{$list->email}}</td>
-      <td>{{$list->password}}</td>
+      <td>{{$list->confirmpassword}}</td>
       <td>{{$list->address}}</td>
       <td><a class= "btn btn-primary"href="{{route('kazidetails',$list->id)}}">View</td>
       <td><a class= "btn btn-danger"href="{{route('kazidelete',$list->id)}}">Delete</td>
