@@ -112,7 +112,7 @@
                                             @if(auth()->user())
                                              
                                             <li>
-                                                <a href="logout" class="dropdown-item w3-hover-purple w3-medium w3-text-purple" >Logout </a>
+                                                <a href="{{route('logout')}}" class="dropdown-item w3-hover-purple w3-medium w3-text-purple" >Logout </a>
                                             </li>@endif
                                             
                                             <li class="dropdown"> 

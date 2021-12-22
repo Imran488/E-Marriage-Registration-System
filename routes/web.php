@@ -49,12 +49,13 @@ Route::group(['prefix'=>'website'], function () {
   Route::get('/certificate',[ServiceController::class,'Certificate'])->name('certificate');
   Route::post('/certificateform',[ServiceController::class,'CertificateForm'])->name('certificate.requestform');
   Route::get('/admin',[LoginController::class,'Admin'])->name('admin');
-  // Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.login');
+  Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.login');
   Route::get('/user',[LoginController::class,'User'])->name('user');
   Route::post('/userlogin',[LoginController::class,'UserLogin'])->name('user.login');
   Route::get('/signup',[LoginController::class,'Signup'])->name('signup');
   Route::post('/usersignup',[LoginController::class,'UserSignup'])->name('user.signup');
   Route::get('/logout',[LoginController::class,'userlogout'])->name('logout');
+  Route::get('/adminlogout',[LoginController::class,'adminlogout'])->name('admin.logout');
 });
 
 Route::get('/admin', function () {

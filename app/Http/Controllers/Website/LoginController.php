@@ -11,6 +11,28 @@ class LoginController extends Controller
     {
         return view('website.pages.admin');
     }
+
+    public function AdminLogin(Request $request){
+        // dd($request->all());
+        $userpost = $request->except('_token');
+        // dd($userpost);
+        // dd(Auth::attempt($userpost));
+        if (Auth::attempt($userpost)) {
+            return redirect()->route('dashboard');
+        }
+        else
+        return redirect()->back();
+
+    }
+
+
+    public function adminlogout(){
+    
+        Auth::logout();
+        return redirect()->route('home');
+    }
+
+
     public function User()
     {
         return view('website.pages.user');
@@ -31,6 +53,8 @@ class LoginController extends Controller
 
         return redirect()->route('user');
     }
+
+    
 
     public function UserLogin(Request $request){
         // dd($request->all());
