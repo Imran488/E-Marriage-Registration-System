@@ -1,7 +1,9 @@
 @extends('master')
 
 @section('contents')
+
 <center>
+<div id="divToPrint">
 <h1><b><u> Marriage Certificate</u></b></h1>
 <b>
 <p>Marriage ID: {{$list->id}}</p>
@@ -19,8 +21,19 @@
 <p>Groom Signature: <img  style="width:60px;height:60px" src="{{url('/uploades/'.$list->signatureh)}}"  alt="signatureh"> Bride Signature: <img  style="width:60px;height:60px" src="{{url('/uploades/'.$list->signaturew)}}"  alt="signaturew"></p>
 <p> Certified By: Md.Imran Hossain</p>
 </b>
-<p><a class="btn btn-primary" href ="#">Print</a>
-<a class="btn btn-primary" href ="#">Download</a>
-<a class="btn btn-danger" href ="#">Cancel</a></p>
+</div>
+<input class="btn btn-primary" type="button" onClick="PrintDiv('divToPrint');" value="Print">
+<a href="{{route('marrigeregistration')}}" class="btn btn-danger" >Cancel</a>
+
 </center>
 @endsection
+<script language="javascript">
+    function PrintDiv(divName) 
+    {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+    }
+</script>
