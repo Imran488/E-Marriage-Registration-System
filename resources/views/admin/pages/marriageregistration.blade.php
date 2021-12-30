@@ -12,8 +12,20 @@
     <div class="col-md-6">
       <a href="{{route('userregistrationform')}}" class="btn btn-primary">Fill-Up Marriage Registration Form</a>
     </div>
+    <form action="{{route('marrigeregistration')}}" method="GET">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <input value="" type="text" placeholder="Search " name="search" class="form-control">
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-success">Search</button>
+        </div>
+    </div>
+    </form>
   </div>
-</div>
+  
+
 <br>
 <table class="table table-dark table-striped">
   <thead>
@@ -49,9 +61,11 @@
       <td><img  style="width:60px;height:60px" src="{{url('/uploades/'.$list->signaturew)}}"  alt="signaturew"></td>
       <td>{{$list->mdate}}</td>
       <td><a class="btn btn-primary" href ="{{route('view',$list->id)}}">View</a></td>
+      <td><a class="btn btn-primary" href ="{{route('edit',$list->id)}}">Edit</a></td>
       <td><a class="btn btn-danger" href ="{{route('delete',$list->id)}}">Delete</a></td>
     </tr>
     @endforeach
   </tbody>
 </table>
+</div>
 @endsection

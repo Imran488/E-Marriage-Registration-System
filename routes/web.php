@@ -81,6 +81,8 @@ Route::group(['prefix'=>'admin'],function(){
     Route::post('/store',[MarriageRegistrationController::class,'Store'])->name('store');
     Route::get('/view/{bridal_id}',[MarriageRegistrationController::class,'View'])->name('view');
     Route::get('/delete/{bridal_id}',[MarriageRegistrationController::class,'Delete'])->name('delete');
+    Route::get('/edit/{bridal_id}',[MarriageRegistrationController::class,'Edit'])->name('edit');
+    Route::put('/update/{bridal_id}',[MarriageRegistrationController::class,'Update'])->name('update');
     Route::get('/devorcerequestslist',[UserRequestController::class,'DevorceRequestList'])->name('devorce.requestlist');
     Route::get('divorce/view/{divorce_id}',[UserRequestController::class,'DivorceView'])->name('divorceview');
     Route::get('divorce/delete/{divorce_id}',[UserRequestController::class,'DivorceDelete'])->name('divorcedelete');

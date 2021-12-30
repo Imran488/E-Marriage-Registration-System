@@ -26,7 +26,7 @@
             <div id="content-wrapper" class="d-flex flex-column">
                 <!-- Main Content -->
                 <div id="content">
-                    <header  style="background-image: url('/jpg/website/image1.png'); background-position: center; background-size: cover; min-height:600px;">
+                    <!-- <header  style="background-image: url('/jpg/website/image1.png'); background-position: center; background-size: cover; min-height:600px;"> -->
                     @include('admin.partials.header')
                     @yield('contents')
                     
