@@ -17,5 +17,8 @@ class HomeController extends Controller
     {
         return view('website.pages.marriagerules');
     }
+    public function search(){
+        return view('website.pages.search');
+    }
 }
     

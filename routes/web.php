@@ -33,6 +33,10 @@ Route::get('/', function () {
   });
 
 Route::group(['prefix'=>'website'], function () {
+
+  Route::get('/user/search',[HomeController::class,'search'])->name('user.search');
+
+
   Route::get('/home',[HomeController::class,'Home'])->name('home');
   Route::get('/marriagerules',[HomeController::class,'Rules'])->name('rules');
   Route::get('/aboutus',[ManagementController::class,'Aboutus'])->name('aboutus');

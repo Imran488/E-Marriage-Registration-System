@@ -134,7 +134,7 @@
                                                     </li>
                                                 </ul>
                                                 <li>@auth
-                                                    <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="#">
+                                                    <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{ route('user.search') }}">
                                                     Search</a>
                                                 </li>@endauth
                                          <!-- <li class="dropdown">
