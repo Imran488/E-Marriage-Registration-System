@@ -55,7 +55,7 @@
                        Religion
                    </div>
                    <div class="col-md-3">
-                       <select  data-parsley-required-message="Please Select" name="religion" id="religion" class="form-control">
+                       <select   name="religion" id="religion" class="form-control"required data-parsley-required-message>
                            <option disabled selected="">Please Choose Religion</option>
                            <option value="Islam">Islam</option>
                            <option value="Hindu">Hindu</option>
@@ -71,7 +71,7 @@
                        Date of Birth 
                    </div>
                    <div class="col-md-3">
-                       <input type ="date" name="date" class="form-control" placeholder="Enter  Date of Birth" required data-parsley-required-message="Please Enter  Full Name of the Groom">
+                       <input type ="date" name="date" class="form-control" placeholder="Enter  Date of Birth" required data-parsley-required-message>
                    </div>
                </div>
 
@@ -86,21 +86,21 @@
                        </select>
                    </div> -->
                    <div class="col-md-3">
-                       <input name="passportnumber" type="text" placeholder="Enter Groom NID Number" id="passportw" class="form-control ">
+                       <input name="passportnumber" type="text" placeholder="Enter Groom NID Number" id="passportw" class="form-control "required data-parsley-required-message>
                     </div>
                 </div>
 
                 <div class="row form-group">
                    <div class="col-md-4">Choose Image</div>
                    <div class="col-md-3">
-                       <input name="imageh" class="form-control" type="file" id="formFileMultiple" multiple />
+                       <input name="imageh" class="form-control" type="file" id="formFileMultiple" multiple required data-parsley-required-message>
                    </div>
                 </div>
 
                 <div class="row form-group">
                    <div class="col-md-4">Choose Signature</div>
                    <div class="col-md-3">
-                   <input name="signatureh" class="form-control" type="file" id="formFileMultiple" multiple />
+                   <input name="signatureh" class="form-control" type="file" id="formFileMultiple" multiple required data-parsley-required-message >
                    </div>
                 </div>
 
@@ -139,7 +139,7 @@
                                Select District
                            </div>
                            <div class="col-md-8">
-                               <select required="" data-parsley-required-message="Please Select District" name="district" id="district" class="form-control">
+                               <select   name="district" id="district" class="form-control"required data-parsley-required-message>
                                    <option disabled selected="">Select</option>
                                    <option >Dhaka</option>
                                    <option  >Rajshahi</option>
@@ -163,7 +163,7 @@
                                Sub-District
                            </div>
                            <div class="col-md-8">
-                               <input name="txtcityh" type="text" maxlength="100" id="txtcityh" class="form-control" placeholder="Enter Sub-District ">
+                               <input name="txtcityh" type="text" maxlength="100" id="txtcityh" class="form-control" placeholder="Enter Sub-District " required data-parsley-required-message>
                                <span id="RequiredFieldValidator11" style="color:Red;visibility:hidden;">Please Enter Sub-District Name</span>
                            </div>
                        </div>
@@ -218,7 +218,7 @@
                        Religion
                    </div>
                    <div class="col-md-3">
-                       <select  data-parsley-required-message="Please Select" name="religionw" id="religion" class="form-control">
+                       <select   name="religionw" id="religion" class="form-control"required data-parsley-required-message>
                            <option disabled selected="">Please Choose Religion</option>
                            <option value="Islam">Islam</option>
                            <option value="Hindu">Hindu</option>
@@ -249,21 +249,21 @@
                        </select>
                    </div> -->
                    <div class="col-md-3">
-                       <input name="passportnumberw" type="text" placeholder="Enter Bride NID Number" id="passportw" class="form-control ">
+                       <input name="passportnumberw" type="text" placeholder="Enter Bride NID Number" id="passportw" class="form-control "required data-parsley-required-message>
                     </div>
                 </div>
 
                 <div class="row form-group">
                    <div class="col-md-4">Choose Image</div>
                    <div class="col-md-3">
-                       <input name="imagew" class="form-control" type="file" id="formFileMultiple" multiple />
+                       <input name="imagew" class="form-control" type="file" id="formFileMultiple" multiple required data-parsley-required-message>
                    </div>
                 </div>
 
                 <div class="row form-group">
                    <div class="col-md-4">Choose Signature</div>
                    <div class="col-md-3">
-                   <input name="signaturew" class="form-control" type="file" id="formFileMultiple" multiple />
+                   <input name="signaturew" class="form-control" type="file" id="formFileMultiple" multiple required data-parsley-required-message>
                    </div>
                 </div>
 
@@ -302,7 +302,7 @@
                                Select District
                            </div>
                            <div class="col-md-8">
-                               <select required="" data-parsley-required-message="Please Select District" name="districtw" id="district" class="form-control">
+                               <select  name="districtw" id="district" class="form-control"required data-parsley-required-message>
                                    <option disabled selected="">Select</option>
                                    <option >Dhaka</option>
                                    <option  >Rajshahi</option>
@@ -326,7 +326,7 @@
                                Sub-District
                            </div>
                            <div class="col-md-8">
-                               <input name="txtcityw" type="text" maxlength="100" id="txtcityh" class="form-control" placeholder="Enter Sub-District ">
+                               <input name="txtcityw" type="text" maxlength="100" id="txtcityh" class="form-control" placeholder="Enter Sub-District " required data-parsley-required-message>
                                <span id="RequiredFieldValidator11" style="color:Red;visibility:hidden;">Please Enter Sub-District Name</span>
                            </div>
                        </div>
@@ -356,7 +356,7 @@
                             Full Name of the Witness1
                         </div>
                         <div class="col-md-6">
-                            <input name="witnessname1" type="text"  id="witnessname1" class="form-control" placeholder=" Enter  Full Name of the Witness"  data-parsley-required-message="Please Enter  Full Name of the Witness">
+                            <input name="witnessname1" type="text"  id="witnessname1" class="form-control" placeholder=" Enter  Full Name of the Witness"  required data-parsley-required-message>
                         </div>
                     </div>
                     <div class="row form-group">
@@ -365,7 +365,7 @@
                             Address of Witness1
                         </div>
                         <div class="col-md-6">
-                            <textarea name="witnessaddress1" id="witnessaddress1" class="form-control" placeholder=" Enter  Address of the Witness"  data-parsley-required-message="Please Enter  Address of the Witness"></textarea>
+                            <textarea name="witnessaddress1" id="witnessaddress1" class="form-control" placeholder=" Enter  Address of the Witness"  required data-parsley-required-message></textarea>
                         </div>
                     </div>
                     <div class="row form-group">
@@ -374,7 +374,7 @@
                             Full Name of the Witness2
                         </div>
                         <div class="col-md-6">
-                            <input name="witnessname2" type="text"  id="witnessname2" class="form-control" placeholder=" Enter  Full Name of the Witness"  data-parsley-required-message="Please Enter  Full Name of the Witness">
+                            <input name="witnessname2" type="text"  id="witnessname2" class="form-control" placeholder=" Enter  Full Name of the Witness"  required data-parsley-required-message>
                         </div>
                     </div>
                     <div class="row form-group">
@@ -383,7 +383,7 @@
                             Address of Witness2
                         </div>
                         <div class="col-md-6">
-                            <textarea name="witnessaddress2" id="witnessaddress2" class="form-control" placeholder=" Enter  Address of the Witness"  data-parsley-required-message="Please Enter  Address of the Witness"></textarea>
+                            <textarea name="witnessaddress2" id="witnessaddress2" class="form-control" placeholder=" Enter  Address of the Witness"  required data-parsley-required-message></textarea>
                         </div>
                     </div>
                     <div class="row form-group">
@@ -392,7 +392,7 @@
                             Full Name of the Witness 3
                         </div>
                         <div class="col-md-6">
-                            <input name="witnessname3" type="text"  id="witnessname3" class="form-control" placeholder=" Enter  Full Name of the Witness"  data-parsley-required-message="Please Enter  Full Name of the Witness">
+                            <input name="witnessname3" type="text"  id="witnessname3" class="form-control" placeholder=" Enter  Full Name of the Witness"  required data-parsley-required-message>
                         </div>
                     </div>
                     <div class="row form-group">
@@ -401,7 +401,7 @@
                             Address of Witness3
                         </div>
                         <div class="col-md-6">
-                            <textarea name="witnessaddress3" id="witnessaddress3" class="form-control" placeholder=" Enter  Address of the Witness"  data-parsley-required-message="Please Enter  Address of the Witness"></textarea>
+                            <textarea name="witnessaddress3" id="witnessaddress3" class="form-control" placeholder=" Enter  Address of the Witness"  required data-parsley-required-message></textarea>
                         </div>
                     </div>
             </form>

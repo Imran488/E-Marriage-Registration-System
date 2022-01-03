@@ -27,13 +27,13 @@
   <tbody>
     @foreach ($devorcerequestslist as $key=>$list)
     <tr>
-      <th>{{$list->mid}}</th>    
+      <th>{{$list->id}}</th>    
       <td>{{$list->name}}</td>
       <td>{{$list->address}}</td>
       <td>{{$list->email}}</td>
       <td>{{$list->contactnumber}}</td>
-      <td><a class= "btn btn-primary"href="{{route('divorceview',$list->mid)}}">View</td>
-      <td><a class= "btn btn-danger"href="{{route('divorcedelete',$list->mid)}}">Delete</td>
+      <td><a class= "btn btn-primary"href="{{route('divorceview',$list->id)}}">View</td>
+      <td><a class= "btn btn-danger"href="{{route('divorcedelete',$list->id)}}">Delete</td>
     </tr>
     @endforeach
   </tbody>

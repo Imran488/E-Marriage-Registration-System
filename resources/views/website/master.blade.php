@@ -6162,6 +6162,7 @@ html.boxed .body {
 			<div role="main" class="main">
 				@include('website.partials.header')
 				@yield('slides')
+				
 			</div>
 		</div>
 		

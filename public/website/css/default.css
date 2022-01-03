@@ -9,7 +9,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #130f40;
+	background-color: #130f4030;
 	font-family: 'Lato' !important;
   }
   .search-box{
@@ -48,7 +48,7 @@
 	border-radius: 50%;
 	position: absolute;
 	right: 0px;
-	color:#ffffff ;
+	color:#0a0a0a ;
 	background-color:transparent;
 	pointer-events: painted;  
   }
@@ -72,7 +72,7 @@
   /*  footer   */
   footer {
 	  background-color: #222;
-	  color: #fff;
+	  color: rgb(19, 17, 17);
 	  font-size: 14px;
 	  bottom: 0;
 	  position: fixed;
@@ -90,7 +90,7 @@
 	  color: red;
   }
   footer .fa-dev{
-	  color: #fff;
+	  color: rgb(17, 16, 16);
   }
   footer .fa-twitter-square{
 	color:#1da0f1;
@@ -102,7 +102,7 @@
 	color:#0073b1;
   }
   footer .fa-codepen{
-	color:#fff
+	color:rgb(8, 8, 8)
   }
   footer a {
 	  color: #3c97bf;
@@ -141,7 +141,7 @@
   .youtubeBtn span{
 	  font-family: 'Lato';
 	  font-weight: normal;
-	  color: #fff;
+	  color: rgb(20, 19, 19);
 	  display: block;
 	  font-size: 12px;
 	  float: right;

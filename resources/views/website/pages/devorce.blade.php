@@ -1,5 +1,5 @@
 @extends('website.master')
-@section('slides')
+<!-- @section('slides') -->
 <center>
     <h1 style="color:black"><u>Devorce Request Form</u></h1>
     @if(session()->has('msg'))
@@ -11,7 +11,7 @@
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputName">Marriage ID</label>
-            <input type="number" name="mid" class="form-control" id="exampleInputName" placeholder="Marriage ID">
+            <input type="number" name="id" class="form-control" id="exampleInputName" placeholder="Marriage ID">
         </div>
     </div>
     <div class="form-group">
@@ -50,4 +50,4 @@
     <a href="{{route('home')}}" class="btn" style="background-color:lightgray; border-radius:10px">Cancel</a>
 </form>
 </center>
-@endsection
+<!-- @endsection -->

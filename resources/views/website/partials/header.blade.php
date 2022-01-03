@@ -119,9 +119,9 @@
                                                
 
                                             @if(!auth()->user())
-                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" >Login </a>
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="{{ route('admin') }}" >Login </a>
                                                 @endif
-                                                <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
+                                                <!-- <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li>
                                                         <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('admin')}}">
                                                             Admin
@@ -132,7 +132,7 @@
                                                             User
                                                         </a>
                                                     </li>
-                                                </ul>
+                                                </ul> -->
                                                 <li>@auth
                                                     <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{ route('user.search') }}">
                                                     Search</a>

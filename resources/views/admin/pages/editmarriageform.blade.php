@@ -143,16 +143,70 @@
                            <div class="col-md-8">
                                <select required="" data-parsley-required-message="Please Select District" value="{{$list->district}}" name="district" id="district" class="form-control">
                                    <option disabled selected="">Select</option>
-                                   <option >Dhaka</option>
-                                   <option  >Rajshahi</option>
-                                   <option >Barishal</option>
-                                   <option  >Khulna</option>
-                                   <option  >Rangpur</option>
-                                   <option  >Sylhet</option>
-                                   <option >Mymonsingh</option>
-                                   <option  >Chottogram</option>
-                                   <option  >Barguna</option>
-                                   <option  >Bhola</option><option  >Jhalkati</option><option  >Patuakhali</option><option  >Pirojpur</option><option  >Bandarban</option><option  >Brahmanbaria</option><option  >Chandpur</option><option >Comilla</option><option  >Cox's Bazar</option><option >Feni</option><option  >Khagrachhari</option><option  >Lakshmipur</option><option  >Noakhali</option><option  >Rangamati</option><option  >Faridpur</option><option  >Gazipur</option><option  >Gopalgang</option><option  >Kishoregang</option><option  >Madaripur</option><option  >Manikgang</option><option  >Munsigang</option><option  >Narayangang</option><option  >Narsingdi</option><option >Rajbari</option><option  >Shariatpur</option><option  >Tangail</option><option  >Bagerhat</option><option  >Chuadanga</option><option  >Jessore</option><option  >Jhenaidha</option><option  >Kustia</option><option  >Magura</option><option  >Meherpur</option><option  >Narail</option><option  >Satkhira</option><option  >Jamalpur</option><option  >Netrokona</option><option  >Sherpur</option><option  >Bogra</option><option  >Joypurhat</option><option >Naogaon</option><option  >Natore</option><option  >Chapai Nawabgang</option><option  >Pabna</option><option  >Sirajganj</option><option  >Dinajpur</option><option  >Gaibandha</option><option >Kurigram</option><option >Lalmonirhat</option><option  >Nilphamari</option><option  >Panchagarh</option><option  >Thakurgaon</option><option  >Habigang</option><option >Moulvibazar</option><option >Sunamgang</option>
+                                   <option @if($list->district == 'Dhaka') selected @endif value="Dhaka" >Dhaka</option>
+                                   <option @if($list->district == 'Rajshahi') selected @endif value="Rajshahi"  >Rajshahi</option>
+                                   <option @if($list->district == 'Barishal') selected @endif value="Barishal"  >Barishal</option>
+                                   <option @if($list->district == 'Khulna') selected @endif value="Khulna"  >Khulna</option>
+                                   <option @if($list->district == 'Rangpur') selected @endif value="Rangpur" >Rangpur</option>
+                                   <option @if($list->district == 'Sylhet') selected @endif value="Sylhet" >Sylhet</option>
+                                   <option @if($list->district == 'Mymonsingh') selected @endif value="Mymonsingh">Mymonsingh</option>
+                                   <option @if($list->district == 'Chottogram') selected @endif value="Chottogram" >Chottogram</option>
+                                   <option  @if($list->district == 'Barguna') selected @endif value="Barguna">Barguna</option>
+                                   <option  @if($list->district == 'Bhola') selected @endif value="Bhola">Bhola</option>
+                                   <option @if($list->district == 'Jhalkati') selected @endif value="Jhalkati" >Jhalkati</option>
+                                   <option @if($list->district == 'Patuakhali') selected @endif value="Patuakhali" >Patuakhali</option>
+                                   <option @if($list->district == 'Pirojpur') selected @endif value="Pirojpur" >Pirojpur</option>
+                                   <option @if($list->district == 'Bandarban') selected @endif value="Bandarban" >Bandarban</option>
+                                   <option @if($list->district == 'Brahmanbaria') selected @endif value="Brahmanbaria" >Brahmanbaria</option>
+                                   <option @if($list->district == 'Chandpur') selected @endif value="Chandpur" >Chandpur</option>
+                                   <option @if($list->district == 'Comilla') selected @endif value="Comilla" >Comilla</option>
+                                   <option @if($list->district == 'Coxs Bazar') selected @endif value="Coxs Bazar" >Cox's Bazar</option>
+                                   <option @if($list->district == 'Feni') selected @endif value="Feni" >Feni</option>
+                                   <option  @if($list->district == 'Khagrachhari') selected @endif value="Khagrachhari">Khagrachhari</option>
+                                   <option  @if($list->district == 'Lakshmipur') selected @endif value="Lakshmipur">Lakshmipur</option>
+                                   <option  @if($list->district == 'Noakhali') selected @endif value="Noakhali">Noakhali</option>
+                                   <option  @if($list->district == 'Rangamati') selected @endif value="Rangamati">Rangamati</option>
+                                   <option  @if($list->district == 'Faridpur') selected @endif value="Faridpur">Faridpur</option
+                                   ><option  @if($list->district == 'Gazipur') selected @endif value="Gazipur">Gazipur</option>
+                                   <option  @if($list->district == 'Gopalgang') selected @endif value="Gopalgang">Gopalgang</option>
+                                   <option  @if($list->district == 'Kishoregang') selected @endif value="Kishoregang">Kishoregang</option>
+                                   <option @if($list->district == 'Madaripur') selected @endif value="Madaripur" >Madaripur</option>
+                                   <option @if($list->district == 'Manikgang') selected @endif value="Manikgang" >Manikgang</option
+                                   ><option  @if($list->district == 'Munsigang') selected @endif value="Munsigang">Munsigang</option>
+                                   <option  @if($list->district == 'Narayangang') selected @endif value="Narayangang">Narayangang</option>
+                                   <option @if($list->district == 'Narsingdi') selected @endif value="Narsingdi" >Narsingdi</option>
+                                   <option @if($list->district == 'Rajbari') selected @endif value="Rajbari">Rajbari</option>
+                                   <option @if($list->district == 'Shariatpur') selected @endif value="Shariatpur" >Shariatpur</option>
+                                   <option  @if($list->district == 'Tangail') selected @endif value="Tangail">Tangail</option>
+                                   <option @if($list->district == 'Bagerhat') selected @endif value="Bagerhat" >Bagerhat</option>
+                                   <option  @if($list->district == 'Chuadanga') selected @endif value="Chuadanga">Chuadanga</option>
+                                   <option @if($list->district == 'Jessore') selected @endif value="Jessore" >Jessore</option>
+                                   <option  @if($list->district == 'Jhenaidha') selected @endif value="Jhenaidha">Jhenaidha</option>
+                                   <option @if($list->district == 'Kustia') selected @endif value="Kustia" >Kustia</option>
+                                   <option @if($list->district == 'Magura') selected @endif value="Magura" >Magura</option>
+                                   <option @if($list->district == 'Meherpur') selected @endif value="Meherpur" >Meherpur</option>
+                                   <option @if($list->district == 'Narail') selected @endif value="Narail" >Narail</option>
+                                   <option @if($list->district == 'Satkhira') selected @endif value="Satkhira" >Satkhira</option>
+                                   <option  @if($list->district == 'Jamalpur') selected @endif value="Jamalpur">Jamalpur</option>
+                                   <option @if($list->district == 'Netrokona') selected @endif value="Netrokona" >Netrokona</option>
+                                   <option @if($list->district == 'Sherpur') selected @endif value="Sherpur" >Sherpur</option>
+                                   <option @if($list->district == 'Bogra') selected @endif value="Bogra" >Bogra</option>
+                                   <option @if($list->district == 'Joypurhat') selected @endif value="Joypurhat" >Joypurhat</option>
+                                   <option @if($list->district == 'Naogaon') selected @endif value="Naogaon" >Naogaon</option>
+                                   <option @if($list->district == 'Natore') selected @endif value="Natore" >Natore</option>
+                                   <option  @if($list->district == 'Chapai Nawabgang') selected @endif value="Chapai Nawabgang">Chapai Nawabgang</option>
+                                   <option @if($list->district == 'Pabna') selected @endif value="Pabna" >Pabna</option>
+                                   <option  @if($list->district == 'Sirajganj') selected @endif value="Sirajganj">Sirajganj</option>
+                                   <option @if($list->district == 'Dinajpur') selected @endif value="Dinajpur" >Dinajpur</option>
+                                   <option  @if($list->district == 'Gaibandha') selected @endif value="Gaibandha">Gaibandha</option>
+                                   <option @if($list->district == 'Kurigram') selected @endif value="Kurigram">Kurigram</option>
+                                   <option @if($list->district == 'Lalmonirhat') selected @endif value="Lalmonirhat">Lalmonirhat</option>
+                                   <option  @if($list->district == 'Nilphamari') selected @endif value="Nilphamari">Nilphamari</option>
+                                   <option  @if($list->district == 'Panchagarh') selected @endif value="Panchagarh">Panchagarh</option>
+                                   <option @if($list->district == 'Thakurgaon') selected @endif value="Thakurgaon" >Thakurgaon</option>
+                                   <option @if($list->district == 'Habigang') selected @endif value="Habigang" >Habigang</option>
+                                   <option @if($list->district == 'Moulvibazar') selected @endif value="Moulvibazar">Moulvibazar</option>
+                                   <option @if($list->district == 'Sunamgang') selected @endif value="Sunamgang">Sunamgang</option>
                                 </select>
                            </div>
                        </div>
@@ -305,18 +359,71 @@
                            <div class="col-md-8">
                                <select required="" data-parsley-required-message="Please Select District" value="{{$list->districtw}}" name="districtw" id="district" class="form-control">
                                    <option disabled selected="">Select</option>
-                                   <option >Dhaka</option>
-                                   <option  >Rajshahi</option>
-                                   <option >Barishal</option>
-                                   <option  >Khulna</option>
-                                   <option  >Rangpur</option>
-                                   <option  >Sylhet</option>
-                                   <option >Mymonsingh</option>
-                                   <option  >Chottogram</option>
-                                   <option  >Barguna</option>
-                                   <option  >Bhola</option><option  >Jhalkati</option><option  >Patuakhali</option><option  >Pirojpur</option><option  >Bandarban</option><option  >Brahmanbaria</option><option  >Chandpur</option><option >Comilla</option><option  >Cox's Bazar</option><option >Feni</option><option  >Khagrachhari</option><option  >Lakshmipur</option><option  >Noakhali</option><option  >Rangamati</option><option  >Faridpur</option><option  >Gazipur</option><option  >Gopalgang</option><option  >Kishoregang</option><option  >Madaripur</option><option  >Manikgang</option><option  >Munsigang</option><option  >Narayangang</option><option  >Narsingdi</option><option >Rajbari</option><option  >Shariatpur</option><option  >Tangail</option><option  >Bagerhat</option><option  >Chuadanga</option><option  >Jessore</option><option  >Jhenaidha</option><option  >Kustia</option><option  >Magura</option><option  >Meherpur</option><option  >Narail</option><option  >Satkhira</option><option  >Jamalpur</option><option  >Netrokona</option><option  >Sherpur</option><option  >Bogra</option><option  >Joypurhat</option><option >Naogaon</option><option  >Natore</option><option  >Chapai Nawabgang</option><option  >Pabna</option><option  >Sirajganj</option><option  >Dinajpur</option><option  >Gaibandha</option><option >Kurigram</option><option >Lalmonirhat</option><option  >Nilphamari</option><option  >Panchagarh</option><option  >Thakurgaon</option><option  >Habigang</option><option >Moulvibazar</option><option >Sunamgang</option>
+                                   <option @if($list->districtw == 'Dhaka') selected @endif value="Dhaka" >Dhaka</option>
+                                   <option @if($list->districtw == 'Rajshahi') selected @endif value="Rajshahi"  >Rajshahi</option>
+                                   <option @if($list->districtw == 'Barishal') selected @endif value="Barishal"  >Barishal</option>
+                                   <option @if($list->districtw == 'Khulna') selected @endif value="Khulna"  >Khulna</option>
+                                   <option @if($list->districtw == 'Rangpur') selected @endif value="Rangpur" >Rangpur</option>
+                                   <option @if($list->districtw == 'Sylhet') selected @endif value="Sylhet" >Sylhet</option>
+                                   <option @if($list->districtw == 'Mymonsingh') selected @endif value="Mymonsingh">Mymonsingh</option>
+                                   <option @if($list->districtw == 'Chottogram') selected @endif value="Chottogram" >Chottogram</option>
+                                   <option  @if($list->districtw == 'Barguna') selected @endif value="Barguna">Barguna</option>
+                                   <option  @if($list->districtw == 'Bhola') selected @endif value="Bhola">Bhola</option>
+                                   <option @if($list->districtw == 'Jhalkati') selected @endif value="Jhalkati" >Jhalkati</option>
+                                   <option @if($list->districtw == 'Patuakhali') selected @endif value="Patuakhali" >Patuakhali</option>
+                                   <option @if($list->districtw == 'Pirojpur') selected @endif value="Pirojpur" >Pirojpur</option>
+                                   <option @if($list->districtw == 'Bandarban') selected @endif value="Bandarban" >Bandarban</option>
+                                   <option @if($list->districtw == 'Brahmanbaria') selected @endif value="Brahmanbaria" >Brahmanbaria</option>
+                                   <option @if($list->districtw == 'Chandpur') selected @endif value="Chandpur" >Chandpur</option>
+                                   <option @if($list->districtw == 'Comilla') selected @endif value="Comilla" >Comilla</option>
+                                   <option @if($list->districtw == 'Coxs Bazar') selected @endif value="Coxs Bazar" >Cox's Bazar</option>
+                                   <option @if($list->districtw == 'Feni') selected @endif value="Feni" >Feni</option>
+                                   <option  @if($list->districtw == 'Khagrachhari') selected @endif value="Khagrachhari">Khagrachhari</option>
+                                   <option  @if($list->districtw == 'Lakshmipur') selected @endif value="Lakshmipur">Lakshmipur</option>
+                                   <option  @if($list->districtw == 'Noakhali') selected @endif value="Noakhali">Noakhali</option>
+                                   <option  @if($list->districtw == 'Rangamati') selected @endif value="Rangamati">Rangamati</option>
+                                   <option  @if($list->districtw == 'Faridpur') selected @endif value="Faridpur">Faridpur</option
+                                   ><option  @if($list->districtw == 'Gazipur') selected @endif value="Gazipur">Gazipur</option>
+                                   <option  @if($list->districtw == 'Gopalgang') selected @endif value="Gopalgang">Gopalgang</option>
+                                   <option  @if($list->districtw == 'Kishoregang') selected @endif value="Kishoregang">Kishoregang</option>
+                                   <option @if($list->districtw == 'Madaripur') selected @endif value="Madaripur" >Madaripur</option>
+                                   <option @if($list->districtw == 'Manikgang') selected @endif value="Manikgang" >Manikgang</option
+                                   ><option  @if($list->districtw == 'Munsigang') selected @endif value="Munsigang">Munsigang</option>
+                                   <option  @if($list->districtw == 'Narayangang') selected @endif value="Narayangang">Narayangang</option>
+                                   <option @if($list->districtw == 'Narsingdi') selected @endif value="Narsingdi" >Narsingdi</option>
+                                   <option @if($list->districtw == 'Rajbari') selected @endif value="Rajbari">Rajbari</option>
+                                   <option @if($list->districtw == 'Shariatpur') selected @endif value="Shariatpur" >Shariatpur</option>
+                                   <option  @if($list->districtw == 'Tangail') selected @endif value="Tangail">Tangail</option>
+                                   <option @if($list->districtw == 'Bagerhat') selected @endif value="Bagerhat" >Bagerhat</option>
+                                   <option  @if($list->districtw == 'Chuadanga') selected @endif value="Chuadanga">Chuadanga</option>
+                                   <option @if($list->districtw == 'Jessore') selected @endif value="Jessore" >Jessore</option>
+                                   <option  @if($list->districtw == 'Jhenaidha') selected @endif value="Jhenaidha">Jhenaidha</option>
+                                   <option @if($list->districtw == 'Kustia') selected @endif value="Kustia" >Kustia</option>
+                                   <option @if($list->districtw == 'Magura') selected @endif value="Magura" >Magura</option>
+                                   <option @if($list->districtw == 'Meherpur') selected @endif value="Meherpur" >Meherpur</option>
+                                   <option @if($list->districtw == 'Narail') selected @endif value="Narail" >Narail</option>
+                                   <option @if($list->districtw == 'Satkhira') selected @endif value="Satkhira" >Satkhira</option>
+                                   <option  @if($list->districtw == 'Jamalpur') selected @endif value="Jamalpur">Jamalpur</option>
+                                   <option @if($list->districtw == 'Netrokona') selected @endif value="Netrokona" >Netrokona</option>
+                                   <option @if($list->districtw == 'Sherpur') selected @endif value="Sherpur" >Sherpur</option>
+                                   <option @if($list->districtw == 'Bogra') selected @endif value="Bogra" >Bogra</option>
+                                   <option @if($list->districtw == 'Joypurhat') selected @endif value="Joypurhat" >Joypurhat</option>
+                                   <option @if($list->districtw == 'Naogaon') selected @endif value="Naogaon" >Naogaon</option>
+                                   <option @if($list->districtw == 'Natore') selected @endif value="Natore" >Natore</option>
+                                   <option  @if($list->districtw == 'Chapai Nawabgang') selected @endif value="Chapai Nawabgang">Chapai Nawabgang</option>
+                                   <option @if($list->districtw == 'Pabna') selected @endif value="Pabna" >Pabna</option>
+                                   <option  @if($list->districtw == 'Sirajganj') selected @endif value="Sirajganj">Sirajganj</option>
+                                   <option @if($list->districtw == 'Dinajpur') selected @endif value="Dinajpur" >Dinajpur</option>
+                                   <option  @if($list->districtw == 'Gaibandha') selected @endif value="Gaibandha">Gaibandha</option>
+                                   <option @if($list->districtw == 'Kurigram') selected @endif value="Kurigram">Kurigram</option>
+                                   <option @if($list->districtw == 'Lalmonirhat') selected @endif value="Lalmonirhat">Lalmonirhat</option>
+                                   <option  @if($list->districtw == 'Nilphamari') selected @endif value="Nilphamari">Nilphamari</option>
+                                   <option  @if($list->districtw == 'Panchagarh') selected @endif value="Panchagarh">Panchagarh</option>
+                                   <option @if($list->districtw == 'Thakurgaon') selected @endif value="Thakurgaon" >Thakurgaon</option>
+                                   <option @if($list->districtw == 'Habigang') selected @endif value="Habigang" >Habigang</option>
+                                   <option @if($list->districtw == 'Moulvibazar') selected @endif value="Moulvibazar">Moulvibazar</option>
+                                   <option @if($list->districtw == 'Sunamgang') selected @endif value="Sunamgang">Sunamgang</option>
                                 </select>
-                               <span id="Req_ID" style="color:Red;display:none;">Please Select State</span>
                            </div>
                        </div>
                    </div>

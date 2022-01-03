@@ -36,7 +36,7 @@
       <td>{{$list->address}}</td>
       <td>{{$list->email}}</td>
       <td>{{$list->contactnumber}}</td>
-      <td><a class= "btn btn-primary"href="#">View</td>
+      <td><a class= "btn btn-primary"href="#">Edit</td>
       <td><a class= "btn btn-danger"href="#">Delete</td>
     </tr>
     @endforeach

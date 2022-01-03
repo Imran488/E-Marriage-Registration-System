@@ -55,7 +55,7 @@ class ServiceController extends Controller
     public function DevorceForm(Request $request){
         //  dd($request->all());
         DevorceRequest::create([
-            'mid'=>$request->mid,
+            'id'=>$request->id,
             'name'=>$request->name,
             'email'=>$request->email,
             'address'=>($request->address) ,

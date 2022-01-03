@@ -14,7 +14,7 @@ class CreateDevorceRequestsTable extends Migration
     public function up()
     {
         Schema::create('devorce_requests', function (Blueprint $table) {
-            $table->string('mid');
+            $table->string('id');
             $table->string('name');
             $table->string('address');
             $table->string('email');

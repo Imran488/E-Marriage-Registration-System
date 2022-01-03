@@ -23,18 +23,18 @@ class UserRequestController extends Controller
         // dd($devorcerequestslist);
         return view('admin.pages.devorcerequestslist',compact('devorcerequestslist'));
     }
-    public function DivorceView($mid)
+    public function DivorceView($id)
     {
         // dd($mid);
-        $list=DevorceRequest::where('mid',$mid)->first();
+        $list=DevorceRequest::where('id',$id)->first();
         
 // dd($list);
         return view('admin.pages.divorcedetails',compact('list'));
     }
-    public function DivorceDelete($mid)
+    public function DivorceDelete($id)
     {
         //dd("$mid");
-        $list=DevorceRequest::find($mid)->delete();
+        $list=DevorceRequest::find($id)->delete();
         
         return redirect()->back()->with('msg','Delete Succesfully');
     }

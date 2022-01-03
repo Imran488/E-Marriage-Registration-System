@@ -9,7 +9,7 @@ class LoginController extends Controller
 {
     public function Admin()
     {
-        return view('website.pages.admin');
+        return view('website.pages.login');
     }
 
     public function AdminLogin(Request $request){
@@ -51,7 +51,7 @@ class LoginController extends Controller
         ]);
         
 
-        return redirect()->route('user');
+        return redirect()->route('admin');
     }
 
     
