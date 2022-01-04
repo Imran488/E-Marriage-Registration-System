@@ -6,6 +6,16 @@
     <p class="alert alert-success">{{session()->get('msg')}}</p>
     @endif
 
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
     
     <form action="{{route('store')}}" method="POST"enctype="multipart/form-data">
         @csrf
@@ -86,7 +96,7 @@
                        </select>
                    </div> -->
                    <div class="col-md-3">
-                       <input name="passportnumber" type="text" placeholder="Enter Groom NID Number" id="passportw" class="form-control "required data-parsley-required-message>
+                       <input name="passportnumber" type="text" placeholder="Enter Groom NID Number" id="passportw" class="form-control " required data-parsley-required-message="Already Used">
                     </div>
                 </div>
 
@@ -249,7 +259,7 @@
                        </select>
                    </div> -->
                    <div class="col-md-3">
-                       <input name="passportnumberw" type="text" placeholder="Enter Bride NID Number" id="passportw" class="form-control "required data-parsley-required-message>
+                       <input name="passportnumberw" type="text" placeholder="Enter Bride NID Number" id="passportw" class="form-control "required data-parsley-required-message="Already Used">
                     </div>
                 </div>
 

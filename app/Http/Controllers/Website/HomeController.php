@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Website;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\RegistrationForm;
+use App\Models\KaziForm;
 
 class HomeController extends Controller
 {
@@ -17,8 +18,17 @@ class HomeController extends Controller
     {
         return view('website.pages.marriagerules');
     }
-    public function search(){
-        return view('website.pages.search');
+    public function KaziList(){
+        $key=null;
+        // dd(request()->search);
+        if(request()->search){
+            
+            $key=request()->search;
+            $kazilist=KaziForm::where('address','LIKE','%'.$key.'%')->orWhere('name','LIKE','%'.$key.'%')->get();
+            return view('website.pages.kazilist',compact('kazilist','key'));
+        }
+        $kazilist=KaziForm::all();
+        return view('website.pages.kazilist',compact('kazilist','key'));
     }
 }
     

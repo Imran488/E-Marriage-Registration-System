@@ -10,10 +10,17 @@ class KaziListController extends Controller
 {
     public function UserList()
     {
+        $key=null;
+        if(request()->search){
+            $key=request()->search;
+            $userlist=User::where('name','LIKE','%'.$key.'%')->orWhere('id','LIKE','%'.$key.'%')->get();
+            return view('admin.pages.userlist',compact('userlist','key'));
+        }
         $userlist=User::all();
-        // dd($userlist);
-        return view('admin.pages.userlist',compact('userlist'));
+        //     // dd($userlist);
+            return view('admin.pages.userlist',compact('userlist','key'));
     }
+    
 
     public function KaziList()
     {

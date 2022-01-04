@@ -8,10 +8,18 @@ class MarriageRegistrationController extends Controller
 {
     public function MarriageRegistration()
     {
+        {
+            $key=null;
+            if(request()->search){
+                $key=request()->search;
+                $registerlist=RegistrationForm::where('fullnameh','LIKE','%'.$key.'%')->orWhere('id','LIKE','%'.$key.'%')->get();
+                return view('admin.pages.marriageregistration',compact('registerlist','key'));
+            }
         $registerlist=RegistrationForm::all();
         // dd($registerlist);
-        return view('admin.pages.marriageregistration',compact('registerlist'));
+        return view('admin.pages.marriageregistration',compact('registerlist','key'));
     }
+}
     public function UserRegistrationForm()
     {
 
@@ -19,6 +27,10 @@ class MarriageRegistrationController extends Controller
     }
     public function Store(Request $request)
     {
+        $request->validate([
+            'passportnumber'=>'unique:registration_forms,passportnumber',
+            'passportnumber'=>'unique:registration_forms,passportnumber',
+        ]);
         //dd(date('Ymdhms'));
         //dd($request->all());
         $filename ='';

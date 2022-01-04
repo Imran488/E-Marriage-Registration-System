@@ -34,7 +34,7 @@ use App\Http\Controllers\MarriageRegistrationController;
 Route::get('/',[HomeController::class,'Home'])->name('home');
 
 Route::group(['prefix'=>'website'], function () {
-   Route::get('/user/search',[HomeController::class,'search'])->name('user.search');
+   Route::get('/kazilist',[HomeController::class,'KaziList'])->name('kazi');
    Route::get('/marriagerules',[HomeController::class,'Rules'])->name('rules');
   Route::get('/aboutus',[ManagementController::class,'Aboutus'])->name('aboutus');
   Route::get('/speciality',[ManagementController::class,'Speciality'])->name('speciality');

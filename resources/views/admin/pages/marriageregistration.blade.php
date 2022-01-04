@@ -16,13 +16,18 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <input value="" type="text" placeholder="Search " name="search" class="form-control">
+            <input value="{{$key}}" type="text" placeholder="Search " name="search" class="form-control">
         </div>
         <div class="col-md-4">
             <button type="submit" class="btn btn-success">Search</button>
         </div>
     </div>
     </form>
+
+    @if($key)
+    <h3>You are searching for: {{$key}}. Found {{$registerlist->count()}} results</h3>
+    @endif
+
   </div>
   
 

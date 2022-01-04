@@ -20,7 +20,7 @@
                                 <div
                                     class="header-nav-main header-nav-main-rounded header-nav-main-dropdown-no-borders header-nav-main-effect-1 header-nav-main-sub-effect-1">
                                     <nav class="collapse w3-text-medium">
-                                        <ul class="nav nav-pills" id="mainNav">
+                                        <ul class="nav nav-pills" id="mainNav" style="position: relative;">
                                             <li> @auth
                                                 <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('home')}}">
                                                     Home
@@ -112,7 +112,7 @@
                                             @if(auth()->user())
                                              
                                             <li>
-                                                <a href="{{route('logout')}}" class="dropdown-item w3-hover-purple w3-medium w3-text-purple" >Logout </a>
+                                                <a href="{{route('logout')}}" class="dropdown-item w3-hover-purple w3-medium w3-text-purple" >{{auth()->user()->name}}| Logout </a>
                                             </li>@endif
                                             
                                             <li class="dropdown"> 
@@ -133,9 +133,10 @@
                                                         </a>
                                                     </li>
                                                 </ul> -->
-                                                <li>@auth
-                                                    <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{ route('user.search') }}">
-                                                    Search</a>
+                                                <li style="position: absolute; top: 0px; right: -80px;">@auth
+                                                    <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{ route('kazi') }}">
+                                                    KaziList</a>
+                                                    
                                                 </li>@endauth
                                          <!-- <li class="dropdown">
                                                     <nav class="navbar navbar-light bg-light">

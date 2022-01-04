@@ -10,8 +10,24 @@
     <p class="alert alert-success">{{session()->get('msg')}}</p>
     @endif
     
-  </div>
-</div>
+  
+
+<form action="{{route('userlist')}}" method="GET">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <input value="{{$key}}" type="text" placeholder="Search " name="search" class="form-control">
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="btn btn-success">Search</button>
+        </div>
+    </div>
+    </form>
+    @if($key)
+    <h4>
+        Your are searching for: {{$key}}. found: {{$userlist->count()}}
+    </h4>
+@endif
 <br>
 <table class="table table-dark table-striped">
   <thead>
@@ -36,4 +52,6 @@
     @endforeach
   </tbody>
 </table>
+</div>
+</div>
 @endsection
