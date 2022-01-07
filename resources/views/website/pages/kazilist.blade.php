@@ -1,6 +1,13 @@
 @extends('website.master')
 @section('slides')
-<center> <h1 style= "color:black"><u><b>Here Our All Registred Kazi</b></u></h1></center>
+<center> <h1 style= "color:black"><u><b>Here Our All Registred Kazi</b></u></h1>
+@if($key)
+    <h4>
+        Your are searching for: {{$key}}. found: {{$kazilist->count()}}
+    </h4>
+@endif
+</center>
+
 <form action="{{route('kazi')}}" method="GET">
     <div class="row">
         <div class="col-md-4"></div>
@@ -12,11 +19,7 @@
         </div>
     </div>
     </form>
-    @if($key)
-    <h4>
-        Your are searching for: {{$key}}. found: {{$kazilist->count()}}
-    </h4>
-@endif
+    
 <div class="container-fluid">
   <div class="row">
     <div class="container">
@@ -30,6 +33,7 @@
               <th scope="col">Email</th>
               <th scope="col">Contact Number</th>
               <th scope="col">Address</th>
+              <th scope="col">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -38,6 +42,7 @@
               <td>{{$list->email}}</td>
               <td>{{$list->confirmpassword}}</td>
               <td>{{$list->address}}</td>
+              <td><a class= "btn btn-primary"href="{{route('kazi.appointment')}}">Appointment</button></td>
               </tr>
             </tbody>
           </table>

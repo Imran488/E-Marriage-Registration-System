@@ -9,6 +9,13 @@ use App\Models\KaziForm;
 
 class HomeController extends Controller
 {
+
+    public function Appointment()
+    {
+        return view('website.pages.appointment');
+    }
+
+
     public function Home()
     {
         $registerlist=RegistrationForm::all();
