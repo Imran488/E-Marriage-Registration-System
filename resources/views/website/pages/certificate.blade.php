@@ -1,5 +1,5 @@
 @extends('website.master')
-<!-- @section('slides') -->
+@section('slides')
 <center>
     <h1 style="color:black"><u>Certificate Request Form</u></h1>
     @if(session()->has('msg'))
@@ -60,5 +60,6 @@
     <button type="submit" class="btn btn-primary">Submit</button>
     <a href="{{route('home')}}" class="btn btn-danger">Cancel</a>
 </form>
+<div style="height: 100px;"></div>
 </center>
-<!-- @endsection -->
+@endsection

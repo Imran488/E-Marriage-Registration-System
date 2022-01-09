@@ -14,6 +14,13 @@
                             </div>
                         </div>
                     </div>
+@if(session()->has('message'))
+<p class="alert alert-success">{{session()->get('message')}}</p>
+@endif
+
+<!-- @if(session()->has('error'))
+<p class="alert alert-danger">{{session()->get('error')}}</p>
+@endif -->
                     <div class="header-column justify-content-end">
                         <div class="header-row">
                             <div class="header-nav header-nav-no-space-dropdown header-nav-stretch">
@@ -118,9 +125,9 @@
                                             <li class="dropdown"> 
                                                
 
-                                            @if(!auth()->user())
+                                            <!-- @if(!auth()->user())
                                                 <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="{{ route('admin') }}" >Login </a>
-                                                @endif
+                                                @endif -->
                                                 <!-- <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li>
                                                         <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('admin')}}">

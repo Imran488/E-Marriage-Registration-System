@@ -26,14 +26,24 @@ use App\Http\Controllers\MarriageRegistrationController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::get('/', function () {
 
-  
+
+// Route::get('/', function () {
 //   return view('website.pages.home');
 //   });
-Route::get('/',[HomeController::class,'Home'])->name('home');
 
-Route::group(['prefix'=>'website'], function () {
+
+// User Login and SignUp
+
+Route::get('/user',[LoginController::class,'User'])->name('user');
+  Route::post('/userlogin',[LoginController::class,'UserLogin'])->name('user.login');
+  Route::get('/signup',[LoginController::class,'Signup'])->name('signup');
+  Route::post('/usersignup',[LoginController::class,'UserSignup'])->name('user.signup');
+
+
+
+Route::group(['middleware'=>'user'], function () {
+  Route::get('/',[HomeController::class,'Home'])->name('home');
   Route::get('/appointment',[HomeController::class,'Appointment'])->name('kazi.appointment');
   Route::get('/kazilist',[HomeController::class,'KaziList'])->name('kazi');
   Route::get('/marriagerules',[HomeController::class,'Rules'])->name('rules');
@@ -50,10 +60,7 @@ Route::group(['prefix'=>'website'], function () {
   Route::post('/devorceform',[ServiceController::class,'DevorceForm'])->name('devorce.requestform');
   Route::get('/certificate',[ServiceController::class,'Certificate'])->name('certificate');
   Route::post('/certificateform',[ServiceController::class,'CertificateForm'])->name('certificate.requestform');
-  Route::get('/user',[LoginController::class,'User'])->name('user');
-  Route::post('/userlogin',[LoginController::class,'UserLogin'])->name('user.login');
-  Route::get('/signup',[LoginController::class,'Signup'])->name('signup');
-  Route::post('/usersignup',[LoginController::class,'UserSignup'])->name('user.signup');
+  
   Route::get('/logout',[LoginController::class,'userlogout'])->name('logout');
   Route::get('/adminlogout',[LoginController::class,'adminlogout'])->name('admin.logout');
 });
@@ -66,10 +73,10 @@ Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.lo
 
 
   Route::group(['prefix'=>'admin','middleware'=>['auth','admin']],function(){
-    // Route::get('/admin', function () {
-    //   return view('admin.pages.dashboard');
-    //  });
-    Route::get('/dashboard',[DashboardController::class,'Dashboard'])->name('dashboard'); 
+    Route::get('/', function () {
+      return view('admin.pages.dashboard');
+        })->name('dashboard');
+    
     Route::get('/kazilist',[KaziListController::class,'KaziList'])->name('kazilist');
     Route::get('/userlist',[KaziListController::class,'UserList'])->name('userlist');
     Route::get('/kazidetails/{id}',[KaziListController::class,'KaziDetails'])->name('kazidetails');

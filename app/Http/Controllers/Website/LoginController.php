@@ -18,10 +18,10 @@ class LoginController extends Controller
         // dd($userpost);
         // dd(Auth::attempt($userpost));
         if (Auth::attempt($userpost)) {
-            return redirect()->route('dashboard');
+            return redirect()->route('dashboard')->with('message','Login Succesfull');
         }
         else
-        return redirect()->back();
+        return redirect()->back()->with('error','Invalid email or password');
 
     }
 
@@ -29,7 +29,7 @@ class LoginController extends Controller
     public function adminlogout(){
     
         Auth::logout();
-        return redirect()->route('home');
+        return redirect()->route('admin')->with('message','Logged Out Thank You');
     }
 
 
@@ -51,7 +51,7 @@ class LoginController extends Controller
         ]);
         
 
-        return redirect()->route('admin');
+        return redirect()->route('admin')->with('message','Registration Succesfull');
     }
 
     
@@ -60,18 +60,18 @@ class LoginController extends Controller
         // dd($request->all());
         $userpost = $request->except('_token');
         // dd($userpost);
-        // dd(Auth::attempt($userpost));
+        //  dd(Auth::attempt($userpost));
         if (Auth::attempt($userpost)) {
-            return redirect()->route('home');
+            return redirect()->route('home')->with('message','Login Succesfull');
         }
         else
-        return redirect()->back();
+        return redirect()->back()->with('error','Invalid email or password');
 
     }
 
     public function userlogout(){
         Auth::logout();
-        return redirect()->route('home');
+        return redirect()->route('admin')->with('message','Logged Out Thank You ');
     }
 }
 

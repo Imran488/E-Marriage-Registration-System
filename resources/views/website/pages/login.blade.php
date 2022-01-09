@@ -1,5 +1,12 @@
 @extends('website.master')
 @section('slides')
+<!-- @if(session()->has('message'))
+<p class="alert alert-success">{{session()->get('message')}}</p>
+@endif -->
+
+@if(session()->has('error'))
+<p class="alert alert-danger">{{session()->get('error')}}</p>
+@endif
 <center>
     <h1 style="color:black"><u>Login Here</u></h1>
 <form action = "{{route('admin.login')}}" method="post">
@@ -21,7 +28,7 @@
     <button type="submit" class="btn btn-primary">SignIn</button>
     <a href="{{route('signup')}}" class="btn btn-primary">SignUp</a>
     
-    <!-- <a href="{{route('dashboard')}}" class="btn" style="background-color:lightgray; border-radius:10px">SignIn</a> -->
+    
 </form>
 </center>
 @endsection

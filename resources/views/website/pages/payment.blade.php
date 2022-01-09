@@ -1,3 +1,5 @@
+@extends('website.master')
+@section('slides')
 <center><h1>Please Fill-Up This Payment Form</h1></center>
 <!DOCTYPE html>
 <html>
@@ -44,17 +46,17 @@ body {
   padding: 0 16px;
 }
 
-.container {
+/* .container {
   background-color: #f2f2f2;
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
-}
+} */
 
 input[type=text] {
   width: 100%;
   margin-bottom: 20px;
-  padding: 12px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 3px;
 }
@@ -111,8 +113,6 @@ span.price {
 </style>
 </head>
 <body>
-
-
 <div class="row">
   <div class="col-75">
     <div class="container">
@@ -160,13 +160,15 @@ span.price {
           
         </div>
         <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          <input type="checkbox" checked="checked" name="checkbox"> Shipping address same as billing
         </label>
         <input type="submit" value="Continue to checkout" class="btn">
       </form>
+      <div style="height: 100px;"></div>
     </div>
   </div>
 </div>
 </body>
 </html>
+@endsection
 
