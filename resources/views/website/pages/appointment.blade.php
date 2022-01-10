@@ -2,9 +2,9 @@
 @section('slides')
 <center>
 <h1>
-    Please Take appointment
+    <b><u>Please Take Appointment For Marriage</u></b>
 </h1>
-<form action="{{route('marriage.requestform')}}" method="post">
+<form action="{{route('form.appointment')}}" method="post">
     @csrf
     <div class="form-group">
         <div class="col-md-4">
@@ -28,13 +28,13 @@
         </div>
     </div>
     
-
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputPassword1">Address</label>
-            <input type="address" name="address" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Address">
+            <label for="exampleInputPassword1">Contact Number</label>
+            <input type="number" name="contactnumber"class="form-control" id="exampleInputPassword1" placeholder="Enter Your Contact Number">
         </div>
     </div>
+
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputEmail1">Email </label>
@@ -42,19 +42,22 @@
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
     </div>
+
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputPassword1">Contact Number</label>
-            <input type="number" name="contactnumber"class="form-control" id="exampleInputPassword1" placeholder="Enter Your Contact Number">
+            <label for="exampleInputPassword1">Address</label>
+            <input type="text" name="address" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Address">
         </div>
     </div>
     
-    <div class="form-check">
+    
+    
+    <!-- <div class="form-check">
         <div class="col-md-4">
             <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">I Declare that all Informations are True</label>
         </div>
-    </div>
+    </div> -->
     <button type="submit" class="btn btn-primary">Submit</button>
     <a href="{{route('home')}}" class="btn" style="background-color:lightgray; border-radius:10px">Cancel</a>
 </form>

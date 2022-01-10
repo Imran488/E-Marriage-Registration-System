@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class PaymentController extends Controller
+
+//User side
 {
     public function Payment()
     {
@@ -16,5 +18,13 @@ class PaymentController extends Controller
     {
         
         return view('website.pages.paymentcondition');
+    }
+
+    //Admin side
+
+    public function PaymentList()
+    {
+        return view ('admin.pages.paymentlist');
+
     }
 }

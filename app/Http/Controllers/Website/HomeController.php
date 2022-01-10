@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\RegistrationForm;
 use App\Models\KaziForm;
+use App\Models\Appointment;
 
 class HomeController extends Controller
 {
@@ -14,6 +15,21 @@ class HomeController extends Controller
     {
         return view('website.pages.appointment');
     }
+    
+    
+    public function AppointmentForm(Request $request)
+    {
+        Appointment::Create([
+            'name'=>$request->name,
+            'nid'=>$request->nid,
+            'date'=>$request->date,
+            'address'=>($request->address) ,
+            'email'=>($request->email) ,
+            'contactnumber'=>($request->contactnumber) ,
+        ]);
+        return redirect()->route('kazi')->with('msg','Appointment submitted');
+    }
+
 
 
     public function Home()

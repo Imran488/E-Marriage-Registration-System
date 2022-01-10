@@ -45,6 +45,7 @@ Route::get('/user',[LoginController::class,'User'])->name('user');
 Route::group(['middleware'=>'user'], function () {
   Route::get('/',[HomeController::class,'Home'])->name('home');
   Route::get('/appointment',[HomeController::class,'Appointment'])->name('kazi.appointment');
+  Route::post('/appointmentform',[HomeController::class,'AppointmentForm'])->name('form.appointment');
   Route::get('/kazilist',[HomeController::class,'KaziList'])->name('kazi');
   Route::get('/marriagerules',[HomeController::class,'Rules'])->name('rules');
   Route::get('/aboutus',[ManagementController::class,'Aboutus'])->name('aboutus');
@@ -60,7 +61,6 @@ Route::group(['middleware'=>'user'], function () {
   Route::post('/devorceform',[ServiceController::class,'DevorceForm'])->name('devorce.requestform');
   Route::get('/certificate',[ServiceController::class,'Certificate'])->name('certificate');
   Route::post('/certificateform',[ServiceController::class,'CertificateForm'])->name('certificate.requestform');
-  
   Route::get('/logout',[LoginController::class,'userlogout'])->name('logout');
   Route::get('/adminlogout',[LoginController::class,'adminlogout'])->name('admin.logout');
 });
@@ -100,6 +100,7 @@ Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.lo
     Route::get('divorce/delete/{divorce_id}',[UserRequestController::class,'DivorceDelete'])->name('divorcedelete');
     Route::get('/certificaterequestslist',[UserRequestController::class,'CertificateRequestList'])->name('certificate.requestlist');
     Route::get('/marriagerequestslist',[UserRequestController::class,'MarriageRequestList'])->name('marriage.requestlist');
+    Route::get('/paymentlist',[PaymentController::class,'PaymentList'])->name('payment.list');
 });
 
 

@@ -12,14 +12,14 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <input value="{{$key}}" type="text" placeholder="Search Kazi By ddress " name="search" class="form-control">
+            <input value="{{$key}}" type="text" placeholder="Search Kazi By His Address " name="search" class="form-control">
         </div>
         <div class="col-md-4">
             <button type="submit" class="btn btn-success">Search</button>
         </div>
     </div>
     </form>
-    
+    <br>
 <div class="container-fluid">
   <div class="row">
     <div class="container">
@@ -53,6 +53,5 @@
     <div class="col-md-6"></div>
   </div>
 </div>
-<br>
-<center><a href="{{route('home')}}" class="btn" style="background-color:lightgray; border-radius:10px">Back</a></center>    
+<br>   
 @endsection
