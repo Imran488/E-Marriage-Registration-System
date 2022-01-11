@@ -5,6 +5,17 @@
     @if(session()->has('msg'))
     <p class="alert alert-success">{{session()->get('msg')}}</p>
     @endif 
+    <!-- server side validation start -->
+    {{--@if ($errors->any())
+     <div class="alert alert-danger" role="alert">
+       <ul>
+         @foreach ($errors->all() as $error)
+         <li>{{ $error }}</li>
+         @endforeach
+       </ul>
+     </div>
+     @endif--}}
+     <!-- server side validation end -->
     
 <form action="{{route('marriage.requestform')}}" method="post">
     @csrf
@@ -51,12 +62,12 @@
         </div>
     </div>
     
-    <div class="form-check">
+    <!-- <div class="form-check">
         <div class="col-md-4">
             <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">I Declare that all Informations are True</label>
         </div>
-    </div>
+    </div> -->
     <button type="submit" class="btn btn-primary">Submit</button>
     <a href="{{route('home')}}" class="btn" style="background-color:lightgray; border-radius:10px">Cancel</a>
 </form>

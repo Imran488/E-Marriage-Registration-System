@@ -92,7 +92,7 @@
                                                 </ul>
                                             </li>@endauth
                                             <li class="dropdown"> @auth
-                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"" href="#">
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="#">
                                                     Services 
                                                 </a>
                                                 <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">

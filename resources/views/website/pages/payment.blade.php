@@ -116,52 +116,58 @@ span.price {
 <div class="row">
   <div class="col-75">
     <div class="container">
-      <form action="/action_page.php">
+      <form action="">
       
         <div class="row">
           <div class="col-50">
             <h3>Billing Address</h3>
             <label for="fname"><i class="fa fa-user"></i> Full Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Type your full name">
+
+
             <label for="email"><i class="fa fa-envelope"></i> Email</label>
             <input type="text" id="email" name="email" placeholder="Type your email">
+
+            <label for="email"><i class="fa fa-envelope"></i> Contact Number</label>
+            <input type="text" id="cnumber" name="cnumber" placeholder="Type your Contact Number">
+
+
             <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
             <input type="text" id="adr" name="address" placeholder="Type your full address">
-            <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="Type your City name">
-
-            <div class="row">
-              <div class="col-50">
-                <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="Type your State name">
-              </div>
-              <div class="col-50">
-                <label for="zip">Zip-Code</label>
-                <input type="text" id="zip" name="zip" placeholder="Type your Zip Code name">
-              </div>
-            </div>
           </div>
 
           <div class="col-50">
             <h3>Payment</h3>
             <label for="fname">Accepted Accounts</label>
             <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
+              <i class="fa fa-cc-visa" style="color:navy;">Nagad</i>
+              <i class="fa fa-cc-amex" style="color:blue;">Bkash</i>
+              <i class="fa fa-cc-mastercard" style="color:red;">Rocket</i>
+              <i class="fa fa-cc-discover" style="color:orange;">Upay</i>
             </div>
+
+
             <label for="cname">Name on Account</label>
-            <input type="text" id="cname" name="cardname" placeholder="Bkash">
+            <select type="text" name="accountname" id="aname" class="form-control"required data-parsley-required-message>
+                           <option disabled selected="">Please Choose An Account</option>
+                           <option value="Nagad">Nagad</option>
+                           <option value="Bkash">Bkash</option>
+                           <option value="Rocket">Rocket</option>
+                           <option value="Upay">Upay</option>
+                       </select>
+
+
             <label for="ccnum">Account number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="01780316345">
+            <input type="text" id="ccnum" name="cardnumber" placeholder="Enter Your Mobile Banking Account Number">
             
+            <label for="ccnum">TxnId Number</label>
+            <input type="text" id="txnid" name="txnid" placeholder="Enter Your Mobile Banking TxnId Number">
           </div>
           
         </div>
-        <label>
+        <!-- <label>
           <input type="checkbox" checked="checked" name="checkbox"> Shipping address same as billing
-        </label>
+        </label> -->
         <input type="submit" value="Continue to checkout" class="btn">
       </form>
       <div style="height: 100px;"></div>
