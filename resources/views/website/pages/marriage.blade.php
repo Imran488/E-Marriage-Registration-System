@@ -5,6 +5,7 @@
     @if(session()->has('msg'))
     <p class="alert alert-success">{{session()->get('msg')}}</p>
     @endif 
+    
 <form action="{{route('marriage.requestform')}}" method="post">
     @csrf
     <div class="form-group">

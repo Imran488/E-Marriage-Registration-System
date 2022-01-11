@@ -4,10 +4,12 @@
 <p class="alert alert-success">{{session()->get('message')}}</p>
 @endif -->
 
+
+<center>
 @if(session()->has('error'))
 <p class="alert alert-danger">{{session()->get('error')}}</p>
 @endif
-<center>
+
     <h1 style="color:black"><u>Login Here</u></h1>
 <form action = "{{route('admin.login')}}" method="post">
     @csrf

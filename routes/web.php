@@ -100,6 +100,9 @@ Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.lo
     Route::get('divorce/delete/{divorce_id}',[UserRequestController::class,'DivorceDelete'])->name('divorcedelete');
     Route::get('/certificaterequestslist',[UserRequestController::class,'CertificateRequestList'])->name('certificate.requestlist');
     Route::get('/marriagerequestslist',[UserRequestController::class,'MarriageRequestList'])->name('marriage.requestlist');
+    Route::get('marriage/edit/{marriage_id}',[UserRequestController::class,'MarriageEdit'])->name('marriage.edit');
+    Route::get('marriage/delete/{marriage_id}',[UserRequestController::class,'MarriageDelete'])->name('marriage.delete');
+    Route::put('/marriageupdate/{marriage_id}',[UserRequestController::class,'MarriageUpdate'])->name('marriage.update');
     Route::get('/paymentlist',[PaymentController::class,'PaymentList'])->name('payment.list');
 });
 

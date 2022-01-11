@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class MarriageRequest extends Model
 {
     use HasFactory;
-    protected $fillable=['name','nid','date','address','email','contactnumber'];
+    protected $fillable=['name','nid','date','address','email','contactnumber','status'];
 }

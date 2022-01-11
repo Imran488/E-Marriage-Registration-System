@@ -21,6 +21,7 @@ class CreateMarriageRequestsTable extends Migration
             $table->string('address');
             $table->string('email');
             $table->string('contactnumber');
+            $table->string('status')->default('pending');
             $table->timestamps();
         });
     }

@@ -29,7 +29,7 @@ class MarriageRegistrationController extends Controller
     {
         $request->validate([
             'passportnumber'=>'unique:registration_forms,passportnumber',
-            'passportnumber'=>'unique:registration_forms,passportnumber',
+            'passportnumberw'=>'unique:registration_forms,passportnumberw',
         ]);
         //dd(date('Ymdhms'));
         //dd($request->all());

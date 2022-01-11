@@ -23,7 +23,11 @@ class ServiceController extends Controller
     }
 
 
-    public function MarriageForm(Request $request){
+    public function MarriageForm(Request $request)
+    {
+        $request->validate([
+            'date' => 'required|date|before:-18 years',
+        ]);
         //  dd($request->all());
         MarriageRequest::create([
             'name'=>$request->name,
@@ -35,8 +39,8 @@ class ServiceController extends Controller
         ]);
         
         return redirect()->route('home')->with('msg','Request submitted');
-        // return redirect()->route('home');
-     }
+    }
+     
 
     public function CertificateForm(Request $request){
         //  dd($request->all());
