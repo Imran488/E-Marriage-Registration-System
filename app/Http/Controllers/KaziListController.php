@@ -20,6 +20,12 @@ class KaziListController extends Controller
         //     // dd($userlist);
             return view('admin.pages.userlist',compact('userlist','key'));
     }
+
+    public function UserDelete($id)
+    {
+        $userlist=User::find($id)->delete();
+        return redirect()->back()->with('msg','Delete Succesfully');
+    }
     
 
     public function KaziList()

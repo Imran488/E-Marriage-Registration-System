@@ -59,17 +59,17 @@
                                             </li>@endauth
                                             <li class="dropdown"> @auth
                                                 <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"" href="#">
-                                                     Payments 
+                                                     Payment 
                                                 </a>
                                                 <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li> 
                                                         <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('payment')}}">
-                                                           Payment Method
+                                                           Make Payment 
                                                         </a>
                                                     </li>
                                                     <li> 
                                                         <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('paymentcondition')}}">
-                                                            Terms &amp; Conditions
+                                                            Method &amp; Conditions
                                                         </a>
                                                     </li>
                                                 </ul>

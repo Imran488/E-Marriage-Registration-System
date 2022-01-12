@@ -4,14 +4,14 @@
 @if(session()->has('msg'))
     <p class="alert alert-success">{{session()->get('msg')}}</p>
     @endif 
-  <h2 style=" color:black"><b>যে ব্যক্তি বিয়ে করলো সে তার অর্ধেক দ্বীন পূর্ণ  করে ফেললো। বাকি অর্ধেকের জন্য সে আল্লাহকে ভয় করুক।<br>
-    (বায়হাকী, শু’আবুল ঈমান – ৫৪৮৬)</b>
-  </h2><br>
+    
+        <h2 style=" color:black" class="my-auto p-4 str_right bold w3-medium"><b>Every Story has a Wonderful Bonding and We Create the Bonding of a Life Time.</b></h2>
+      
 </center>
 
 <!-- Recent Stories -->
 <div class="stories">
-  <div class="container py-5">
+  <!-- <div class="container py-5">
     <div class="row">
       <div class="col-lg-4 col-md-12 col-sm-12 str_left">
         <h1 style=" color:black" class="fw-bold bold text-center">RECENT STORIES</h1>
@@ -24,7 +24,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="z-index-1 appear-animation" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="100">
     <div class="owl-carousel owl-theme full-width owl-loaded owl-drag owl-carousel-init m-0" data-plugin-options="{'items': 1, 'loop': true, 'nav': true, 'dots': false,'autoplayHoverPause':false,  'autoplay':true, 'autoplayTimeout': 5000}">
       @foreach ($registerlist as $key=>$list)

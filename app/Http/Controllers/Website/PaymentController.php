@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\website;
-
+use App\Models\Payment;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -20,11 +20,22 @@ class PaymentController extends Controller
         return view('website.pages.paymentcondition');
     }
 
-    //Admin side
 
-    public function PaymentList()
+    
+    public function PaymentForm(Request $request)
     {
-        return view ('admin.pages.paymentlist');
-
+        
+        // dd($request->all());
+        Payment::create([
+        'name'=>$request->name,
+        'email'=>$request->email,
+        'cnumber'=>$request->cnumber, 
+        'address'=>$request->address,
+        'accountname'=>$request->accountname,
+        'accountnumber'=>$request->accountnumber,
+        'txnid'=>$request->txnid,
+        'totalamount'=>$request->totalamount,
+     ]);
+        return redirect()->back()/*route('marrigeregistration')*/->with('msg','Payment Completed.');
     }
 }

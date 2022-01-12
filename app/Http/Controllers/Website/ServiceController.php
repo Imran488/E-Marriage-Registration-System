@@ -25,10 +25,12 @@ class ServiceController extends Controller
 
     public function MarriageForm(Request $request)
     {
+        // dd($request->all());
         $request->validate([
             'date' => 'required|date|before:-18 years',
+            // 'nid'=>'unique:marriage_request,nid',
         ]);
-         dd($request->all());
+         
         MarriageRequest::create([
             'name'=>$request->name,
             'nid'=>$request->nid,

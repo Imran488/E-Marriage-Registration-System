@@ -8,6 +8,7 @@ use App\Http\Controllers\KaziListController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KaziOfficeController;
 use App\Http\Controllers\UserRequestController;
+use App\Http\Controllers\AdminPaymentController;
 use App\Http\Controllers\Website\HomeController;
 use App\Http\Controllers\Website\LoginController;
 use App\Http\Controllers\website\FindUsController;
@@ -54,6 +55,7 @@ Route::group(['middleware'=>'user'], function () {
   Route::get('/ouroffices',[FindUsController::class,'Ouroffices'])->name('ouroffices');
   Route::get('/support',[FindUsController::class,'Support'])->name('support');
   Route::get('/payment',[PaymentController::class,'Payment'])->name('payment');
+  Route::post('/paymentform',[PaymentController::class,'PaymentForm'])->name('payment.store');
   Route::get('/payment.condition',[PaymentController::class,'Paymentcondition'])->name('paymentcondition');
   Route::get('/marriage',[ServiceController::class,'Marriage'])->name('marriage');
   Route::post('/marriageform',[ServiceController::class,'MarriageForm'])->name('marriage.requestform');
@@ -79,6 +81,7 @@ Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.lo
     
     Route::get('/kazilist',[KaziListController::class,'KaziList'])->name('kazilist');
     Route::get('/userlist',[KaziListController::class,'UserList'])->name('userlist');
+    Route::get('/delete/{id}',[KaziListController::class,'UserDelete'])->name('userlist.delete');
     Route::get('/kazidetails/{id}',[KaziListController::class,'KaziDetails'])->name('kazidetails');
     Route::get('/kazidelete/{id}',[KaziListController::class,'KaziDelete'])->name('kazidelete');
     Route::get('/kaziform',[KaziListController::class,'KaziForm'])->name('kaziform');
@@ -103,7 +106,8 @@ Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.lo
     Route::get('marriage/edit/{marriage_id}',[UserRequestController::class,'MarriageEdit'])->name('marriage.edit');
     Route::get('marriage/delete/{marriage_id}',[UserRequestController::class,'MarriageDelete'])->name('marriage.delete');
     Route::put('/marriageupdate/{marriage_id}',[UserRequestController::class,'MarriageUpdate'])->name('marriage.update');
-    Route::get('/paymentlist',[PaymentController::class,'PaymentList'])->name('payment.list');
+    Route::get('/paymentlist',[AdminPaymentController::class,'PaymentList'])->name('payment.list');
+    Route::get('/paymentdetails/{id}',[AdminPaymentController::class,'PaymentDetails'])->name('paymentdetails');
 });
 
 

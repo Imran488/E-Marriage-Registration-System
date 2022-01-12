@@ -30,6 +30,8 @@ class MarriageRegistrationController extends Controller
         $request->validate([
             'passportnumber'=>'unique:registration_forms,passportnumber',
             'passportnumberw'=>'unique:registration_forms,passportnumberw',
+            'date' => 'required|date|before:-18 years',
+            'datew' => 'required|date|before:-18 years',
         ]);
         //dd(date('Ymdhms'));
         //dd($request->all());

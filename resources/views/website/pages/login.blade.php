@@ -6,6 +6,9 @@
 
 
 <center>
+<h2 style=" color:black"><b>যে ব্যক্তি বিয়ে করলো সে তার অর্ধেক দ্বীন পূর্ণ  করে ফেললো। বাকি অর্ধেকের জন্য সে আল্লাহকে ভয় করুক।<br>
+    (বায়হাকী, শু’আবুল ঈমান – ৫৪৮৬)</b>
+  </h2><br>
 @if(session()->has('error'))
 <p class="alert alert-danger">{{session()->get('error')}}</p>
 @endif
@@ -29,8 +32,7 @@
     </div>
     <button type="submit" class="btn btn-primary">SignIn</button>
     <a href="{{route('signup')}}" class="btn btn-primary">SignUp</a>
-    
-    
 </form>
+<div style="height: 100px;"></div>
 </center>
 @endsection

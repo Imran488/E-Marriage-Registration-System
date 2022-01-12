@@ -6,15 +6,15 @@
     <p class="alert alert-success">{{session()->get('msg')}}</p>
     @endif 
     <!-- server side validation start -->
-    {{--@if ($errors->any())
+    @if ($errors->any())
      <div class="alert alert-danger" role="alert">
        <ul>
          @foreach ($errors->all() as $error)
          <li>{{ $error }}</li>
-         @endforeach
+          @endforeach
        </ul>
-     </div>
-     @endif--}}
+    </div>
+    @endif
      <!-- server side validation end -->
     
 <form action="{{route('marriage.requestform')}}" method="post">
@@ -22,21 +22,21 @@
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputName">Name</label>
-            <input type="name" name="name" class="form-control" id="exampleInputName" placeholder="Enter Your Name">
+            <input type="name" name="name" class="form-control" id="exampleInputName" placeholder="Enter Your Name"required>
         </div>
     </div>
 
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputName">NID Number</label>
-            <input type="number" name="nid" class="form-control" id="exampleInputName" placeholder="Enter Your NID Number">
+            <input type="number" name="nid" class="form-control" id="exampleInputName" placeholder="Enter Your NID Number"required>
         </div>
     </div>
 
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputName">Date of Birth</label>
-            <input type="date" name="date" class="form-control" id="exampleInputName" placeholder="Enter Your Date of Birth">
+            <input type="date" name="date" class="form-control" id="exampleInputName" placeholder="Enter Your Date of Birth"required>
             <small id="emailHelp" class="form-text text-muted">Your Age Should be Minimum 18 Years.</small>
         </div>
     </div>
@@ -45,20 +45,20 @@
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputPassword1">Address</label>
-            <input type="address" name="address" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Address">
+            <input type="address" name="address" class="form-control" id="exampleInputPassword1" placeholder="Enter Your Address"required>
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputEmail1">Email </label>
-            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email"required>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputPassword1">Contact Number</label>
-            <input type="number" name="contactnumber"class="form-control" id="exampleInputPassword1" placeholder="Enter Your Contact Number">
+            <input type="number" name="contactnumber"class="form-control" id="exampleInputPassword1" placeholder="Enter Your Contact Number"required>
         </div>
     </div>
     
