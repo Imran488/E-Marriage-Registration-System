@@ -70,6 +70,7 @@
                 
             </form>
             <center><button type="submit" class="btn btn-primary">Submit</button></center>
+            <center><a href="{{route('dashboard')}}" class="btn" style="background-color:lightgray; border-radius:10px">Cancel</a></center>
         </div>
     </form>
 @endsection

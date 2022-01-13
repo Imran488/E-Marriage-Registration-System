@@ -31,6 +31,7 @@
                         </div>
                     </div>
   <button type="submit" class="btn btn-primary">Submit</button>
+  <center><a href="{{route('dashboard')}}" class="btn" style="background-color:lightgray; border-radius:10px">Back</a></center>
 </form>
 </center>
 @endsection

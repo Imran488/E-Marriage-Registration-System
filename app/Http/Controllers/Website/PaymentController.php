@@ -36,6 +36,6 @@ class PaymentController extends Controller
         'txnid'=>$request->txnid,
         'totalamount'=>$request->totalamount,
      ]);
-        return redirect()->back()/*route('marrigeregistration')*/->with('msg','Payment Completed.');
+     return redirect()->route('home')->with('msg','Payment submitted');
     }
 }

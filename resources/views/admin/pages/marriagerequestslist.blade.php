@@ -2,16 +2,18 @@
 
 @section('contents')
 
-<div class="container-fluid">
-  <div class="row">
-    <h1>Marriage Requests List</h1>
-    <div class="col-md-6"></div>
+<center>
+<h1>
+    <b><u>This is Marriage Request List</u></b>
+</h1>
+    <br>
+<div class="col-md-4">
     @if(session()->has('msg'))
     <p class="alert alert-success">{{session()->get('msg')}}</p>
     @endif
-    
-  </div>
 </div>
+</center>
+
 <br>
 <table class="table table-dark table-striped">
   <thead>
@@ -44,4 +46,5 @@
     @endforeach
   </tbody>
 </table>
+<center><a href="{{route('dashboard')}}" class="btn" style="background-color:lightgray; border-radius:10px">Back</a></center>
 @endsection

@@ -11,7 +11,7 @@ class AdminPaymentController extends Controller
         $key=null;
         if(request()->search){
             $key=request()->search;
-            $paymentlist=Payment::where('name','LIKE','%'.$key.'%')->orWhere('id','LIKE','%'.$key.'%')->get();
+            $paymentlist=Payment::where('name','LIKE','%'.$key.'%')->orWhere('txnid','LIKE','%'.$key.'%')->get();
             return view('admin.pages.paymentlist',compact('paymentlist','key'));
         }
         $paymentlist=Payment::all();

@@ -415,7 +415,8 @@
                         </div>
                     </div>
             </form>
-           <center><button type="submit" class="btn btn-primary">Submit</button></center>
+           <center><button type="submit" class="btn btn-primary">Submit</button>
+           <a href="{{route('marrigeregistration')}}" class="btn" style="background-color:lightgray; border-radius:10px">Cancel</a></center>
             
         </div>
     </form>    

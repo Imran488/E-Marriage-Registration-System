@@ -136,7 +136,7 @@ span.price {
 
 
             <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <textarea type="text" id="adr" name="address" placeholder="Type your full address"required></textarea>
+            <textarea name="address" id="description" class="form-control" rows="5" placeholder="Type your full address"required></textarea>
           </div>
 
           <div class="col-50">
@@ -168,7 +168,7 @@ span.price {
 
 
             <label for="ccnum">Total Amount</label>
-            <input type="number" id="txnid" name="totalamount" placeholder="Enter Total amount here"required>
+            <input type="text" id="txnid" name="totalamount" placeholder="Enter Total amount here"required>
           </div>
           
         </div>
@@ -176,6 +176,7 @@ span.price {
           <input type="checkbox" checked="checked" name="checkbox"> Shipping address same as billing
         </label> -->
         <input type="submit" value="Continue to checkout" class="btn">
+        <a href="{{route('home')}}" class="btn" style="background-color:lightgray; border-radius:10px">Back</a>
       </form>
       <div style="height: 100px;"></div>
     </div>

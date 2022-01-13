@@ -30,9 +30,18 @@ class KaziListController extends Controller
 
     public function KaziList()
     {
-        $kazilist=KaziForm::all();
-        // dd($registerlist);
-        return view('admin.pages.kazilist',compact('kazilist'));
+        {
+            $key=null;
+            if(request()->search){
+                $key=request()->search;
+                $kazilist=KaziForm::where('name','LIKE','%'.$key.'%')->orWhere('address','LIKE','%'.$key.'%')->get();
+                return view('admin.pages.kazilist',compact('kazilist','key'));
+            }
+            $kazilist=KaziForm::all();
+            // dd($registerlist);
+            return view('admin.pages.kazilist',compact('kazilist','key'));
+        }
+        
     }
     public function KaziForm()
     {
@@ -50,7 +59,7 @@ class KaziListController extends Controller
         'confirmpassword'=>$request->repassword,
         'address'=>$request->address,
      ]);
-        return redirect()->back()/*route('marrigeregistration')*/->with('msg','Registration Successfull.');
+        return redirect()->route('kazilist')->with('msg','Registration Successfull.');
     }
     public function KaziDetails($id)
     {

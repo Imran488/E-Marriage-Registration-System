@@ -75,13 +75,11 @@ Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.lo
 
 
   Route::group(['prefix'=>'admin','middleware'=>['auth','admin']],function(){
-    Route::get('/', function () {
-      return view('admin.pages.dashboard');
-        })->name('dashboard');
-    
+   
+    Route::get('/dashboard',[DashboardController::class,'Dashboard'])->name('dashboard');
     Route::get('/kazilist',[KaziListController::class,'KaziList'])->name('kazilist');
     Route::get('/userlist',[KaziListController::class,'UserList'])->name('userlist');
-    Route::get('/delete/{id}',[KaziListController::class,'UserDelete'])->name('userlist.delete');
+    Route::get('/kdelete/{id}',[KaziListController::class,'UserDelete'])->name('userlist.delete');
     Route::get('/kazidetails/{id}',[KaziListController::class,'KaziDetails'])->name('kazidetails');
     Route::get('/kazidelete/{id}',[KaziListController::class,'KaziDelete'])->name('kazidelete');
     Route::get('/kaziform',[KaziListController::class,'KaziForm'])->name('kaziform');
@@ -95,7 +93,7 @@ Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.lo
     Route::get('/userregistrationform',[MarriageRegistrationController::class,'UserRegistrationForm'])->name('userregistrationform');
     Route::post('/store',[MarriageRegistrationController::class,'Store'])->name('store');
     Route::get('/view/{bridal_id}',[MarriageRegistrationController::class,'View'])->name('view');
-    Route::get('/delete/{bridal_id}',[MarriageRegistrationController::class,'Delete'])->name('delete');
+    Route::get('/mdelete/{bridal_id}',[MarriageRegistrationController::class,'Delete'])->name('delete');
     Route::get('/edit/{bridal_id}',[MarriageRegistrationController::class,'Edit'])->name('edit');
     Route::put('/update/{bridal_id}',[MarriageRegistrationController::class,'Update'])->name('update');
     Route::get('/devorcerequestslist',[UserRequestController::class,'DevorceRequestList'])->name('devorce.requestlist');

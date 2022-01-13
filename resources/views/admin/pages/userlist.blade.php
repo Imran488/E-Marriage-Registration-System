@@ -53,6 +53,7 @@
     @endforeach
   </tbody>
 </table>
+<center><a href="{{route('dashboard')}}" class="btn" style="background-color:lightgray; border-radius:10px">Back</a></center>
 </div>
 </div>
 @endsection
