@@ -1,8 +1,10 @@
 @extends('master')
 
 @section('contents')
-<h1><center>Marriage Registration History</center></h1>
-
+<h1><center><b><u>Marriage Registration History</u></b></center></h1>
+<br>
+<br>
+<br>
 <!-- Content Row -->
 <div class="row">
     <div class="col-xl-3 col-md-6 mb-4">

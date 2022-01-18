@@ -8,10 +8,18 @@ class KaziOfficeController extends Controller
 {
     public function Office()
     {
+        {
+            $key=null;
+            if(request()->search){
+                $key=request()->search;
+                $officelist=Office::where('name','LIKE','%'.$key.'%')->orWhere('address','LIKE','%'.$key.'%')->get();
+                return view('admin.pages.office',compact('officelist','key'));
+            }
         $officelist=Office::all();
-        // dd($registerlist);
-        return view('admin.pages.office',compact('officelist'));
+        
+        return view('admin.pages.office',compact('officelist','key'));
     }
+}
     public function OfficeForm()
     {
 

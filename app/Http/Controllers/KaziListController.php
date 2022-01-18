@@ -38,7 +38,7 @@ class KaziListController extends Controller
                 return view('admin.pages.kazilist',compact('kazilist','key'));
             }
             $kazilist=KaziForm::all();
-            // dd($registerlist);
+            
             return view('admin.pages.kazilist',compact('kazilist','key'));
         }
         

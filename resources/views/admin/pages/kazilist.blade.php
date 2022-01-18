@@ -1,20 +1,7 @@
 @extends('master')
 
 @section('contents')
-<!-- <center>
-<div class="container-fluid">
-  <div class="row">
-    <h1> Kazi List</h1>
-    <div class="col-md-6"></div>
-    @if(session()->has('msg'))
-    <p class="alert alert-success">{{session()->get('msg')}}</p>
-    @endif
-    <div class="col-md-6">
-      <a href="{{route('kaziform')}}" class="btn btn-primary">Add kazi</a>
-    </div>
-  </div>
-</div>
-</center> -->
+
 <center>
 <h1>
     <b><u>This is Kazi List</u></b>
