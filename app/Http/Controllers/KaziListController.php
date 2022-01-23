@@ -21,12 +21,42 @@ class KaziListController extends Controller
             return view('admin.pages.userlist',compact('userlist','key'));
     }
 
+
+    public function UserEdit($id)
+    {
+        // dd($mid);
+        $userlist=User::where('id',$id)->first();
+
+// dd($list);
+        return view('admin.pages.edituser',compact('userlist'));
+    }
+
+
+
+    public function UserUpdate(Request $request,$id){
+        //  dd($request->all());
+
+        $userlist=User::find($id);
+        $userlist->update([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'mobile'=>$request->number,
+            // 'password'=>($request->password),
+        ]);
+
+        return redirect()->route('userlist')->with('msg','Updated');
+
+     }
+
+
+
+
     public function UserDelete($id)
     {
         $userlist=User::find($id)->delete();
         return redirect()->back()->with('msg','Delete Succesfully');
     }
-    
+
 
     public function KaziList()
     {
@@ -38,10 +68,10 @@ class KaziListController extends Controller
                 return view('admin.pages.kazilist',compact('kazilist','key'));
             }
             $kazilist=KaziForm::all();
-            
+
             return view('admin.pages.kazilist',compact('kazilist','key'));
         }
-        
+
     }
     public function KaziForm()
     {
@@ -55,7 +85,7 @@ class KaziListController extends Controller
         KaziForm::create([
         'name'=>$request->name,
         'email'=>$request->email,
-        'password'=>$request->password, 
+        'password'=>$request->password,
         'confirmpassword'=>$request->repassword,
         'address'=>$request->address,
      ]);

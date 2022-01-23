@@ -24,4 +24,8 @@ class AdminPaymentController extends Controller
         $paymentlist=Payment::find($id);
         return view('admin.pages.paymentdetails',compact('paymentlist'));
     }
+
+    public function Profile(){
+        return view('admin.pages.profile');
+    }
 }
