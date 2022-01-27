@@ -3,8 +3,9 @@
 namespace App\Http\Controllers\Website;
 
 use App\Models\KaziForm;
-use App\Models\Messages;
 use App\Models\Appointment;
+use App\Models\UserMessages;
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\RegistrationForm;
 use App\Http\Controllers\Controller;
@@ -14,19 +15,25 @@ class HomeController extends Controller
 
     public function Message()
     {
+        $user=User::all();
 
-        return view('website.pages.message');
+        return view('website.pages.message',compact('user'));
     }
 
     public function MessageForm(Request $request)
     {
-        Messages::Create([
-            'sender_id'=>auth()->user()->id,
-            'receiver_id'=>1,
-            'is_seen'=>'no',
-            'message'=>$request->message,
+        UserMessages::Create([
+            'user_id'=>auth()->user()->id,
+            'subject'=>$request->subject,
+            'question'=>$request->question,
+
         ]);
-        return redirect()->back()->with('msg','Message submitted');
+        return redirect()->back()->with('msg','question submitted. wait for reply.');
+    }
+    public function messageview(){
+
+        $message=UserMessages::with('user')->where('status','replied')->get();
+        return view('website.pages.messagelist',compact('message'));
     }
 
 

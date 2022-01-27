@@ -27,7 +27,7 @@ use App\Http\Controllers\MarriageRegistrationController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+include('messenger.php');
 
 // Route::get('/', function () {
 //   return view('website.pages.home');
@@ -47,6 +47,10 @@ Route::get('/user',[LoginController::class,'User'])->name('user');
 Route::group(['middleware'=>'user'], function () {
 Route::get('/message',[HomeController::class,'Message'])->name('show.message');
 Route::post('/messageform',[HomeController::class,'MessageForm'])->name('form.message');
+Route::get('/message/view',[HomeController::class,'messageview'])->name('view.message');
+
+
+
   Route::get('/',[HomeController::class,'Home'])->name('home');
   Route::get('/appointment',[HomeController::class,'Appointment'])->name('kazi.appointment');
   Route::post('/appointmentform',[HomeController::class,'AppointmentForm'])->name('form.appointment');
@@ -113,6 +117,10 @@ Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.lo
     Route::get('/paymentlist',[AdminPaymentController::class,'PaymentList'])->name('payment.list');
     Route::get('/paymentdetails/{id}',[AdminPaymentController::class,'PaymentDetails'])->name('paymentdetails');
     Route::get('/profile',[AdminPaymentController::class,'Profile'])->name('admin.profile');
+
+    Route::get('/message/list',[DashboardController::class,'QuestionList'])->name('admin.question.list');
+    Route::get('/reply/view/{question_id}',[DashboardController::class,'Replyview'])->name('admin.reply.view');
+    Route::PUT('/message/reply/{question_id}',[DashboardController::class,'Reply'])->name('admin.question.reply');
 });
 
 

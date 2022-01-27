@@ -135,6 +135,8 @@ return [
     */
 
     'providers' => [
+        BaklySystems\LaravelMessenger\LaravelMessengerServiceProvider::class,
+
 
         /*
          * Laravel Framework Service Providers...
@@ -189,6 +191,8 @@ return [
     */
 
     'aliases' => [
+        'Messenger' => BaklySystems\LaravelMessenger\Facades\Messenger::class,
+
 
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,

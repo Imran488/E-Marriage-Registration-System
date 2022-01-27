@@ -6181,8 +6181,8 @@ header('Access-Control-Allow-Headers: Origin, Content-Type');
             <div role="main" class="main">
                 @include('website.partials.header')
                 @yield('slides')
+                @yield('css-styles')
 
-                
 
             </div>
     </div>
@@ -6259,6 +6259,7 @@ header('Access-Control-Allow-Headers: Origin, Content-Type');
             });
         });
 
+        @yield('js-scripts')
     </script>
 
 </body>

@@ -1,5 +1,3 @@
-@extends('website.master')
-@section('slides')
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -56,53 +54,38 @@
 			</div>
 		</div>
 		<div class="col-md-9">
-            <form action="{{route('form.message')}}" method="POST">
+            <form action="{{route('admin.question.reply',$questions->id)}}" method="POST">
                 @csrf
+                @method('PUT')
 			<div class="contact-form">
 
 				</div>
 
 				<div class="form-group">
-				  <label class="control-label col-sm-2" for="email">Email:</label>
-				  <div class="col-sm-10">
-                      <select name="email"class="form-control">
-                          @foreach($user as $data)
-                          @if($data->role =='user')
-<option value="{{$data->id}}">{{$data->email}}</option>
-@endif
-@endforeach
-                      </select>
-				  </div>
+				  <label class="control-label col-sm-2" for="email">Email: {{$questions->user->email}}</label>
+
 				</div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="email">subject:</label>
-                    <div class="col-sm-10">
-                        <select name="subject"class="form-control">
+                    <label class="control-label col-sm-2" for="email">subject:{{$questions->subject}}</label>
 
-  <option value="Marriage">Marriage</option>
-  <option value="Divorce">Divorce</option>
-  <option value="Certificate">Certificate</option>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Question:{{$questions->question}}</label>
 
-                        </select>
-                    </div>
                   </div>
 				<div class="form-group">
-				  <label class="control-label col-sm-2" for="comment">Question:</label>
+				  <label class="control-label col-sm-2" for="comment">Reply:</label>
 				  <div class="col-sm-10">
-					<textarea name="question"class="form-control" rows="5" id="comment"></textarea>
+					<textarea name="reply"class="form-control" rows="5" id="comment"></textarea>
 				  </div>
 				</div>
 				<div class="form-group">
 				  <div class="col-sm-offset-2 col-sm-10">
 					<button type="submit" class="btn btn-default">Submit</button>
-
 				  </div>
 				</div>
 			</div>
 		</div>
 	</div>
 </form>
-<div style="height: 100px;"></div>
 </div>
-
-@endsection
