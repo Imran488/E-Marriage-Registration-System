@@ -7,7 +7,10 @@
         E-Marriage Registration System
 
     </title>
-
+@php
+ header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: Origin, Content-Type');
+@endphp
     <!-- Basic -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -51,6 +54,9 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="{{url('website/css/custom.css')}}">
     <link rel="stylesheet" href="{{url('website/css/welcome.css')}}">
+    {{-- <link rel="stylesheet" href="{{url('website/css/font-awesome.min.css')}}"> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 
 
@@ -6167,26 +6173,6 @@
     </head>
 
 <body>
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v4.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-
-    </script>
 
 
 
@@ -6196,11 +6182,40 @@
                 @include('website.partials.header')
                 @yield('slides')
 
+                
+
             </div>
     </div>
 
 
+{{-- <div class="fb-customerchat"
+ page_id="107790738478268"
+ minimized="true">
+</div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'facebook-developer-app-id',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.11'
+    });
+  };
+(function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="your-page-id"
+  theme_color="#BE59B9">
+</div> --}}
 
     @include('website.partials.footer')
 
@@ -6245,6 +6260,7 @@
         });
 
     </script>
+
 </body>
 </head>
 

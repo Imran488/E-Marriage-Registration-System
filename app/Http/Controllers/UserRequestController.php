@@ -21,7 +21,7 @@ class UserRequestController extends Controller
     {
         // dd($mid);
         $list=MarriageRequest::where('id',$id)->first();
-        
+
 // dd($list);
         return view('admin.pages.editmarriagerequestform',compact('list'));
     }
@@ -29,9 +29,10 @@ class UserRequestController extends Controller
 
     public function MarriageUpdate(Request $request,$id){
         //  dd($request->all());
-       
+
         $list=MarriageRequest::find($id);
         $list->update([
+            'marriagedate'=>$request->marriagedate,
             'name'=>$request->name,
             'nid'=>$request->nid,
             'date'=>$request->date,
@@ -39,11 +40,11 @@ class UserRequestController extends Controller
             'email'=>($request->email) ,
             'contactnumber'=>($request->contactnumber) ,
             'status'=>($request->status),
-            
+
         ]);
-        
+
         return redirect()->route('marriage.requestlist')->with('msg','Updated');
-        
+
      }
 
 
@@ -51,7 +52,7 @@ class UserRequestController extends Controller
     {
         //dd("$mid");
         $list=MarriageRequest::find($id)->delete();
-        
+
         return redirect()->back()->with('msg','Delete Succesfully');
     }
 
@@ -69,7 +70,7 @@ class UserRequestController extends Controller
     {
         // dd($mid);
         $list=DevorceRequest::where('id',$id)->first();
-        
+
 // dd($list);
         return view('admin.pages.divorcedetails',compact('list'));
     }
@@ -77,7 +78,7 @@ class UserRequestController extends Controller
     {
         //dd("$mid");
         $list=DevorceRequest::find($id)->delete();
-        
+
         return redirect()->back()->with('msg','Delete Succesfully');
     }
 
@@ -87,5 +88,5 @@ class UserRequestController extends Controller
         // dd($devorcerequestslist);
         return view('admin.pages.certificaterequestslist',compact('certificaterequestslist'));
     }
-    
+
 }

@@ -137,20 +137,27 @@
                                                 <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
                                                     href="{{route('rules')}}">Marriage Rules</a>
                                             </li>@endauth
-                                            @if(auth()->user())
 
+                                            <li style="position: absolute; top: 0px; right: -80px;">@auth
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
+                                                    href="{{ route('kazi') }}">
+                                                    KaziList
+                                                </a>
+                                            </li>@endauth
+
+                                            @if(auth()->user())
                                             <li>
                                                 <a href="{{route('logout')}}"
                                                     class="dropdown-item w3-hover-purple w3-medium w3-text-purple">{{auth()->user()->name}}|
                                                     Logout </a>
                                             </li>@endif
 
-                                            <li class="dropdown">
+                                            {{-- <li class="dropdown"> --}}
 
 
-                                                <!-- @if(!auth()->user())
-                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="{{ route('admin') }}" >Login </a>
-                                                @endif -->
+                                                {{-- <!-- @if(!auth()->user()) --}}
+                                                {{-- <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="{{ route('admin') }}" >Login </a>
+                                                @endif --> --}}
                                                 <!-- <ul class="dropdown-menu" -style="transform: skew(20deg) !important; margin-left: 10px !important;">
                                                     <li>
                                                         <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"href="{{route('admin')}}">
@@ -163,13 +170,16 @@
                                                         </a>
                                                     </li>
                                                 </ul> -->
-                                            <li style="position: absolute; top: 0px; right: -80px;">@auth
-                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
-                                                    href="{{ route('kazi') }}">
-                                                    KaziList
+
+
+                                            <li style="position: absolute; top: 0px; right: -120px;">@auth
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="{{route('show.message')}}">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z"/></svg>
                                                 </a>
 
                                             </li>@endauth
+
+
 
                                             </li>
                                         </ul>

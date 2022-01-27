@@ -19,6 +19,7 @@
   <thead>
     <tr>
     <th scope="col">Request ID</th>
+    <th scope="col">Marriage Date</th>
       <th scope="col">Name</th>
       <th scope="col">NID Number</th>
       <th scope="col">Date of Birth</th>
@@ -32,7 +33,8 @@
   <tbody>
     @foreach ($marriagerequestslist as $key=>$list)
     <tr>
-      <th>{{$key+1}}</th>    
+      <th>{{$key+1}}</th>
+      <td>{{$list->marriagedate}}</td>
       <td>{{$list->name}}</td>
       <td>{{$list->nid}}</td>
       <td>{{$list->date}}</td>

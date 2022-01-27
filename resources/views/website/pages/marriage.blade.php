@@ -4,7 +4,7 @@
     <h1 style=" color:black"><u>Marriage Request Form</u></h1>
     @if(session()->has('msg'))
     <p class="alert alert-success">{{session()->get('msg')}}</p>
-    @endif 
+    @endif
     <!-- server side validation start -->
     @if ($errors->any())
      <div class="alert alert-danger" role="alert">
@@ -16,9 +16,16 @@
     </div>
     @endif
      <!-- server side validation end -->
-    
+
 <form action="{{route('marriage.requestform')}}" method="post">
     @csrf
+    <div class="form-group">
+        <div class="col-md-4">
+            <label for="exampleInputName">Marriage Date</label>
+            <input type="date" name="marriagedate" class="form-control" id="exampleInputName" placeholder="Enter When you will be marry"required>
+            <small id="emailHelp" class="form-text text-muted"> When you will Marry</small>
+        </div>
+    </div>
     <div class="form-group">
         <div class="col-md-4">
             <label for="exampleInputName">Name</label>
@@ -40,7 +47,7 @@
             <small id="emailHelp" class="form-text text-muted">Your Age Should be Minimum 18 Years.</small>
         </div>
     </div>
-    
+
 
     <div class="form-group">
         <div class="col-md-4">
@@ -61,7 +68,7 @@
             <input type="number" name="contactnumber"class="form-control" id="exampleInputPassword1" placeholder="Enter Your Contact Number"required>
         </div>
     </div>
-    
+
     <!-- <div class="form-check">
         <div class="col-md-4">
             <input type="checkbox" name="checkbox" class="form-check-input" id="exampleCheck1">

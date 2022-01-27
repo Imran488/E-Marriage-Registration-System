@@ -30,8 +30,10 @@ class ServiceController extends Controller
             'date' => 'required|date|before:-18 years',
             // 'nid'=>'unique:marriage_request,nid',
         ]);
-         
+
         MarriageRequest::create([
+            // 'user_id'=>auth()->user()->id,
+            'marriagedate'=>$request->marriagedate,
             'name'=>$request->name,
             'nid'=>$request->nid,
             'date'=>$request->date,
@@ -39,10 +41,10 @@ class ServiceController extends Controller
             'email'=>($request->email) ,
             'contactnumber'=>($request->contactnumber) ,
         ]);
-        
+
         return redirect()->route('home')->with('msg','Request submitted');
     }
-     
+
 
     public function CertificateForm(Request $request){
         //  dd($request->all());
@@ -54,7 +56,7 @@ class ServiceController extends Controller
             'gnid'=>($request->gnid) ,
             'bnid'=>($request->bnid) ,
         ]);
-        
+
         return redirect()->route('home')->with('msg','Request submitted');
         // return redirect()->route('home');
      }
@@ -67,7 +69,7 @@ class ServiceController extends Controller
             'address'=>($request->address) ,
             'contactnumber'=>($request->contactnumber) ,
         ]);
-        
+
         return redirect()->route('home')->with('msg','Request submitted');
         // return redirect()->route('home');
      }

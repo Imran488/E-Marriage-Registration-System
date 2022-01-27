@@ -2,21 +2,41 @@
 
 namespace App\Http\Controllers\Website;
 
-use App\Http\Controllers\Controller;
+use App\Models\KaziForm;
+use App\Models\Messages;
+use App\Models\Appointment;
 use Illuminate\Http\Request;
 use App\Models\RegistrationForm;
-use App\Models\KaziForm;
-use App\Models\Appointment;
+use App\Http\Controllers\Controller;
 
 class HomeController extends Controller
 {
+
+    public function Message()
+    {
+
+        return view('website.pages.message');
+    }
+
+    public function MessageForm(Request $request)
+    {
+        Messages::Create([
+            'sender_id'=>auth()->user()->id,
+            'receiver_id'=>1,
+            'is_seen'=>'no',
+            'message'=>$request->message,
+        ]);
+        return redirect()->back()->with('msg','Message submitted');
+    }
+
+
+
 
     public function Appointment()
     {
         return view('website.pages.appointment');
     }
-    
-    
+
     public function AppointmentForm(Request $request)
     {
         Appointment::Create([
@@ -45,7 +65,7 @@ class HomeController extends Controller
         $key=null;
         // dd(request()->search);
         if(request()->search){
-            
+
             $key=request()->search;
             $kazilist=KaziForm::where('address','LIKE','%'.$key.'%')->orWhere('name','LIKE','%'.$key.'%')->get();
             return view('website.pages.kazilist',compact('kazilist','key'));
@@ -54,4 +74,3 @@ class HomeController extends Controller
         return view('website.pages.kazilist',compact('kazilist','key'));
     }
 }
-    

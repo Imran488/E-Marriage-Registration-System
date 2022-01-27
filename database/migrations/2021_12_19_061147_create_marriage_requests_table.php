@@ -15,6 +15,8 @@ class CreateMarriageRequestsTable extends Migration
     {
         Schema::create('marriage_requests', function (Blueprint $table) {
             $table->id();
+            // $table->integer('user_id');
+            $table->string('marriagedate');
             $table->string('name');
             $table->string('nid');
             $table->string('date');

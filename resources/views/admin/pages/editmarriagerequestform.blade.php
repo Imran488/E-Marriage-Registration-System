@@ -1,13 +1,20 @@
 @extends('master')
 @section('contents')
 <center>
-    <h1 style=" color:black"><u>Marriage Request Approved Form</u></h1>
+    <h1 style=" color:black"><u>Marriage Request Approval Form</u></h1>
     @if(session()->has('msg'))
     <p class="alert alert-success">{{session()->get('msg')}}</p>
     @endif
     <form action="{{route('marriage.update',$list->id)}}" method="post">
         @csrf
         @method('PUT')
+
+        <div class="form-group">
+            <div class="col-md-4">
+                <label for="exampleInputName">Marriage Date</label>
+                <input value="{{$list->marriagedate}}" type="date" name="marriagedate" class="form-control" id="exampleInputName" placeholder="Enter When you will be marry"required>
+            </div>
+        </div>
         <div class="form-group">
             <div class="col-md-4">
                 <label for="exampleInputName">Name</label>
@@ -62,8 +69,8 @@
                 <label for="exampleInputName">Status</label>
                 <select name="status" type="status" class="form-control" required data-parsley-required-message>
                     <option disabled selected="">Please Choose Option</option>
-                    <option value="Approved">Approved</option>
-                    <option value="Pending">pending</option>
+                    <option @if($list->status == 'Approved') selected @endif value="Approved">Approved</option>
+                    <option @if($list->status == 'Pending') selected @endif value="Pending">pending</option>
 
                 </select>
             </div>

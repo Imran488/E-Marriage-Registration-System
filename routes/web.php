@@ -36,6 +36,7 @@ use App\Http\Controllers\MarriageRegistrationController;
 
 // User Login and SignUp
 
+
 Route::get('/user',[LoginController::class,'User'])->name('user');
   Route::post('/userlogin',[LoginController::class,'UserLogin'])->name('user.login');
   Route::get('/signup',[LoginController::class,'Signup'])->name('signup');
@@ -44,6 +45,8 @@ Route::get('/user',[LoginController::class,'User'])->name('user');
 
 
 Route::group(['middleware'=>'user'], function () {
+Route::get('/message',[HomeController::class,'Message'])->name('show.message');
+Route::post('/messageform',[HomeController::class,'MessageForm'])->name('form.message');
   Route::get('/',[HomeController::class,'Home'])->name('home');
   Route::get('/appointment',[HomeController::class,'Appointment'])->name('kazi.appointment');
   Route::post('/appointmentform',[HomeController::class,'AppointmentForm'])->name('form.appointment');
@@ -65,6 +68,7 @@ Route::group(['middleware'=>'user'], function () {
   Route::post('/certificateform',[ServiceController::class,'CertificateForm'])->name('certificate.requestform');
   Route::get('/logout',[LoginController::class,'userlogout'])->name('logout');
   Route::get('/adminlogout',[LoginController::class,'adminlogout'])->name('admin.logout');
+
 });
 
 //admin login
