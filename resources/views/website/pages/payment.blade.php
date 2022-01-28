@@ -3,7 +3,7 @@
 <center><h1><b><u>Please Fill-Up This Payment Form</u></b></h1></center>
 @if(session()->has('msg'))
     <p class="alert alert-success">{{session()->get('msg')}}</p>
-    @endif 
+    @endif
 <!DOCTYPE html>
 <html>
 <head>
@@ -143,10 +143,10 @@ span.price {
             <h3>Payment</h3>
             <label for="fname">Accepted Accounts</label>
             <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;">Nagad</i>
-              <i class="fa fa-cc-amex" style="color:blue;">Bkash</i>
-              <i class="fa fa-cc-mastercard" style="color:red;">Rocket</i>
-              <i class="fa fa-cc-discover" style="color:orange;">Upay</i>
+                <i class="far fa-credit-card" style="color:rgb(238, 9, 9);"> Nagad</i>
+                <i class="far fa-credit-card" style="color:rgb(228, 15, 114);"> Bkash</i>
+                <i class="far fa-credit-card" style="color:rgb(22, 98, 211);"> Rocket</i>
+                <i class="far fa-credit-card" style="color:orange;"> Upay</i>
             </div>
 
 
@@ -162,7 +162,7 @@ span.price {
 
             <label for="ccnum">Account number</label>
             <input type="text" id="ccnum" name="accountnumber" placeholder="Enter Your Mobile Banking Account Number"required>
-            
+
             <label for="ccnum">TxnId Number</label>
             <input type="text" id="txnid" name="txnid" placeholder="Enter Your Mobile Banking TxnId Number"required>
 
@@ -170,7 +170,7 @@ span.price {
             <label for="ccnum">Total Amount</label>
             <input type="text" id="txnid" name="totalamount" placeholder="Enter Total amount here"required>
           </div>
-          
+
         </div>
         <!-- <label>
           <input type="checkbox" checked="checked" name="checkbox"> Shipping address same as billing

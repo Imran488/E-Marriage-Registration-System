@@ -28,11 +28,12 @@ class HomeController extends Controller
             'question'=>$request->question,
 
         ]);
-        return redirect()->back()->with('msg','question submitted. wait for reply.');
+        return redirect()->back()->with('msg','Question submitted. wait for reply.');
     }
     public function messageview(){
 
-        $message=UserMessages::with('user')->where('status','replied')->get();
+        $message=UserMessages::with('user')->where('status','replied')
+        ->where('user_id',auth()->user()->id)->get();
         return view('website.pages.messagelist',compact('message'));
     }
 

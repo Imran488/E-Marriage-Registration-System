@@ -33,7 +33,7 @@
               <th scope="col">Email</th>
               <th scope="col">Contact Number</th>
               <th scope="col">Address</th>
-              <th scope="col">Action</th>
+              <th scope="col">Call</th>
               </tr>
             </thead>
             <tbody>
@@ -54,5 +54,5 @@
     <div class="col-md-6"></div>
   </div>
 </div>
-<br>   
+<br>
 @endsection

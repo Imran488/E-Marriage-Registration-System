@@ -5,10 +5,10 @@
         <div class="col-50">
             <label for="fname"><b><u>Accepted Accounts</u></b></label>
             <div class="icon-container">
-                <i class="fa fa-cc-visa" style="color:navy;">Nagad</i>
-                <i class="fa fa-cc-amex" style="color:blue;">Bkash</i>
-                <i class="fa fa-cc-mastercard" style="color:red;">Rocket</i>
-                <i class="fa fa-cc-discover" style="color:orange;">Upay</i>
+                <i class="far fa-credit-card" style="color:rgb(238, 9, 9);"> Nagad</i>
+                <i class="far fa-credit-card" style="color:rgb(228, 15, 114);"> Bkash</i>
+                <i class="far fa-credit-card" style="color:rgb(22, 98, 211);"> Rocket</i>
+                <i class="far fa-credit-card" style="color:orange;"> Upay</i>
             </div><br>
             <label for="fname">Nagad Payment Account Number:01795235940</label><br>
             <label for="fname">Bkash Payment Account Number:01780316345</label><br>
@@ -17,7 +17,7 @@
 
             <label for="fname"><u><b>The government has fixed the fees of the Marriage Registration consistent with the dower
                 money, such as:</b></u></label>
-            <label for="fname">(1)The fee is BDT 12.50/=  for each BDT 1000/= 
+            <label for="fname">(1)The fee is BDT 12.50/=  for each BDT 1000/=
                 Taka) of dower money</label>
             <label for="fname">(2)The fee is BDT 1250/=  for each BDT
                 1,00,000/=  of dower money</label>

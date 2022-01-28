@@ -4,7 +4,7 @@
     <h1 style="color:black"><u>Certificate Request Form</u></h1>
     @if(session()->has('msg'))
     <p class="alert alert-success">{{session()->get('msg')}}</p>
-    @endif 
+    @endif
 <form action="{{route('certificate.requestform')}}"method="post">
     @csrf
     <div class=" form-group">
@@ -49,14 +49,9 @@
             <input type="nid" name="bnid" class="form-control" id="exampleInputPassword1" placeholder="Bride NID">
         </div>
     </div>
+
+
     
-    
-    <div class="form-check">
-        <div class="col-md-4">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">I Declare that all Informations are True</label>
-        </div>
-    </div>
     <button type="submit" class="btn btn-primary">Submit</button>
     <a href="{{route('home')}}" class="btn btn-danger">Cancel</a>
 </form>

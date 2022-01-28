@@ -8,7 +8,7 @@
     <p class="alert alert-success">{{session()->get('msg')}}</p>
     @endif
 
-    
+
     <form action="{{route('ostore')}}" method="POST"enctype="multipart/form-data">
         @csrf
 <form>
@@ -24,14 +24,14 @@
                     <div class="row form-group">
                         <div class="col-md-4">
                             <label class="red">*</label>
-                            Office Address 
+                            Office Address
                         </div>
                         <div class="col-md-6">
                             <textarea name="address" id="address" class="form-control" placeholder="Please Enter  Office Address"  data-parsley-required-message="Please Enter  Address of the Witness"></textarea>
                         </div>
                     </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-  <center><a href="{{route('dashboard')}}" class="btn" style="background-color:lightgray; border-radius:10px">Back</a></center>
+  <a href="{{route('kazioffice')}}" class="btn" style="background-color:lightgray; border-radius:10px">Back</a>
 </form>
 </center>
 @endsection

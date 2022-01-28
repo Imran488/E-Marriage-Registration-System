@@ -19,9 +19,7 @@
                     <p class="alert alert-success">{{session()->get('message')}}</p>
                     @endif
 
-                    <!-- @if(session()->has('error'))
-<p class="alert alert-danger">{{session()->get('error')}}</p>
-@endif -->
+
                     <div class="header-column justify-content-end">
                         <div class="header-row">
                             <div class="header-nav header-nav-no-space-dropdown header-nav-stretch">
@@ -29,6 +27,7 @@
                                     class="header-nav-main header-nav-main-rounded header-nav-main-dropdown-no-borders header-nav-main-effect-1 header-nav-main-sub-effect-1">
                                     <nav class="collapse w3-text-medium">
                                         <ul class="nav nav-pills" id="mainNav" style="position: relative;">
+
                                             <li> @auth
                                                 <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
                                                     href="{{route('home')}}">
@@ -36,8 +35,10 @@
                                                 </a>
                                             </li> @endauth
 
+
+
                                             <li class="dropdown"> @auth
-                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"" href="
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="
                                                     #">
                                                     Management
                                                 </a>
@@ -46,7 +47,7 @@
                                                     <li>
                                                         <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
                                                             href="{{route('aboutus')}}">
-                                                            Who we are
+                                                            About Us
                                                         </a>
                                                     </li>
 
@@ -65,8 +66,7 @@
                                                 </ul>
                                             </li>@endauth
                                             <li class="dropdown"> @auth
-                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"" href="
-                                                    #">
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href=" #">
                                                     Payment
                                                 </a>
                                                 <ul class="dropdown-menu"
@@ -86,7 +86,7 @@
                                                 </ul>
                                             </li>@endauth
                                             <li class="dropdown"> @auth
-                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"" href="
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="
                                                     #">
                                                     Find Us
                                                 </a>
@@ -100,16 +100,11 @@
                                                     </li>
                                                     <li>
                                                         <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
-                                                            href="{{route('show.message')}}">
-                                                              Question Section
+                                                            href="{{route('support')}}">
+                                                             Help and Support
                                                         </a>
                                                     </li>
-                                                    <li>
-                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
-                                                            href="{{route('view.message')}}">
-                                                            Questions Answer
-                                                        </a>
-                                                    </li>
+
                                                 </ul>
                                             </li>@endauth
                                             <li class="dropdown"> @auth
@@ -144,18 +139,45 @@
                                                     href="{{route('rules')}}">Marriage Rules</a>
                                             </li>@endauth
 
-                                            <li style="position: absolute; top: 0px; right: -80px;">@auth
+                                            <li >@auth
                                                 <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
                                                     href="{{ route('kazi') }}">
                                                     KaziList
                                                 </a>
                                             </li>@endauth
 
+                                            <li>@auth
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
+                                                    href="{{route('show.message')}}">
+                                                    Question Us
+                                                </a>
+                                            </li>@endauth
+
+
                                             @if(auth()->user())
-                                            <li>
-                                                <a href="{{route('logout')}}"
-                                                    class="dropdown-item w3-hover-purple w3-medium w3-text-purple">{{auth()->user()->name}}|
-                                                    Logout </a>
+                                            <li class="dropdown"style="position: absolute; top: 0px; right: -130px;">
+                                                <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
+                                                    href="#">
+                                                    {{auth()->user()->name}}
+                                                </a>
+                                                <ul class="dropdown-menu"
+                                                    -style="transform: skew(20deg) !important; margin-left: 10px !important;">
+                                                    <li>
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
+                                                            href="{{route('view.message')}}">
+                                                           Messages
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
+                                                            href="{{route('logout')}}">
+                                                            Logout
+                                                        </a>
+                                                    </li>
+
+
+                                                </ul>
                                             </li>@endif
 
                                             {{-- <li class="dropdown"> --}}
@@ -178,12 +200,15 @@
                                                 </ul> -->
 
 
-                                            <li style="position: absolute; top: 0px; right: -120px;">@auth
+
+
+
+                                            {{-- <li style="position: absolute; top: 0px; right: -120px;">@auth
                                                 <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple" href="#">
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M22 20H2v-2h1v-6.969C3 6.043 7.03 2 12 2s9 4.043 9 9.031V18h1v2zM5 18h14v-6.969C19 7.148 15.866 4 12 4s-7 3.148-7 7.031V18zm4.5 3h5a2.5 2.5 0 1 1-5 0z"/></svg>
                                                 </a>
 
-                                            </li>@endauth
+                                            </li>@endauth --}}
 
 
 

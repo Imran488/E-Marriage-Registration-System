@@ -1,6 +1,6 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
     <div class="header-logo myimg">
-        <img src="url('/jpg/website/mypic.png')" alt=""><br><br><br><br><br><br><br><br>
+        <img src="#" alt=""><br><br><br><br><br><br><br><br>
     </div>
 
     @if(auth())
@@ -121,13 +121,8 @@
     </li>
     <li class="nav-item active">
         <a class="nav-link collapsed" href="{{route('admin.question.list')}}">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                    d="M17.084 15.812a7 7 0 1 0-10.168 0A5.996 5.996 0 0 1 12 13a5.996 5.996 0 0 1 5.084 2.812zM12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0L12 23.728zM12 12a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                    fill="rgba(203,43,43,1)" />
-            </svg>
-            <span>Question List</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z" fill="rgba(239,20,20,1)"/></svg>
+            <span>Message List</span>
         </a>
     </li>
 

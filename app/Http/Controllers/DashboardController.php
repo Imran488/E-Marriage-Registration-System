@@ -37,7 +37,15 @@ class DashboardController extends Controller
             'status'=>'replied'
         ]);
 
-        return redirect()->route('admin.question.list')->with('msg','replied successfully.') ;
+        return redirect()->route('admin.question.list')->with('msg','Replied successfully.') ;
+    }
+
+    public function Delete($question_id)
+    {
+        //dd("$mid");
+        $questions = UserMessages::find($question_id)->delete();
+
+        return redirect()->back()->with('msg','Delete Succesfully');
     }
 
 }

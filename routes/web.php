@@ -27,7 +27,6 @@ use App\Http\Controllers\MarriageRegistrationController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-include('messenger.php');
 
 // Route::get('/', function () {
 //   return view('website.pages.home');
@@ -121,6 +120,7 @@ Route::post('/adminlogin',[LoginController::class,'AdminLogin'])->name('admin.lo
     Route::get('/message/list',[DashboardController::class,'QuestionList'])->name('admin.question.list');
     Route::get('/reply/view/{question_id}',[DashboardController::class,'Replyview'])->name('admin.reply.view');
     Route::PUT('/message/reply/{question_id}',[DashboardController::class,'Reply'])->name('admin.question.reply');
+    Route::get('reply/delete/{question_id}',[DashboardController::class,'Delete'])->name('reply.delete');
 });
 
 

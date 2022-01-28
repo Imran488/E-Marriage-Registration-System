@@ -16,11 +16,11 @@
     </div>
 @endif
 
-    
+
     <form action="{{route('store')}}" method="POST"enctype="multipart/form-data">
         @csrf
         <div id="formapp1" class="card1 form active" style="font-size:14px;">
-           
+
 
            <form data-parsley-validate="" method="post" id="apply">
                <div class="card">
@@ -31,7 +31,7 @@
 
                 <div class="row form-group">
                    <div class="col-md-4">
-                       Marriage Date 
+                       Marriage Date
                    </div>
                    <div class="col-md-6">
                        <input type ="date" name="mdate" class="form-control" placeholder=" Enter  Marriage Date" required data-parsley-required-message="Please Enter  Marriage Date">
@@ -47,7 +47,7 @@
                        <input name="fullnameh" type="text"  id="txtfname" class="form-control" placeholder="Enter  Full Name of the Groom" required data-parsley-required-message="Please Enter  Full Name of the Groom">
                     </div>
                 </div>
-            
+
                 <div class="row form-group">
                     <div class="col-md-4">
                        <label class="red">*</label>
@@ -68,9 +68,9 @@
                        <select   name="religion" id="religion" class="form-control"required data-parsley-required-message>
                            <option disabled selected="">Please Choose Religion</option>
                            <option value="Islam">Islam</option>
-                           <option value="Hindu">Hindu</option>
+                           {{-- <option value="Hindu">Hindu</option>
                            <option value="Khristian">Khristian</option>
-                           <option value="Others">Others</option>
+                           <option value="Others">Others</option> --}}
                        </select>
                    </div>
 
@@ -78,7 +78,7 @@
 
                <div class="row form-group">
                    <div class="col-md-4">
-                       Date of Birth 
+                       Date of Birth
                    </div>
                    <div class="col-md-3">
                        <input type ="date" name="date" class="form-control" placeholder="Enter  Date of Birth" required data-parsley-required-message>
@@ -86,7 +86,7 @@
                </div>
 
                <div class="row form-group">
-                   <div class="col-md-4">NID Number</div>
+                   <div class="col-md-4">NID Number/Passport Number</div>
                    <!-- <div class="col-md-3">
                        <select  data-parsley-required-message="Please Select" name="chooseidw" id="chooseidw" class="form-control">
                            <option disabled selected="">Please choose ID</option>
@@ -96,7 +96,7 @@
                        </select>
                    </div> -->
                    <div class="col-md-3">
-                       <input name="passportnumber" type="text" placeholder="Enter Groom NID Number" id="passportw" class="form-control " required data-parsley-required-message="Already Used">
+                       <input name="passportnumber" type="text" placeholder="Enter Groom NID/Passport Number" id="passportw" class="form-control " required data-parsley-required-message="Already Used">
                     </div>
                 </div>
 
@@ -122,7 +122,7 @@
                        <div class="row form-group">
                            <div class="col-md-4">
                                <label class="red">*</label>
-                               Flat / Room No. 
+                               Flat / Room No.
                            </div>
                            <div class="col-md-8">
                                <input name="txtroomh" type="text" maxlength="250" id="txtroomh" class="form-control" placeholder="Enter Flat / Room No." required data-parsley-required-message="Please Enter Flat / Room No.">
@@ -162,7 +162,7 @@
                                    <option  >Barguna</option>
                                    <option  >Bhola</option><option  >Jhalkati</option><option  >Patuakhali</option><option  >Pirojpur</option><option  >Bandarban</option><option  >Brahmanbaria</option><option  >Chandpur</option><option >Comilla</option><option  >Cox's Bazar</option><option >Feni</option><option  >Khagrachhari</option><option  >Lakshmipur</option><option  >Noakhali</option><option  >Rangamati</option><option  >Faridpur</option><option  >Gazipur</option><option  >Gopalgang</option><option  >Kishoregang</option><option  >Madaripur</option><option  >Manikgang</option><option  >Munsigang</option><option  >Narayangang</option><option  >Narsingdi</option><option >Rajbari</option><option  >Shariatpur</option><option  >Tangail</option><option  >Bagerhat</option><option  >Chuadanga</option><option  >Jessore</option><option  >Jhenaidha</option><option  >Kustia</option><option  >Magura</option><option  >Meherpur</option><option  >Narail</option><option  >Satkhira</option><option  >Jamalpur</option><option  >Netrokona</option><option  >Sherpur</option><option  >Bogra</option><option  >Joypurhat</option><option >Naogaon</option><option  >Natore</option><option  >Chapai Nawabgang</option><option  >Pabna</option><option  >Sirajganj</option><option  >Dinajpur</option><option  >Gaibandha</option><option >Kurigram</option><option >Lalmonirhat</option><option  >Nilphamari</option><option  >Panchagarh</option><option  >Thakurgaon</option><option  >Habigang</option><option >Moulvibazar</option><option >Sunamgang</option>
                                 </select>
-                               
+
                            </div>
                        </div>
                    </div>
@@ -178,12 +178,12 @@
                            </div>
                        </div>
                    </div>
-                   
+
                    <div class="col-md-6">
                        <div class="row form-group">
                            <div class="col-md-4">
                                <label class="red">*</label>
-                               Pincode / Zipcode 
+                               Pincode / Zipcode
                            </div>
                            <div class="col-md-8">
                                <input required data-parsley-required-message=" Enter Pincode / Zipcode " name="txtpincodeh" type="text" maxlength="10" id="txtpincodeh" class="form-control" placeholder="Pincode / Zipcode " onkeypress="return isNumberKey(event)">
@@ -210,7 +210,7 @@
                        <input name="fullnamew" type="text"  id="txtfname" class="form-control" placeholder="Enter  Full Name of the Bride" required data-parsley-required-message="Please Enter  Full Name of the Bride">
                     </div>
                 </div>
-            
+
                 <div class="row form-group">
                     <div class="col-md-4">
                        <label class="red">*</label>
@@ -231,9 +231,9 @@
                        <select   name="religionw" id="religion" class="form-control"required data-parsley-required-message>
                            <option disabled selected="">Please Choose Religion</option>
                            <option value="Islam">Islam</option>
-                           <option value="Hindu">Hindu</option>
+                           {{-- <option value="Hindu">Hindu</option>
                            <option value="Khristian">Khristian</option>
-                           <option value="Others">Others</option>
+                           <option value="Others">Others</option> --}}
                        </select>
                    </div>
 
@@ -241,7 +241,7 @@
 
                <div class="row form-group">
                    <div class="col-md-4">
-                       Date of Birth 
+                       Date of Birth
                    </div>
                    <div class="col-md-3">
                        <input type ="date" name="datew" class="form-control" placeholder=" Enter  Date of Birth" required data-parsley-required-message="Please Enter  Full Name of the Bride">
@@ -249,7 +249,7 @@
                </div>
 
                <div class="row form-group">
-                   <div class="col-md-4">NID Number</div>
+                   <div class="col-md-4">NID Number/Passport Number</div>
                    <!-- <div class="col-md-3">
                        <select  data-parsley-required-message="Please Select" name="chooseidw" id="chooseidw" class="form-control">
                            <option disabled selected="">Please choose ID</option>
@@ -259,7 +259,7 @@
                        </select>
                    </div> -->
                    <div class="col-md-3">
-                       <input name="passportnumberw" type="text" placeholder="Enter Bride NID Number" id="passportw" class="form-control "required data-parsley-required-message="Already Used">
+                       <input name="passportnumberw" type="text" placeholder="Enter Bride NID/Passport Number" id="passportw" class="form-control "required data-parsley-required-message="Already Used">
                     </div>
                 </div>
 
@@ -285,7 +285,7 @@
                        <div class="row form-group">
                            <div class="col-md-4">
                                <label class="red">*</label>
-                               Flat / Room No. 
+                               Flat / Room No.
                            </div>
                            <div class="col-md-8">
                                <input name="txtroomw" type="text" maxlength="250" id="txtroomh" class="form-control" placeholder=" Enter Flat / Room No." required data-parsley-required-message="Please Enter Flat / Room No.">
@@ -325,7 +325,7 @@
                                    <option  >Barguna</option>
                                    <option  >Bhola</option><option  >Jhalkati</option><option  >Patuakhali</option><option  >Pirojpur</option><option  >Bandarban</option><option  >Brahmanbaria</option><option  >Chandpur</option><option >Comilla</option><option  >Cox's Bazar</option><option >Feni</option><option  >Khagrachhari</option><option  >Lakshmipur</option><option  >Noakhali</option><option  >Rangamati</option><option  >Faridpur</option><option  >Gazipur</option><option  >Gopalgang</option><option  >Kishoregang</option><option  >Madaripur</option><option  >Manikgang</option><option  >Munsigang</option><option  >Narayangang</option><option  >Narsingdi</option><option >Rajbari</option><option  >Shariatpur</option><option  >Tangail</option><option  >Bagerhat</option><option  >Chuadanga</option><option  >Jessore</option><option  >Jhenaidha</option><option  >Kustia</option><option  >Magura</option><option  >Meherpur</option><option  >Narail</option><option  >Satkhira</option><option  >Jamalpur</option><option  >Netrokona</option><option  >Sherpur</option><option  >Bogra</option><option  >Joypurhat</option><option >Naogaon</option><option  >Natore</option><option  >Chapai Nawabgang</option><option  >Pabna</option><option  >Sirajganj</option><option  >Dinajpur</option><option  >Gaibandha</option><option >Kurigram</option><option >Lalmonirhat</option><option  >Nilphamari</option><option  >Panchagarh</option><option  >Thakurgaon</option><option  >Habigang</option><option >Moulvibazar</option><option >Sunamgang</option>
                                 </select>
-                               
+
                            </div>
                        </div>
                    </div>
@@ -341,12 +341,12 @@
                            </div>
                        </div>
                    </div>
-                   
+
                    <div class="col-md-6">
                        <div class="row form-group">
                            <div class="col-md-4">
                                <label class="red">*</label>
-                               Pincode / Zipcode 
+                               Pincode / Zipcode
                            </div>
                            <div class="col-md-8">
                                <input required data-parsley-required-message=" Enter Pincode / Zipcode " name="txtpincodew" type="text" maxlength="10" id="txtpincodeh" class="form-control" placeholder="Pincode / Zipcode " onkeypress="return isNumberKey(event)">
@@ -417,7 +417,7 @@
             </form>
            <center><button type="submit" class="btn btn-primary">Submit</button>
            <a href="{{route('marrigeregistration')}}" class="btn" style="background-color:lightgray; border-radius:10px">Cancel</a></center>
-            
+
         </div>
-    </form>    
+    </form>
 @endsection
