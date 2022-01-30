@@ -65,7 +65,7 @@
         <div class="col-md-3">
             <div class="contact-info">
                 <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
-                <h2> Question Us?</h2>
+                <h2> Message Us?</h2>
                 <h4>We would love to hear from you !</h4>
             </div>
         </div>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-2" for="comment">Question:</label>
+                    <label class="control-label col-sm-2" for="comment">Message:</label>
                     <div class="col-sm-10">
                         <textarea name="question" class="form-control" rows="5" id="comment" required></textarea>
                     </div>

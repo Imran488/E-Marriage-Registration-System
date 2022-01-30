@@ -1,7 +1,7 @@
 @extends('website.master')
 @section('slides')
 <center>
-    <h1 style="color:black"><u><b>Answer Question Section</b></u></h1>
+    <h1 style="color:black"><u><b>Message Section</b></u></h1>
 
     <br>
     <div class="container-fluid">
@@ -17,7 +17,7 @@
                                     <th scope="col">Name</th>
                                     <th scope="col">Email</th>
                                     <th scope="col">Subject</th>
-                                    <th scope="col">Question</th>
+                                    <th scope="col">My Message</th>
                                     <th scope="col">Message From Register</th>
                                     <th scope="col">Reply</th>
 

@@ -10,7 +10,7 @@
 <p>Address:{{$list->address}}</p>
 <p>Email:{{$list->email}}</p>
 <p>Contact Number:{{$list->contactnumber}}</p>
-<p> Certified By: Md.Imran Hossain</p>
+<p> Certified By: Registered</p>
 </b>
 </div>
 <input class="btn btn-primary" type="button" onClick="PrintDiv('divToPrint');" value="Print">
@@ -19,7 +19,7 @@
 </center>
 @endsection
 <script language="javascript">
-    function PrintDiv(divName) 
+    function PrintDiv(divName)
     {
         var printContents = document.getElementById(divName).innerHTML;
         var originalContents = document.body.innerHTML;

@@ -20,10 +20,10 @@
     <tr>
     <th scope="col">Request ID</th>
     <th scope="col">Marriage Date</th>
-      <th scope="col">Name</th>
-      <th scope="col">NID Number</th>
-      <th scope="col">Date of Birth</th>
-      <th scope="col">Address</th>
+      <th scope="col">Groom Name</th>
+      <th scope="col">Groom NID </th>
+      <th scope="col">Bride Name</th>
+      <th scope="col">Bride NID </th>
       <th scope="col">Email</th>
       <th scope="col">Contact Number</th>
       <th scope="col">Status</th>
@@ -37,8 +37,8 @@
       <td>{{$list->marriagedate}}</td>
       <td>{{$list->name}}</td>
       <td>{{$list->nid}}</td>
-      <td>{{$list->date}}</td>
-      <td>{{$list->address}}</td>
+      <td>{{$list->nameb}}</td>
+      <td>{{$list->nidb}}</td>
       <td>{{$list->email}}</td>
       <td>{{$list->contactnumber}}</td>
       <td>{{$list->status}}</td>

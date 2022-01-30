@@ -18,8 +18,9 @@
 <p> Witness1 Name & Address:{{$list->witnessname1}},{{$list->witnessaddress1}}</p>
 <p> Witness2 Name & Address:{{$list->witnessname2}},{{$list->witnessaddress2}}</p>
 <p> Witness3 Name & Address:{{$list->witnessname3}},{{$list->witnessaddress3}}</p>
-<p>Groom Signature: <img  style="width:60px;height:60px" src="{{url('/uploades/'.$list->signatureh)}}"  alt="signatureh"> Bride Signature: <img  style="width:60px;height:60px" src="{{url('/uploades/'.$list->signaturew)}}"  alt="signaturew"></p>
-<p> Certified By: Md.Imran Hossain</p>
+<p>Groom Signature: <img  style="width:60px;height:60px" src="{{url('/uploades/'.$list->signatureh)}}"  alt="signatureh"><br>
+    Bride Signature: <img  style="width:60px;height:60px" src="{{url('/uploades/'.$list->signaturew)}}"  alt="signaturew"></p>
+<p> Certified By: Registered</p>
 </b>
 </div>
 <input class="btn btn-primary" type="button" onClick="PrintDiv('divToPrint');" value="Print">
@@ -28,7 +29,7 @@
 </center>
 @endsection
 <script language="javascript">
-    function PrintDiv(divName) 
+    function PrintDiv(divName)
     {
         var printContents = document.getElementById(divName).innerHTML;
         var originalContents = document.body.innerHTML;

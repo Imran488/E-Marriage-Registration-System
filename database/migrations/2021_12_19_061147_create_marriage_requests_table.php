@@ -20,6 +20,9 @@ class CreateMarriageRequestsTable extends Migration
             $table->string('name');
             $table->string('nid');
             $table->string('date');
+            $table->string('nameb');
+            $table->string('nidb');
+            $table->string('dateb');
             $table->string('address');
             $table->string('email');
             $table->string('contactnumber');

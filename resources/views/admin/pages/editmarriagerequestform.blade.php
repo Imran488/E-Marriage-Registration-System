@@ -17,7 +17,7 @@
         </div>
         <div class="form-group">
             <div class="col-md-4">
-                <label for="exampleInputName">Name</label>
+                <label for="exampleInputName">Groom Name</label>
                 <input value="{{$list->name}}" type="name" name="name" class="form-control" id="exampleInputName"
                     placeholder="Enter Your Name">
             </div>
@@ -25,7 +25,7 @@
 
         <div class="form-group">
             <div class="col-md-4">
-                <label for="exampleInputName">NID Number</label>
+                <label for="exampleInputName">Groom NID Number</label>
                 <input value="{{$list->nid}}" type="number" name="nid" class="form-control" id="exampleInputName"
                     placeholder="Enter Your NID Number">
             </div>
@@ -33,7 +33,7 @@
 
         <div class="form-group">
             <div class="col-md-4">
-                <label for="exampleInputName">Date of Birth</label>
+                <label for="exampleInputName">Groom Date of Birth</label>
                 <input value="{{$list->date}}" type="date" name="date" class="form-control" id="exampleInputName"
                     placeholder="Enter Your Date of Birth">
                 <small id="emailHelp" class="form-text text-muted">Your Age Should be Minimum 18 Years.</small>

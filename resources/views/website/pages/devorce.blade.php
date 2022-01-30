@@ -10,40 +10,40 @@
 
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputName">Marriage ID</label>
-            <input type="number" name="id" class="form-control" id="exampleInputName" placeholder="Marriage ID">
+            <strong for="exampleInputName">Marriage ID</strong>
+            <input type="number" name="id" class="form-control" id="exampleInputName" placeholder="Marriage ID"required>
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputName">Name</label>
-            <input type="name" name="name" class="form-control" id="exampleInputName" placeholder="Name">
+            <strong for="exampleInputName">Name</strong>
+            <input type="name" name="name" class="form-control" id="exampleInputName" placeholder="Name"required>
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputPassword1">Address</label>
-            <input type="address" name="address" class="form-control" id="exampleInputPassword1" placeholder="Address">
+            <strong for="exampleInputPassword1">Address</strong>
+            <input type="address" name="address" class="form-control" id="exampleInputPassword1" placeholder="Address"required>
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputEmail1">Email </label>
-            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <strong for="exampleInputEmail1">Email </strong>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"required>
             <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputPassword1">Contact Number</label>
-            <input type="string" name="contactnumber" class="form-control" id="exampleInputPassword1" placeholder="Contact Number">
+            <strong for="exampleInputPassword1">Contact Number</strong>
+            <input type="string" name="contactnumber" class="form-control" id="exampleInputPassword1" placeholder="Contact Number"required>
         </div>
     </div>
 
     {{-- <div class="form-check">
         <div class="col-md-4">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">I Declare that all Informations are True</label>
+            <strong class="form-check-strong" for="exampleCheck1">I Declare that all Informations are True</strong>
         </div>
     </div> --}}
     <button type="submit" class="btn btn-primary">Submit</button>

@@ -9,7 +9,7 @@
     @csrf
     <div class=" form-group">
         <div class="col-md-4">
-            <label class="red">Certificate Type</label>
+            <strong class="red">Certificate Type</strong>
         </div>
         <div class="col-md-4">
             <select  data-parsley-required-message="Please Select" name="certificate" id="certificate" class="form-control">
@@ -21,37 +21,37 @@
     </div>
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputEmail1">Marriage Date </label>
+            <strong for="exampleInputEmail1">Marriage Date </strong>
             <input type ="date" name="datem" class="form-control" placeholder="Please Enter Marriage Date" required data-parsley-required-message="Please Enter Marriage Date">
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputName">Groom Name</label>
-            <input type="name" name="gname" class="form-control" id="exampleInputName" placeholder="Groom Name">
+            <strong for="exampleInputName">Groom Name</strong>
+            <input type="name" name="gname" class="form-control" id="exampleInputName" placeholder="Groom Name"required>
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputName">Bride Name</label>
-            <input type="name" name="bname" class="form-control" id="exampleInputName" placeholder="BrideName">
+            <strong for="exampleInputName">Bride Name</strong>
+            <input type="name" name="bname" class="form-control" id="exampleInputName" placeholder="BrideName"required>
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputPassword1">Groom NID</label>
-            <input type="nid" name="gnid" class="form-control" id="exampleInputPassword1" placeholder="Groom NID">
+            <strong for="exampleInputPassword1">Groom NID</strong>
+            <input type="nid" name="gnid" class="form-control" id="exampleInputPassword1" placeholder="Groom NID"required>
         </div>
     </div>
     <div class="form-group">
         <div class="col-md-4">
-            <label for="exampleInputPassword1">Bride NID</label>
-            <input type="nid" name="bnid" class="form-control" id="exampleInputPassword1" placeholder="Bride NID">
+            <strong for="exampleInputPassword1">Bride NID</strong>
+            <input type="nid" name="bnid" class="form-control" id="exampleInputPassword1" placeholder="Bride NID"required>
         </div>
     </div>
 
 
-    
+
     <button type="submit" class="btn btn-primary">Submit</button>
     <a href="{{route('home')}}" class="btn btn-danger">Cancel</a>
 </form>

@@ -149,7 +149,7 @@
                                             <li>@auth
                                                 <a class="dropdown-item w3-hover-purple w3-medium w3-text-purple"
                                                     href="{{route('show.message')}}">
-                                                    Question Us
+                                                    Message Us
                                                 </a>
                                             </li>@endauth
 

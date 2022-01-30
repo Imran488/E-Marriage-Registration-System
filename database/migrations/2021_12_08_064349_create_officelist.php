@@ -17,6 +17,7 @@ class CreateOfficelist extends Migration
             $table->id();
             $table->string('name')->default('');
             $table->string('address')->default('');
+            $table->string('contactnumber')->default('');
             $table->timestamps();
         });
     }

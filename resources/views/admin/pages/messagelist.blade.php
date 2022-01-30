@@ -4,7 +4,7 @@
 
 <center>
 <h1>
-    <b><u>This is Question List</u></b>
+    <b><u>User Message Reply List</u></b>
 </h1>
     <br>
 <div class="col-md-4">
@@ -22,7 +22,7 @@
     <th scope="col">User name</th>
     <th scope="col">Email</th>
       <th scope="col">Subject</th>
-      <th scope="col">Question</th>
+      <th scope="col">Message From User</th>
       <th scope="col">Reply</th>
       <th scope="col">Status</th>
       <th scope="col">Action</th>

@@ -50,7 +50,7 @@
 			<div class="contact-info">
 				<img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
 				<h2>Thank You</h2>
-				<h4>Please Reply User Question !</h4>
+				<h4>Please Reply User Message !</h4>
 			</div>
 		</div>
 		<div class="col-md-9">
@@ -70,7 +70,7 @@
 
                   </div>
                   <div class="form-group">
-                    <label class="control-label col-sm-2" for="email">Question:{{$questions->question}}</label>
+                    <label class="control-label col-sm-2" for="email">User Message:{{$questions->question}}</label>
 
                   </div>
 				<div class="form-group">

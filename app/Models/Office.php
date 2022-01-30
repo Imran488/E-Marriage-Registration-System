@@ -9,5 +9,5 @@ class Office extends Model
 {
     use HasFactory;
     protected $table = "officelist";
-    protected $fillable=['name','address'];
+    protected $fillable=['name','address','contactnumber'];
 }

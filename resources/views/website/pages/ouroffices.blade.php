@@ -12,15 +12,17 @@
             <thead>
               <tr>
                 <th scope="col">BranchID</th>
-                <!--<th scope="col">Kazi Name</th>-->
+                <th scope="col">Register Name</th>
                 <th scope="col">Office Address</th>
+                <th scope="col">Contact Number</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th>{{$key+1}}</th>    
-                <!--<td>{{$list->name}}</td>-->
+                <th>{{$key+1}}</th>
+                <td>{{$list->name}}</td>
                 <td>{{$list->address}}</td>
+                <td>{{$list->contactnumber}}</td>
               </tr>
             </tbody>
           </table>

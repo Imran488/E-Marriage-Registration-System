@@ -16,7 +16,7 @@ class KaziOfficeController extends Controller
                 return view('admin.pages.office',compact('officelist','key'));
             }
         $officelist=Office::all();
-        
+
         return view('admin.pages.office',compact('officelist','key'));
     }
 }
@@ -32,19 +32,20 @@ class KaziOfficeController extends Controller
         Office::create([
         'name'=>$request->name,
         'address'=>$request->address,
+        'contactnumber'=>$request->contactnumber
      ]);
-        return redirect()->back()/*route('marrigeregistration')*/->with('msg','Registration Successfull.');
+        return redirect()->route('kazioffice')->with('msg','Registration Successfull.');
     }
     public function OfficeDetails($id)
     {
         $officelist=Office::find($id);
-        
+
         return view('admin.pages.officedetails',compact('officelist'));
     }
     public function OfficeDelete($id)
     {
         $officelist=Office::find($id)->delete();
-        
+
         return redirect()->back()->with('msg','Delete Succesfully');
     }
 }
